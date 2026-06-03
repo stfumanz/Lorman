@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QA Admin | Elite Editor MTD</title>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <style>
+    :root { --primary: #f59e0b; --navy: #0f172a; --slate: #1e293b; --bg: #fef3c7; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+
+    /* Sidebar */
+    .sidebar { width: 280px; background: var(--navy); color: white; display: flex; flex-direction: column; border-right: 2px solid var(--primary); }
+    .sidebar-header { padding: 25px; border-bottom: 1px solid var(--slate); text-align: center; }
+    .agent-list { flex: 1; overflow-y: auto; padding: 10px; }
+    .agent-item { padding: 15px; margin-bottom: 8px; border-radius: 12px; cursor: pointer; transition: 0.3s; border: 1px solid transparent; color: #94a3b8; }
+    .agent-item:hover { background: var(--slate); color: white; }
+    .agent-item.active { background: var(--primary); color: var(--navy); font-weight: 800; }
+
+    /* Main Editor Area */
+    .editor-main { flex: 1; display: flex; flex-direction: column; background: white; }
+    .editor-header { padding: 20px 40px; background: white; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; }
+    .scroll-content { padding: 40px; overflow-y: auto; flex: 1; }
+    
+    /* Global Buttons */
+    .btn-save { background: var(--navy); color: var(--primary); border: none; padding: 12px 25px; border-radius: 12px; font-weight: 800; cursor: pointer; transition: 0.3s; }
+    .btn-dashboard { 
+      background: transparent; color: var(--navy); border: 2px solid var(--navy); 
+      padding: 10px 20px; border-radius: 12px; font-weight: 800; text-decoration: none; 
+      font-size: 0.8rem; transition: 0.3s; display: inline-block;
+    }
+    .btn-dashboard:hover { background: var(--navy); color: var(--primary); }
+    .btn-add { background: var(--primary); color: var(--navy); border: none; padding: 10px 20px; border-radius: 10px; font-weight: 700; cursor: pointer; margin-top: 10px; }
+    .btn-import { background: transparent; color: #94a3b8; border: 1px solid #334155; padding: 8px; border-radius: 10px; font-size: 0.7rem; font-weight: 700; cursor: pointer; margin-bottom: 10px; }
+    .btn-clear { background: #fee2e2; color: #ef4444; border: 1px solid #fecaca; padding: 10px 20px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+
+    /* Sections */
+    .form-section { background: #f8fafc; padding: 25px; border-radius: 20px; margin-bottom: 30px; border: 1px solid #e2e8f0; }
+    .form-section h3 { margin-top: 0; font-size: 0.8rem; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 20px; }
+    .score-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; background: #1e293b; padding: 25px; border-radius: 20px; margin-bottom: 20px; }
+    .score-grid label { color: var(--primary); margin-bottom: 8px; font-size: 0.7rem; font-weight: 800; display: block; }
+    .score-grid input { background: #020617; color: #f59e0b !important; border: 1px solid var(--primary); padding: 15px; border-radius: 12px; text-align: center; font-weight: 800; font-size: 1.3rem; width: 100%; }
+    .grid-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    label { display: block; font-weight: 700; font-size: 0.8rem; margin-bottom: 8px; color: var(--navy); }
+    input, textarea { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 12px; font-family: inherit; font-size: 0.9rem; transition: 0.3s; color: var(--navy); }
+    .row-number { background: var(--navy); color: var(--primary); font-weight: 800; padding: 12px; border-radius: 12px; min-width: 45px; text-align: center; display: flex; align-items: center; justify-content: center; }
+
+    /* Modals */
+    .json-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; padding: 50px; justify-content: center; align-items: center; }
+    .json-content { background: var(--navy); width: 100%; max-width: 700px; border-radius: 25px; padding: 35px; border: 1px solid var(--primary); }
+    textarea.json-area { background: #020617; color: #10b981; border: none; height: 300px; font-family: monospace; width: 100%; padding: 20px; margin-top: 15px; border-radius: 12px; outline: none; }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar-header"><h2 style="color:var(--primary); font-size:0.9rem;">QA ADMIN PANEL</h2></div>
+    <div id="agentList" class="agent-list"></div>
+    <div style="padding: 20px; display: flex; flex-direction: column; gap: 10px;">
+        <!-- Sidebar Shortcut to Dashboard -->
+        <a href="index.html" class="btn-dashboard" style="text-align: center; border-color: #334155; color: #94a3b8; font-size: 0.7rem;">🏠 EXIT TO DASHBOARD</a>
+        <button onclick="showImportModal()" class="btn-import">📥 IMPORT JSON</button>
+        <button onclick="addNewAgent()" class="btn-add">+ New Agent</button>
+    </div>
+  </div>
+
+  <div class="editor-main">
+    <div class="editor-header">
+      <h2 id="editingTitle" style="color:var(--navy);">Select Agent</h2>
+      <div style="display:flex; gap:10px; align-items: center;">
+          <button class="btn-clear" onclick="clearPerformanceData()">🧹 Reset</button>
+          <button class="btn-save" onclick="showExport()">🚀 GENERATE JSON</button>
+          <!-- Main View Dashboard Button -->
+          <a href="index.html" class="btn-dashboard">View Dashboard</a>
+      </div>
+    </div>
+    
+    <div id="editorContent" class="scroll-content" style="display:none;">
+        <!-- BASIC INFORMATION -->
+        <div class="form-section">
+            <h3>Basic Information</h3>
+            <div class="grid-inputs">
+                <div><label>Agent Name</label><input type="text" id="editName" oninput="saveAndSync()"></div>
+                <div><label>Dashboard Password</label><input type="text" id="editPass" oninput="saveAndSync()"></div>
+            </div>
+            <div class="grid-inputs">
+                <div><label>Current Month (e.g. MAY)</label><input type="text" id="editMonth" oninput="saveAndSync()"></div>
+                <div><label>Current Week Label (e.g. WEEK 1)</label><input type="text" id="editWeek" oninput="saveAndSync()"></div>
+            </div>
+        </div>
+
+        <!-- WEEKLY SCORES -->
+        <div class="form-section">
+            <h3>MTD Weekly Scores</h3>
+            <div class="score-grid">
+                <div><label>W1</label><input type="number" id="w1" oninput="updateWeeklyScore('week1', this.value)"></div>
+                <div><label>W2</label><input type="number" id="w2" oninput="updateWeeklyScore('week2', this.value)"></div>
+                <div><label>W3</label><input type="number" id="w3" oninput="updateWeeklyScore('week3', this.value)"></div>
+                <div><label>W4</label><input type="number" id="w4" oninput="updateWeeklyScore('week4', this.value)"></div>
+            </div>
+        </div>
+
+        <!-- FEEDBACK SECTION -->
+        <div class="form-section">
+            <h3>QA Evaluations</h3>
+            <div id="qaContainer"></div>
+            <button class="btn-add" onclick="addRow('qa')">+ Add QA Feedback</button>
+            
+            <h3 style="margin-top:40px;">Dispo Audits</h3>
+            <div id="auditContainer"></div>
+            <button class="btn-add" onclick="addRow('audits')">+ Add Audit Entry</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- EXPORT MODAL -->
+  <div id="exportModal" class="json-modal"><div class="json-content">
+      <h2 style="color:var(--primary); margin:0;">✅ JSON Ready</h2>
+      <textarea id="jsonOutput" class="json-area" readonly onclick="this.select()"></textarea>
+      <div style="display:flex; gap:10px; margin-top:25px;"><button class="btn-save" style="flex:1;" onclick="copyJSON()">Copy Code</button><button class="btn-save" style="background:#334155; color:white;" onclick="closeModal('exportModal')">Close</button></div>
+  </div></div>
+
+  <!-- IMPORT MODAL -->
+  <div id="importModal" class="json-modal"><div class="json-content">
+      <h2 style="color:var(--primary); margin:0;">📥 Import JSON</h2>
+      <textarea id="jsonInput" class="json-area" placeholder="Paste JSON here..."></textarea>
+      <div style="display:flex; gap:10px; margin-top:25px;"><button class="btn-save" style="flex:1; background:#10b981; color:white;" onclick="processImport()">IMPORT</button><button class="btn-save" style="background:#334155; color:white;" onclick="closeModal('importModal')">Cancel</button></div>
+  </div></div>
+
+  <script>
+    let db = [];
+    let selectedIndex = -1;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedData = localStorage.getItem('qa_dashboard_mtd_data');
+      if (savedData) { db = JSON.parse(savedData); renderSidebar(); }
+      else { fetch('data.json?t=' + new Date().getTime()).then(r => r.json()).then(data => { db = data; saveToLocal(); renderSidebar(); }); }
+    });
+
+    function saveToLocal() { localStorage.setItem('qa_dashboard_mtd_data', JSON.stringify(db)); }
+    function renderSidebar() {
+      const list = document.getElementById('agentList');
+      list.innerHTML = db.map((a, i) => `<div class="agent-item ${i === selectedIndex ? 'active' : ''}" onclick="selectAgent(${i})">${a.name}</div>`).join('');
+    }
+
+    function selectAgent(index) {
+      selectedIndex = index;
+      const agent = db[index];
+      if(!agent.weekly) agent.weekly = { week1:{score:0}, week2:{score:0}, week3:{score:0}, week4:{score:0} };
+      document.getElementById('editorContent').style.display = 'block';
+      document.getElementById('editingTitle').innerText = "Editing: " + agent.name;
+      document.getElementById('editName').value = agent.name;
+      document.getElementById('editPass').value = agent.password;
+      document.getElementById('editMonth').value = agent.month || "MAY";
+      document.getElementById('editWeek').value = agent.week_label || "WEEK 1";
+      document.getElementById('w1').value = agent.weekly.week1.score;
+      document.getElementById('w2').value = agent.weekly.week2.score;
+      document.getElementById('w3').value = agent.weekly.week3.score;
+      document.getElementById('w4').value = agent.weekly.week4.score;
+      renderList('qa', agent.qa || []);
+      renderList('audits', agent.audits || []);
+      renderSidebar();
+    }
+
+    function renderList(type, data) {
+      const container = document.getElementById(type === 'qa' ? 'qaContainer' : 'auditContainer');
+      container.innerHTML = data.map((item, i) => `
+        <div style="margin-bottom:12px; display:flex; gap:12px; align-items:stretch;">
+            <div class="row-number">${i + 1}</div>
+            <textarea oninput="updateItem('${type}', ${i}, this.value)" style="flex:1; min-height:80px;">${item}</textarea>
+            <button onclick="removeItem('${type}', ${i})" style="color:#ef4444; background:none; border:none; cursor:pointer; font-weight:800; font-size:1.2rem;">✕</button>
+        </div>
+      `).join('');
+    }
+
+    function updateWeeklyScore(week, val) { db[selectedIndex].weekly[week].score = val || 0; saveToLocal(); }
+    function updateItem(type, index, val) { db[selectedIndex][type][index] = val; saveToLocal(); }
+    function saveAndSync() {
+      if(selectedIndex === -1) return;
+      db[selectedIndex].name = document.getElementById('editName').value;
+      db[selectedIndex].password = document.getElementById('editPass').value;
+      db[selectedIndex].month = document.getElementById('editMonth').value.toUpperCase();
+      db[selectedIndex].week_label = document.getElementById('editWeek').value.toUpperCase();
+      saveToLocal(); renderSidebar();
+    }
+
+    function addRow(type) {
+      if(!db[selectedIndex][type]) db[selectedIndex][type] = [];
+      db[selectedIndex][type].push("GOOD CALL"); 
+      renderList(type, db[selectedIndex][type]);
+      saveToLocal();
+    }
+
+    function removeItem(type, index) { db[selectedIndex][type].splice(index, 1); renderList(type, db[selectedIndex][type]); saveToLocal(); }
+    function showExport() { document.getElementById('jsonOutput').value = JSON.stringify(db, null, 2); document.getElementById('exportModal').style.display = 'flex'; }
+    function showImportModal() { document.getElementById('jsonInput').value = ''; document.getElementById('importModal').style.display = 'flex'; }
+    function processImport() {
+      try {
+        const input = document.getElementById('jsonInput').value;
+        const parsed = JSON.parse(input);
+        if (Array.isArray(parsed)) { db = parsed; saveToLocal(); renderSidebar(); document.getElementById('editorContent').style.display = 'none'; closeModal('importModal'); alert("✅ Imported!"); }
+      } catch (e) { alert("❌ Invalid JSON code"); }
+    }
+    function copyJSON() { document.getElementById('jsonOutput').select(); document.execCommand('copy'); alert("✅ JSON Copied!"); }
+    function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+    function addNewAgent() { db.push({ name: "New Agent", password: "123", month: "MAY", week_label: "WEEK 1", weekly: { week1:{score:0}, week2:{score:0}, week3:{score:0}, week4:{score:0} }, qa: ["GOOD CALL"], audits: [] }); saveToLocal(); renderSidebar(); }
+    function clearPerformanceData() { if(selectedIndex === -1) return; if(!confirm("Reset performance for this agent?")) return; db[selectedIndex].weekly = { week1:{score:0}, week2:{score:0}, week3:{score:0}, week4:{score:0} }; db[selectedIndex].qa = []; db[selectedIndex].audits = []; selectAgent(selectedIndex); saveToLocal(); }
+  </script>
+</body>
+</html>

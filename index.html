@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QA Pro | Analytics & MTD Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://googleapis.com" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f59e0b;    --bg: #fef3c7;
+      --card: #0f172a;       --text-light: #f8fafc;
+      --text-dark: #0f172a;  --border: #334155;
+    }
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: var(--text-dark); margin: 0; padding: 0; }
+    
+    /* HEADER STYLES */
+    .header-main { 
+      background: #020617; padding: 15px 30px; color: var(--primary); 
+      border-bottom: 5px solid var(--primary); display: flex; justify-content: space-between; align-items: center;
+    }
+    .header-main h1 { margin: 0; font-size: 1.1rem; font-weight: 800; letter-spacing: 2px; flex: 1; text-align: center; }
+    
+    .admin-btn {
+      background: transparent; color: #94a3b8; font-size: 0.7rem; font-weight: 700;
+      padding: 8px 12px; border: 1px solid #334155; border-radius: 8px; cursor: pointer; transition: 0.3s;
+    }
+    .admin-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* NAVIGATION */
+    .nav-bar { background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--primary); padding: 12px 0; position: sticky; top: 0; z-index: 100; overflow-x: auto; }
+    .nav-inner { display: flex; justify-content: center; gap: 10px; padding: 0 15px; flex-wrap: wrap; }
+    .agent-pill { padding: 8px 18px; border-radius: 30px; border: 1px solid var(--border); background: #1e293b; color: #94a3b8; font-weight: 700; font-size: 0.75rem; cursor: pointer; transition: 0.3s; display: flex; align-items: center; gap: 8px; }
+    .agent-pill.active { background: var(--primary); color: var(--text-dark); border-color: var(--primary); }
+    .dot { width: 8px; height: 8px; border-radius: 50%; }
+    
+    .content-container { max-width: 900px; margin: 30px auto; padding: 0 20px 80px; }
+    
+    /* KPI BOXES */
+    .kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 30px; }
+    .kpi-box { padding: 20px 10px; border-radius: 24px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 125px; transition: 0.3s; }
+    .kpi-1 { background: var(--card); border: 2px solid var(--primary); box-shadow: 0 10px 20px rgba(0,0,0,0.2); } 
+    .kpi-2 { background: var(--primary); color: var(--text-dark); } 
+    .kpi-3 { background: #334155; color: white; }
+
+    .kpi-label { font-size: 0.8rem; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; color: #ffffff !important; letter-spacing: 1.5px; opacity: 1; }
+    .kpi-2 .kpi-label { color: #0f172a !important; opacity: 0.8; }
+    .kpi-1 .kpi-value { color: var(--primary); }
+    .kpi-value { font-size: 2rem; font-weight: 900; line-height: 1; text-transform: uppercase; }
+    
+    /* MAIN DASHBOARD CARD */
+    .main-card { background: var(--card); border-radius: 32px; box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.4); overflow: hidden; color: var(--text-light); }
+    .card-head { padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); background: #1e293b; }
+    .card-head h2 { margin: 0; font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+    
+    .btn-group { display: flex; gap: 10px; align-items: center; }
+    .unlock-btn { background: var(--primary); color: var(--text-dark); padding: 10px 20px; border-radius: 12px; border: none; font-weight: 800; cursor: pointer; }
+    .inquire-btn { background: transparent; color: var(--primary); border: 2px solid var(--primary); padding: 8px 18px; border-radius: 12px; font-weight: 800; cursor: pointer; }
+
+    /* MTD GRID */
+    .mtd-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; background: #020617; padding: 15px; border-radius: 16px; border: 1px solid var(--primary); margin-top: 15px; width: 100%; max-width: 450px; }
+    .mtd-item { text-align: center; }
+    .mtd-label { font-size: 0.6rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; }
+    .mtd-val { font-size: 0.9rem; font-weight: 800; color: white; }
+    .mtd-highlight { border-left: 1px solid #334155; padding-left: 8px; }
+
+    .table-block { padding: 30px; border-bottom: 1px solid var(--border); }
+    .table-block h3 { color: var(--primary); font-size: 1.1rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+    table { width: 100%; border-collapse: collapse; }
+    td { padding: 18px 10px; border-top: 1px solid var(--border); color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; }
+    .quote-style { font-weight: 600; color: #fde68a; background: #334155; padding: 4px 10px; border-radius: 8px; border-left: 4px solid var(--primary); display: inline-block; margin: 5px 0; }
+    
+    /* MODALS */
+    .modal { display: none; position: fixed; inset: 0; background:rgba(2, 6, 23, 0.9); backdrop-filter:blur(10px); z-index: 200; justify-content:center; align-items:center; }
+    .modal-content { background:var(--card); padding:40px; border-radius:30px; width:340px; text-align:center; border: 2px solid var(--primary); }
+    .modal-content input { width:100%; padding:15px; margin:20px 0; border:2px solid var(--border); background: #020617; color:white; border-radius:15px; text-align:center; font-size: 1.5rem; font-weight: 800; outline: none; }
+    .btn-verify { background: var(--primary); color: var(--text-dark); padding: 15px; border:none; border-radius:15px; width: 100%; font-weight:800; cursor:pointer; }
+    
+    @media (max-width: 600px) { 
+        .kpi-row { grid-template-columns: 1fr; } 
+        .mtd-grid { grid-template-columns: repeat(3, 1fr); }
+        .card-head { flex-direction: column; gap: 20px; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-main">
+    <div style="width: 100px;"></div>
+    <h1>AGENT ANALYTICS PORTAL</h1>
+    <button onclick="openAdminModal()" class="admin-btn">ADMIN ONLY</button>
+  </header>
+
+  <nav class="nav-bar"><div id="agentPills" class="nav-inner"></div></nav>
+  <div class="content-container"><div id="dashboardView"></div></div>
+
+  <!-- Agent Password Modal -->
+  <div id="passwordModal" class="modal">
+    <div class="modal-content">
+      <h3 style="color:var(--primary); margin:0;">🔐 UNLOCK SCORES</h3>
+      <input type="password" id="pwInput" placeholder="••••" />
+      <button class="btn-verify" onclick="verifyAndShowScores()">VERIFY ACCESS</button>
+      <p onclick="closeModal('passwordModal')" style="color:#94a3b8; cursor:pointer; margin-top:20px; font-size:0.85rem;">Cancel</p>
+    </div>
+  </div>
+
+  <!-- Admin Password Modal (Bagay na ang design!) -->
+  <div id="adminModal" class="modal">
+    <div class="modal-content">
+      <h3 style="color:var(--primary); margin:0;">🚨 ADMIN ACCESS</h3>
+      <p style="color:#94a3b8; font-size:0.75rem; margin-top:10px;">Security Verification Required</p>
+      <input type="password" id="adminPwInput" placeholder="••••" />
+      <button class="btn-verify" onclick="verifyAdmin()">ACCESS EDITOR</button>
+      <p onclick="closeModal('adminModal')" style="color:#94a3b8; cursor:pointer; margin-top:20px; font-size:0.85rem;">Cancel</p>
+    </div>
+  </div>
+
+  <script>
+    let db = [];
+    let activeAgent = null;
+    const MY_EMAIL = "hitsuguya08@gmail.com"; 
+
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('data.json?t=' + new Date().getTime())
+        .then(r => r.json())
+        .then(data => {
+          db = data;
+          renderPills(db);
+        })
+        .catch(err => {
+          document.getElementById('dashboardView').innerHTML = `<div style="text-align:center; padding:50px; color:var(--primary);"><h3>⚠️ Syncing...</h3></div>`;
+        });
+    });
+
+    function renderPills(agents) {
+      const box = document.getElementById('agentPills'); box.innerHTML = '';
+      agents.forEach((agent, i) => {
+        const pill = document.createElement('div'); pill.className = 'agent-pill';
+        const w = agent.weekly || { week4: {score:0} };
+        const s = parseFloat(w.week4?.score || 0);
+        const c = s >= 90 ? '#10b981' : (s >= 80 ? '#fbbf24' : '#ff4d4d');
+        pill.innerHTML = `<div class="dot" style="background:${c}"></div> ${agent.name}`;
+        pill.onclick = () => { renderAgent(agent); [...box.children].forEach(el => el.classList.remove('active')); pill.classList.add('active'); };
+        box.appendChild(pill); if(i === 0) pill.click();
+      });
+    }
+
+    function renderAgent(agent) {
+      activeAgent = agent;
+      const qas = agent.qa || []; const audits = agent.audits || [];
+      const monthDisplay = agent.month || "MAY";
+      const weekLabelDisplay = agent.week_label || "WEEK 1";
+
+      document.getElementById('dashboardView').innerHTML = `
+        <div class="kpi-row">
+            <div class="kpi-box kpi-1">
+                <div class="kpi-label">${weekLabelDisplay}</div>
+                <div class="kpi-value">${monthDisplay}</div>
+            </div>
+            <div class="kpi-box kpi-2">
+                <div class="kpi-label">LONG CALLS</div>
+                <div class="kpi-value" style="color:var(--text-dark)">${qas.length}</div>
+            </div>
+            <div class="kpi-box kpi-3">
+                <div class="kpi-label">DISPO AUDITS</div>
+                <div class="kpi-value">${audits.length}</div>
+            </div>
+        </div>
+        <div class="main-card">
+            <div class="card-head">
+                <div>
+                  <h2>${agent.name}</h2>
+                  <span style="color:var(--primary); font-size: 0.75rem; text-transform:uppercase; font-weight:800; letter-spacing:1px;">Performance Breakdown</span>
+                </div>
+                <div class="btn-group">
+                    <button class="inquire-btn" onclick="sendInquiry()">✉️ CLARIFY FEEDBACK</button>
+                    <button class="unlock-btn" onclick="openAgentModal()">🔐 UNLOCK SCORE</button>
+                    <div id="scoreBreakdown" style="display:none;"></div>
+                </div>
+            </div>
+            ${renderTable('Latest QA Feedback', qas)}
+            ${renderTable('Recent Dispo Audits', audits)}
+        </div>`;
+    }
+
+    function renderTable(title, data) {
+      return `<div class="table-block"><h3>${title}</h3><table><tbody>
+        ${data.map((item, i) => {
+          if (item.length < 3) return "";
+          let formatted = item.replace(/"([^"]+)"/g, '<span class="quote-style">"$1"</span>');
+          return `<tr><td style="width:40px; color:var(--primary); font-weight:800;">${i+1}</td><td>${formatted}</td></tr>`;
+        }).join('')}
+      </tbody></table></div>`;
+    }
+
+    function sendInquiry() {
+      const subject = encodeURIComponent(`QA Inquiry: ${activeAgent.name}`);
+      window.location.href = `mailto:${MY_EMAIL}?subject=${subject}`;
+    }
+
+    // MODAL HANDLERS
+    function openAgentModal() { document.getElementById('pwInput').value = ''; document.getElementById('passwordModal').style.display = 'flex'; document.getElementById('pwInput').focus(); }
+    function openAdminModal() { document.getElementById('adminPwInput').value = ''; document.getElementById('adminModal').style.display = 'flex'; document.getElementById('adminPwInput').focus(); }
+    function closeModal(id) { document.getElementById(id).style.display = 'none'; }
+
+    // VERIFY ADMIN (KINI ANG GUSTO NIMO)
+    function verifyAdmin() {
+      const ADMIN_CODE = "Jeikaaru-08!"; // PWEDE NIMO USBON KINI
+      const input = document.getElementById('adminPwInput').value;
+      if (input === ADMIN_CODE) { window.location.href = "admin.html"; } 
+      else { alert("❌ Unauthorized Access Denied."); closeModal('adminModal'); }
+    }
+
+    function verifyAndShowScores() {
+      const inputPw = document.getElementById('pwInput').value.trim();
+      if(activeAgent && inputPw === activeAgent.password.toString().trim()) {
+          const w = activeAgent.weekly || { week1:{score:0}, week2:{score:0}, week3:{score:0}, week4:{score:0} };
+          const s1 = parseFloat(w.week1?.score || 0), s2 = parseFloat(w.week2?.score || 0), s3 = parseFloat(w.week3?.score || 0), s4 = parseFloat(w.week4?.score || 0);
+          const scores = [s1, s2, s3, s4].filter(s => s > 0);
+          const mtd = scores.length > 0 ? (scores.reduce((a,b) => a+b, 0) / scores.length).toFixed(2) : "0.00";
+
+          document.getElementById('scoreBreakdown').innerHTML = `
+            <div class="mtd-grid">
+                <div class="mtd-item"><div class="mtd-label">W1</div><div class="mtd-val">${s1}%</div></div>
+                <div class="mtd-item"><div class="mtd-label">W2</div><div class="mtd-val">${s2}%</div></div>
+                <div class="mtd-item"><div class="mtd-label">W3</div><div class="mtd-val">${s3}%</div></div>
+                <div class="mtd-item"><div class="mtd-label">W4</div><div class="mtd-val">${s4}%</div></div>
+                <div class="mtd-item mtd-highlight"><div class="mtd-label" style="color:var(--primary)">MTD</div><div class="mtd-val" style="color:var(--primary); font-size:1rem;">${mtd}%</div></div>
+            </div>`;
+          document.getElementById('scoreBreakdown').style.display = 'block'; 
+          document.querySelector('.unlock-btn').style.display = 'none'; 
+          closeModal('passwordModal');
+      } else { alert('❌ Incorrect Access Code'); }
+    }
+
+    window.onclick = (e) => { 
+        if(e.target == document.getElementById('passwordModal')) closeModal('passwordModal');
+        if(e.target == document.getElementById('adminModal')) closeModal('adminModal');
+    }
+  </script>
+</body>
+</html>
