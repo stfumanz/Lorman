@@ -1,118 +1,226 @@
-[
-  {
-    "name": "L. Ombos",
-    "password": "",
-    "weekly": {
-      "week1": {
-        "score": "79.88"
-      },
-      "week2": {
-        "score": "79.68"
-      },
-      "week3": {
-        "score": 0
-      },
-      "week4": {
-        "score": "91.62"
-      }
-    },
-    "qa": [
-      "GOOD CALL",
-      "GOOD CALL",
-      "\"INTRODUCTION\" -  @00:10 Some delay \"Cx: Fine, How are you?| 4 seconds delay\" , (PC_WI)",
-      "\"SURVEY - MAIN REASON\" - @1:34 Failed to apply the silent rule \"3 seconds\" , (PC_WI)",
-      "\"SURVEY - MAIN REASON\" - @2:17 Cx said \"Somebody else must have done it. I have no idea who would want to redo my bathroom. My bathroom is fine.\",  agent pressed 2nd round of   >(SH - How Get Number)  instead of    42(Imm No) , (SB_BR)",
-      "\"TCPA\" - @2:32 Bumping key , (SB_BR)"
-    ],
-    "audits": [],
-    "month": "MAY",
-    "week_label": "WEEK 4"
+{
+  "theme": {
+    "primary": "#3b82f6",
+    "bg": "#eff6ff",
+    "card": "#1e3a8a"
   },
-  {
-    "name": "A. Lisondra",
-    "password": "",
-    "month": "MAY",
-    "week_label": "WEEK 4",
-    "weekly": {
-      "week1": {
-        "score": "100"
+  "agents": [
+    {
+      "name": "L. Ombos",
+      "password": "0925",
+      "weekly": {
+        "week1": {
+          "score": "79.88"
+        },
+        "week2": {
+          "score": "79.68"
+        },
+        "week3": {
+          "score": 0
+        },
+        "week4": {
+          "score": "91.62"
+        }
       },
-      "week2": {
-        "score": "63.27"
-      },
-      "week3": {
-        "score": "81.61"
-      },
-      "week4": {
-        "score": "98.02"
+      "qa": [
+        "GOOD CALL",
+        "GOOD CALL",
+        "\"INTRODUCTION\" -  @00:10 Some delay \"Cx: Fine, How are you?| 4 seconds delay\" , (PC_WI)",
+        "\"SURVEY - MAIN REASON\" - @1:34 Failed to apply the silent rule \"3 seconds\" , (PC_WI)",
+        "\"SURVEY - MAIN REASON\" - @2:17 Cx said \"Somebody else must have done it. I have no idea who would want to redo my bathroom. My bathroom is fine.\",  agent pressed 2nd round of   >(SH - How Get Number)  instead of    42(Imm No) , (SB_BR)",
+        "\"TCPA\" - @2:32 Bumping key , (SB_BR)"
+      ],
+      "audits": [],
+      "month": "JUNE",
+      "week_label": "WEEK 4",
+      "weekly_data": {
+        "week1": {
+          "score": 94.68,
+          "qa": [
+            "Good call",
+            "Good call",
+            "PITCH @01:04 after 41(Imm No x1)  cust said,  \"No, no, we've, we've done it already.\"  agent some delay in pressing  42(Imm No x2)  instead of  ending the call.  BR"
+          ],
+          "audits": []
+        },
+        "week2": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week3": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week4": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        }
       }
     },
-    "qa": [
-      "\"PITCH\"  @01:33  Slight delay. \"Cx: So what I got. |3 seconds delay\"   PC HW",
-      "GOOD CALL",
-      "\"BENEFITS\"  @02:10  Slight delay \"4 seconds delay silent rule\"   ;  @02:33 Slight delay  \"Cx: I got home protection with homeserve| 3 seconds delay\" ;  @02:43  \"Cx: Home Serve| 3 seconds delay\"  Slight delay.",
-      "GOOD CALL",
-      "GOOD CALL",
-      "\"5K SCREEN\" @01:01  Failed to apply in silent rule. \"After 5 seconds the customer responded\" PC HW"
-    ],
-    "audits": []
-  },
-  {
-    "name": "B. Buen",
-    "password": "",
-    "weekly": {
-      "week1": {
-        "score": "92.04"
+    {
+      "name": "A. Lisondra",
+      "password": "@rfie93",
+      "month": "JUNE",
+      "week_label": "WEEK 4",
+      "weekly": {
+        "week1": {
+          "score": "100"
+        },
+        "week2": {
+          "score": "63.27"
+        },
+        "week3": {
+          "score": "81.61"
+        },
+        "week4": {
+          "score": "98.02"
+        }
       },
-      "week2": {
-        "score": "81.68"
-      },
-      "week3": {
-        "score": "88.70"
-      },
-      "week4": {
-        "score": "77.09"
+      "qa": [
+        "\"PITCH\"  @01:33  Slight delay. \"Cx: So what I got. |3 seconds delay\"   PC HW",
+        "GOOD CALL",
+        "\"BENEFITS\"  @02:10  Slight delay \"4 seconds delay silent rule\"   ;  @02:33 Slight delay  \"Cx: I got home protection with homeserve| 3 seconds delay\" ;  @02:43  \"Cx: Home Serve| 3 seconds delay\"  Slight delay.",
+        "GOOD CALL",
+        "GOOD CALL",
+        "\"5K SCREEN\" @01:01  Failed to apply in silent rule. \"After 5 seconds the customer responded\" PC HW"
+      ],
+      "audits": [],
+      "weekly_data": {
+        "week1": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week2": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week3": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week4": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        }
       }
     },
-    "qa": [
-      "\"TCPA\"  @02:17  Slight delay. \"5 seconds delay silent rule\"   PC WI",
-      "\"MAIN REASON\"  @01:16  Slight delay. PC WI",
-      "\"MAIN REASON\"  @0:15  after r(Repeat) cust said,  \"All of what you said.\"  agent pressed 1(Yes) *asked the main reason question again*   instead of 1(Yes) to proceed in Own Home.   PC WI",
-      "\"1\" \"MAIN REASON\"  @01:13  Slight delay  ;  @01:25  cust said,  \"I'm I'm not saying anything. I'm, I'm just talking to you. What I said, what are y'all price?\"  agent slight delay in pressing   57(No Need)  instead of  66(How Much)  ;  @02:13  cust said,  \"A lot of people do I already know, but you keep saying the same thing. But I'm asking you, you know, you talking about other people, but we only supposed to be talking about what size my house is and how many windows I got, ain't that right?\"  agent pressed  67(Cost insistent)  instead of  d(Defer).   PC WI || \"2\" \"TCPA\"  @05:41  Slight delay  ;  @06:32 Slight delay  ;  PRE TRANSFER  @08:08  Major delay   \"Cx: I said, I don't need to talk to no two or three people. I'm on the phone and I'm. I'm trying. I felt it. I already. You got the right person, so now you don't. I got to go to another person.| 7 seconds delay on pressing D(Deferment)\" ;  @08:22  Slight delay.   PC WI || \"3\" Delay in disposing the call for more than 10 seconds. \"No dialer issue/CTO Reports\"",
-      "GOOD CALL",
-      "\"TCPA\"  @01:25  cust said,  \"We've already got a quote from renewal by Anderson.\"  agent  ended the call instead of  53(Already had Quote).   PC WI"
-    ],
-    "audits": [],
-    "month": "MAY",
-    "week_label": "WEEK 4"
-  },
-  {
-    "name": "W. Barquio",
-    "password": "",
-    "weekly": {
-      "week1": {
-        "score": "95.38"
+    {
+      "name": "B. Buen",
+      "password": "buenafe26",
+      "weekly": {
+        "week1": {
+          "score": "92.04"
+        },
+        "week2": {
+          "score": "81.68"
+        },
+        "week3": {
+          "score": "88.70"
+        },
+        "week4": {
+          "score": "77.09"
+        }
       },
-      "week2": {
-        "score": "57.54"
-      },
-      "week3": {
-        "score": "59.02"
-      },
-      "week4": {
-        "score": "95.36"
+      "qa": [
+        "\"TCPA\"  @02:17  Slight delay. \"5 seconds delay silent rule\"   PC WI",
+        "\"MAIN REASON\"  @01:16  Slight delay. PC WI",
+        "\"MAIN REASON\"  @0:15  after r(Repeat) cust said,  \"All of what you said.\"  agent pressed 1(Yes) *asked the main reason question again*   instead of 1(Yes) to proceed in Own Home.   PC WI",
+        "\"1\" \"MAIN REASON\"  @01:13  Slight delay  ;  @01:25  cust said,  \"I'm I'm not saying anything. I'm, I'm just talking to you. What I said, what are y'all price?\"  agent slight delay in pressing   57(No Need)  instead of  66(How Much)  ;  @02:13  cust said,  \"A lot of people do I already know, but you keep saying the same thing. But I'm asking you, you know, you talking about other people, but we only supposed to be talking about what size my house is and how many windows I got, ain't that right?\"  agent pressed  67(Cost insistent)  instead of  d(Defer).   PC WI || \"2\" \"TCPA\"  @05:41  Slight delay  ;  @06:32 Slight delay  ;  PRE TRANSFER  @08:08  Major delay   \"Cx: I said, I don't need to talk to no two or three people. I'm on the phone and I'm. I'm trying. I felt it. I already. You got the right person, so now you don't. I got to go to another person.| 7 seconds delay on pressing D(Deferment)\" ;  @08:22  Slight delay.   PC WI || \"3\" Delay in disposing the call for more than 10 seconds. \"No dialer issue/CTO Reports\"",
+        "GOOD CALL",
+        "\"TCPA\"  @01:25  cust said,  \"We've already got a quote from renewal by Anderson.\"  agent  ended the call instead of  53(Already had Quote).   PC WI"
+      ],
+      "audits": [],
+      "month": "JUNE",
+      "week_label": "WEEK 4",
+      "weekly_data": {
+        "week1": {
+          "score": 86,
+          "qa": [
+            "Credit @ 03:02 - slight delay \"Cx: That's good| 2 seconds delay on responding\" - PC BR",
+            "Pitch @ 01:27 - slight delay in applying silent rule \"5 seconds delay\" - PC BR || Home Type @ 04:15 \"delay on pressing R\" ; @ 04:54 - slight delays \"I said it's a manufactured\"; @ 04:57 - bumping key \"Agent proceeded the call then ended\" - PC BR\n\n",
+            "Main Reason @ 00:55 - some delay in applying silent rule \"6 seconds delay\" - PC BR ",
+            "Transfer @ 03:58 cx said \"Like I said, I'm not really trying to do it right now. So I, I think this call is a little premature for me.\" Agent pressed X (Exit) + 4 (Not Interested) + 4 (Final No) instead of 4 (Final No); @ 04:10 - major delay - \"Agent pressed X after * seconds agent pressed 4(Not interested), Stopped the script at the middle then played 4(Final No)\" PC BR"
+          ],
+          "audits": []
+        },
+        "week2": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week3": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week4": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        }
       }
     },
-    "qa": [
-      "GOOD CALL",
-      "\"Main Reason/Own Home\" @ 01:24 - slight delay \"There was verbal collision, Cx: No, You go ahead| 3 seconds delay\"  - PC BR",
-      "\"1\" \"Pitch\" @ 00:48 - slight delay \"Cx: I didn't want more information. I thought when I hit that button that they tell you on your phone different things, but I'm not going to update my bathroom right now.|2 seconds delay\"- PC BR || \"2\" \"Own Home\" @ 01:41 cx interrupted & said \"I'm not interested in doing anything right now.\" Agent played (_) Home Ownership instead of 58 (Hesitant 2nd Rnd); Credit @ 02:40 - slight delay - PC BR",
-      "GOOD CALL",
-      "GOOD CALL",
-      "GOOD CALL"
-    ],
-    "audits": [],
-    "month": "MAY",
-    "week_label": "WEEK 4"
-  }
-]
+    {
+      "name": "W. Barquio",
+      "password": "b.wiljohn2000",
+      "weekly": {
+        "week1": {
+          "score": "95.38"
+        },
+        "week2": {
+          "score": "57.54"
+        },
+        "week3": {
+          "score": "59.02"
+        },
+        "week4": {
+          "score": "95.36"
+        }
+      },
+      "qa": [
+        "GOOD CALL",
+        "\"Main Reason/Own Home\" @ 01:24 - slight delay \"There was verbal collision, Cx: No, You go ahead| 3 seconds delay\"  - PC BR",
+        "\"1\" \"Pitch\" @ 00:48 - slight delay \"Cx: I didn't want more information. I thought when I hit that button that they tell you on your phone different things, but I'm not going to update my bathroom right now.|2 seconds delay\"- PC BR || \"2\" \"Own Home\" @ 01:41 cx interrupted & said \"I'm not interested in doing anything right now.\" Agent played (_) Home Ownership instead of 58 (Hesitant 2nd Rnd); Credit @ 02:40 - slight delay - PC BR",
+        "GOOD CALL",
+        "GOOD CALL",
+        "GOOD CALL"
+      ],
+      "audits": [],
+      "month": "JUNE",
+      "week_label": "WEEK 4",
+      "weekly_data": {
+        "week1": {
+          "score": 100,
+          "qa": [
+            "Good call",
+            "Good call",
+            "Good call"
+          ],
+          "audits": []
+        },
+        "week2": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week3": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week4": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        }
+      }
+    }
+  ]
+}
