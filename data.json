@@ -82,12 +82,7 @@
       "GOOD CALL",
       "\"TCPA\"  @01:25  cust said,  \"We've already got a quote from renewal by Anderson.\"  agent  ended the call instead of  53(Already had Quote).   PC WI"
     ],
-    "audits": [
-      "GOOD CALL",
-      "GOOD CALL",
-      "GOOD CALL",
-      "GOOD CALL"
-    ],
+    "audits": [],
     "month": "MAY",
     "week_label": "WEEK 4"
   },
