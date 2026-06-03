@@ -1,91 +1,86 @@
 [
   {
-    "name": "J. Años",
-    "password": "Jowsip2026",
+    "name": "L. Ombos",
+    "password": "",
     "weekly": {
       "week1": {
-        "score": "92.64"
+        "score": "79.88"
       },
       "week2": {
-        "score": "93.18"
+        "score": "79.68"
       },
       "week3": {
         "score": 0
       },
       "week4": {
-        "score": "78.64"
+        "score": "91.62"
       }
     },
     "qa": [
-      "INTRO  @0:02  Unnecessary hotkey.  WI ",
       "GOOD CALL",
       "GOOD CALL",
-      "GOOD CALL",
-      "Tagging a SALE call into a NON-SALE call.  WI ",
-      "INTRO  @0:40  cust said,  \"I'm under the weather today. I have COVID.\"  agent pressed  b(Busy)  instead of  v(Very busy).  PC "
+      "\"INTRODUCTION\" -  @00:10 Some delay \"Cx: Fine, How are you?| 4 seconds delay\" , (PC_WI)",
+      "\"SURVEY - MAIN REASON\" - @1:34 Failed to apply the silent rule \"3 seconds\" , (PC_WI)",
+      "\"SURVEY - MAIN REASON\" - @2:17 Cx said \"Somebody else must have done it. I have no idea who would want to redo my bathroom. My bathroom is fine.\",  agent pressed 2nd round of   >(SH - How Get Number)  instead of    42(Imm No) , (SB_BR)",
+      "\"TCPA\" - @2:32 Bumping key , (SB_BR)"
     ],
-    "audits": [
-      "Agent disposed the call as NI3 instead of CB.  WI",
-      "GOOD CALL",
-      "GOOD CALL",
-      "GOOD CALL"
-    ],
+    "audits": [],
     "month": "MAY",
     "week_label": "WEEK 4"
   },
   {
-    "name": "S. Fuentes",
-    "password": "10988343",
+    "name": "A. Lisondra",
+    "password": "",
     "month": "MAY",
     "week_label": "WEEK 4",
     "weekly": {
       "week1": {
-        "score": "93.98"
+        "score": "100"
       },
       "week2": {
-        "score": "81.90"
+        "score": "63.27"
       },
       "week3": {
-        "score": "88.68"
+        "score": "81.61"
       },
       "week4": {
-        "score": "66.36"
+        "score": "98.02"
       }
     },
     "qa": [
+      "\"PITCH\"  @01:33  Slight delay. \"Cx: So what I got. |3 seconds delay\"   PC HW",
+      "GOOD CALL",
+      "\"BENEFITS\"  @02:10  Slight delay \"4 seconds delay silent rule\"   ;  @02:33 Slight delay  \"Cx: I got home protection with homeserve| 3 seconds delay\" ;  @02:43  \"Cx: Home Serve| 3 seconds delay\"  Slight delay.",
       "GOOD CALL",
       "GOOD CALL",
-      "GOOD CALL",
-      "CREDIT  @03:14  Slight delay.  PC BR\n\nTCPA  @04:08  cust said,  \"Yeah, if they call me and I don't answer and they don't leave a voicemail, I'm gonna think it's not important and I'm not gonna call the number back.\"  agent pressed  60(What Partners)  instead of  d(Defer)  ;  @05:34  after  3(I guess, i think so, i suppose, Maybe)  cust said,  \"i guess.\"  agent proceed the call instead of  3(I guess, i think so, i suppose, Maybe) 2nd rnd  --Autofail--  PC BR\n\n NO Affirmation in TCPA. PC BR",
-      "TCPA  @02:50 Bumping key.  PC BR",
-      "GOOD CALL"
+      "\"5K SCREEN\" @01:01  Failed to apply in silent rule. \"After 5 seconds the customer responded\" PC HW"
     ],
     "audits": []
   },
   {
-    "name": "L. Guansing",
-    "password": "5560guansinG!",
+    "name": "B. Buen",
+    "password": "",
     "weekly": {
       "week1": {
-        "score": "85.52"
+        "score": "92.04"
       },
       "week2": {
-        "score": "85.88"
+        "score": "81.68"
       },
       "week3": {
-        "score": 0
+        "score": "88.70"
       },
       "week4": {
-        "score": "88.68"
+        "score": "77.09"
       }
     },
     "qa": [
-      "HOMETYPE  @01:31 after r(Repeat that 2nd rnd)  cust said,  \"I'm sorry, I've had throat surgery, so this might not be a good time, thank you.\"  agent pressed  64(Don't Need Now)  instead of  b(Busy). WI",
+      "\"TCPA\"  @02:17  Slight delay. \"5 seconds delay silent rule\"   PC WI",
+      "\"MAIN REASON\"  @01:16  Slight delay. PC WI",
+      "\"MAIN REASON\"  @0:15  after r(Repeat) cust said,  \"All of what you said.\"  agent pressed 1(Yes) *asked the main reason question again*   instead of 1(Yes) to proceed in Own Home.   PC WI",
+      "\"1\" \"MAIN REASON\"  @01:13  Slight delay  ;  @01:25  cust said,  \"I'm I'm not saying anything. I'm, I'm just talking to you. What I said, what are y'all price?\"  agent slight delay in pressing   57(No Need)  instead of  66(How Much)  ;  @02:13  cust said,  \"A lot of people do I already know, but you keep saying the same thing. But I'm asking you, you know, you talking about other people, but we only supposed to be talking about what size my house is and how many windows I got, ain't that right?\"  agent pressed  67(Cost insistent)  instead of  d(Defer).   PC WI || \"2\" \"TCPA\"  @05:41  Slight delay  ;  @06:32 Slight delay  ;  PRE TRANSFER  @08:08  Major delay   \"Cx: I said, I don't need to talk to no two or three people. I'm on the phone and I'm. I'm trying. I felt it. I already. You got the right person, so now you don't. I got to go to another person.| 7 seconds delay on pressing D(Deferment)\" ;  @08:22  Slight delay.   PC WI || \"3\" Delay in disposing the call for more than 10 seconds. \"No dialer issue/CTO Reports\"",
       "GOOD CALL",
-      "GOOD CALL",
-      "GREETINGS after 41(Imm No x1)  @0:30  cust said,  \"Well, I just got, I had to dirt after one of the hurricanes down here, I had to break a window to get back in the house. So that was all fine and good, anderson window came out, they did their measurements, blah blah blah, talked me into buying 2,2,2 other, 3 other windows, small, not big, and I got a total bill of $17,000. Can you imagine? And I, I asked, I asked everybody, in between Tampa and Sarasota and down here in Inglewood, I, I asked friends, neighbors. Have you ever bought a window? Well, yeah, occasionally, you know, found two guys that bought windows. Well, how much were they? Well, one window was about 6, maybe 700. The other one was around 5. I said, well, I bought 4,4 windows for 17,000, and the guy said, Anderson? I said, yeah, yeah they brag about being the best. They ought to brag about being the most expensive.\"  agent  end the call instead   $(How Much)  +  7(What's About).  WI",
-      "GOOD CALL",
-      "PITCH  @01:04  after r(Repeat) cust said,  \"I don't, I don't think I remember it. I don't write it down. I'm saying there's a million advertisements out there now on the radio and television. We replace the windows if you're a veteran, if you're this, if you're that, there's almost no cost. They're all full of it, I know that. So if you're gonna go into a thing and it's gonna run into 1000, you get it, I'm not interested.\"  agent pressed  4(Not Interested)  instead of  66(How Much).  PC WI\n\nMAIN REASON  @02:03  cust said,  \"I said they're 50 years old. I live in Kings Point. It's a pretty old place. I mean, I don't live here that long, but the place is 50 years old, the windows and everything kind of changed their touch.\"  agent pressed  x(Exit)  instead of  proceed.  PC WI"
+      "\"TCPA\"  @01:25  cust said,  \"We've already got a quote from renewal by Anderson.\"  agent  ended the call instead of  53(Already had Quote).   PC WI"
     ],
     "audits": [
       "GOOD CALL",
@@ -97,29 +92,29 @@
     "week_label": "WEEK 4"
   },
   {
-    "name": "C. Omandam",
-    "password": "sybille27",
+    "name": "W. Barquio",
+    "password": "",
     "weekly": {
       "week1": {
-        "score": "75.06"
+        "score": "95.38"
       },
       "week2": {
-        "score": "93.30"
+        "score": "57.54"
       },
       "week3": {
-        "score": 0
+        "score": "59.02"
       },
       "week4": {
-        "score": "91.09"
+        "score": "95.36"
       }
     },
     "qa": [
-      " Delay in disposing the call for more than 10 seconds. PC BR",
-      "HOME TYPE  @01:37  Slight delay in applying silent rule.   PC BR",
       "GOOD CALL",
-      "HOME TYPE  @03:20  Bumping key.  PC BR",
+      "\"Main Reason/Own Home\" @ 01:24 - slight delay \"There was verbal collision, Cx: No, You go ahead| 3 seconds delay\"  - PC BR",
+      "\"1\" \"Pitch\" @ 00:48 - slight delay \"Cx: I didn't want more information. I thought when I hit that button that they tell you on your phone different things, but I'm not going to update my bathroom right now.|2 seconds delay\"- PC BR || \"2\" \"Own Home\" @ 01:41 cx interrupted & said \"I'm not interested in doing anything right now.\" Agent played (_) Home Ownership instead of 58 (Hesitant 2nd Rnd); Credit @ 02:40 - slight delay - PC BR",
       "GOOD CALL",
-      "CREDIT  @01:42  cust said,  \"Oh I see I was, I'll see what I was looking for, I was hoping that government, was any assistance. They're saying that, you know, you're retired, you can do it. I'm retired. I'm not working.\"  agent pressed  0(Credit) instead of  d(Defer).   PC BR"
+      "GOOD CALL",
+      "GOOD CALL"
     ],
     "audits": [],
     "month": "MAY",
