@@ -1,8 +1,8 @@
 {
   "theme": {
-    "primary": "#3b82f6",
-    "bg": "#eff6ff",
-    "card": "#1e3a8a"
+    "primary": "#ffffff",
+    "bg": "#111827",
+    "card": "#1f2937"
   },
   "agents": [
     {
@@ -35,11 +35,15 @@
       "week_label": "WEEK 4",
       "weekly_data": {
         "week1": {
-          "score": 94.68,
+          "score": 85.64,
           "qa": [
             "Good call",
             "Good call",
-            "PITCH @01:04 after 41(Imm No x1)  cust said,  \"No, no, we've, we've done it already.\"  agent some delay in pressing  42(Imm No x2)  instead of  ending the call.  BR"
+            "PITCH @01:04 after 41(Imm No x1)  cust said,  \"No, no, we've, we've done it already.\"  agent some delay in pressing  42(Imm No x2)  instead of  ending the call.  BR",
+            "Good call",
+            "MAIN REASON  @0:59  cust said,  \"I don't remember if I put any request for remortgage, so this is not for me.\"  agent pressed  41(Imm No x1)  instead of  >(How Get Number).  BR",
+            "PITCH  @0:57 after >(How get number 2nd rnd)  cust said,  \"No, I, I, I understand that logic, but right now I'm not interested in that.\"  agent pressed  41(Imm No x1)  instead of  64(Don't Need Now).  BR",
+            "GREETINGS  @0:17  Slight delay. \"Cx: Okay, How are you?| 2 seconds delay\"  BR || NEXT STEP  @03:13  Not seamless. \"Not seamless in branding\"  BR"
           ],
           "audits": []
         },
@@ -90,8 +94,13 @@
       "audits": [],
       "weekly_data": {
         "week1": {
-          "score": 0,
-          "qa": [],
+          "score": 89.09,
+          "qa": [
+            "Greetings @ 00:13 - slight delay \"Cx: Not interested| 2 seconds delay\"; Pitch @ 00:49 - slight delay \"Cx: Yeah, Okay| 2 seconds delay\" - PC HW || Benefits @ 01:47 - some delay \"Cx: No| 4 seconds delay\"- PC HW || TCPA @ 02:38 - slight delay \"Cx: That's good| 2 seconds delay\" - PC HW",
+            "Pitch @ 00:46 - slight delay \"Cx: is it cost money?| 2 seconds delay\"  - PC HW || Delay dispo for 12secs. \"Cx: No CTO/Dialer Issue reported\" - PC HW",
+            "Good call",
+            "Benefits @ 02:36 - slight delay \"Cx: It depends on what the price| 2 seconds delay\" - PC HW"
+          ],
           "audits": []
         },
         "week2": {
