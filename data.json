@@ -35,7 +35,7 @@
       "week_label": "WEEK 4",
       "weekly_data": {
         "week1": {
-          "score": 85.64,
+          "score": 83.54,
           "qa": [
             "Good call",
             "Good call",
@@ -43,9 +43,23 @@
             "Good call",
             "MAIN REASON  @0:59  cust said,  \"I don't remember if I put any request for remortgage, so this is not for me.\"  agent pressed  41(Imm No x1)  instead of  >(How Get Number).  BR",
             "PITCH  @0:57 after >(How get number 2nd rnd)  cust said,  \"No, I, I, I understand that logic, but right now I'm not interested in that.\"  agent pressed  41(Imm No x1)  instead of  64(Don't Need Now).  BR",
-            "GREETINGS  @0:17  Slight delay. \"Cx: Okay, How are you?| 2 seconds delay\"  BR || NEXT STEP  @03:13  Not seamless. \"Not seamless in branding\"  BR"
+            "GREETINGS  @0:17  Slight delay. \"Cx: Okay, How are you?| 2 seconds delay\"  BR || NEXT STEP  @03:13  Not seamless. \"Not seamless in branding\"  BR",
+            "Good call"
           ],
-          "audits": []
+          "audits": [
+            "Good call",
+            "Good call",
+            "Good call",
+            "Agent disposed the call as NI3 instead of CB. \"The Cx hang-up after |Monitored|\"  BR",
+            "Good call",
+            "Good call",
+            "@0:19  Agent has a missed option. \"Cx: I said who are you calling?| Agent pressed 3 instead of >(How get number)\"   BR",
+            "Agent disposed the call as DA instead of AM.  BR",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call"
+          ]
         },
         "week2": {
           "score": 0,
@@ -94,12 +108,18 @@
       "audits": [],
       "weekly_data": {
         "week1": {
-          "score": 89.09,
+          "score": 81.52,
           "qa": [
             "Greetings @ 00:13 - slight delay \"Cx: Not interested| 2 seconds delay\"; Pitch @ 00:49 - slight delay \"Cx: Yeah, Okay| 2 seconds delay\" - PC HW || Benefits @ 01:47 - some delay \"Cx: No| 4 seconds delay\"- PC HW || TCPA @ 02:38 - slight delay \"Cx: That's good| 2 seconds delay\" - PC HW",
             "Pitch @ 00:46 - slight delay \"Cx: is it cost money?| 2 seconds delay\"  - PC HW || Delay dispo for 12secs. \"Cx: No CTO/Dialer Issue reported\" - PC HW",
             "Good call",
-            "Benefits @ 02:36 - slight delay \"Cx: It depends on what the price| 2 seconds delay\" - PC HW"
+            "Benefits @ 02:36 - slight delay \"Cx: It depends on what the price| 2 seconds delay\" - PC HW",
+            "Good call",
+            "Benefits @ 02:01 - slight delay \"Cx: Yes, I do. But the thing is, right now I've just had to purchase a car, and so I just would not have the money to have the service.| 2 seconds delay\" - PC HW",
+            "Good call",
+            "Benefits @ 01:58 - slight delay \"Cx: Yeah| 2 seconds delay\" - PC HW || TCPA @ 03:01 - slight delay \"Cx: I said I don't want anything anyway. Coz I'm on a fixed income so.| 2seconds delay\" - PC HW",
+            "Value @ 01:26; @ 02:10 - slight delays \"Cx interrupted| Cx: Can we get on with this.| 3 seconds delay on pressing R\" - PC HW",
+            "Delay dispo for 11secs. \"Cx did not respond in pre-transfer screen| NO CTO/Dialer Reports\"  - PC HW"
           ],
           "audits": []
         },
@@ -155,7 +175,13 @@
             "Credit @ 03:02 - slight delay \"Cx: That's good| 2 seconds delay on responding\" - PC BR",
             "Pitch @ 01:27 - slight delay in applying silent rule \"5 seconds delay\" - PC BR || Home Type @ 04:15 \"delay on pressing R\" ; @ 04:54 - slight delays \"I said it's a manufactured\"; @ 04:57 - bumping key \"Agent proceeded the call then ended\" - PC BR\n\n",
             "Main Reason @ 00:55 - some delay in applying silent rule \"6 seconds delay\" - PC BR ",
-            "Transfer @ 03:58 cx said \"Like I said, I'm not really trying to do it right now. So I, I think this call is a little premature for me.\" Agent pressed X (Exit) + 4 (Not Interested) + 4 (Final No) instead of 4 (Final No); @ 04:10 - major delay - \"Agent pressed X after * seconds agent pressed 4(Not interested), Stopped the script at the middle then played 4(Final No)\" PC BR"
+            "Transfer @ 03:58 cx said \"Like I said, I'm not really trying to do it right now. So I, I think this call is a little premature for me.\" Agent pressed X (Exit) + 4 (Not Interested) + 4 (Final No) instead of 4 (Final No); @ 04:10 - major delay - \"Agent pressed X after * seconds agent pressed 4(Not interested), Stopped the script at the middle then played 4(Final No)\" PC BR",
+            "Walk In Tub @ 01:26 - slight delay; @ 01:32 cx said \"I could be interested, but I'm not going to do it right now.\" Agent slight delay in playing 57 (No need) instead of proceed - 1 (Yes)- PC BR || Transfer @ 03:35 - slight delay in applying silent rule \"2 seconds delay\" - PC BR || Delay dispo 11secs. - PC BR \"No CTO/Dialer Issue Reports\"",
+            "TCPA @ 03:14 - slight delay \"Cx: No, sir, not right now. I'm in bed sick, have been for weeks, so I'm really not up for it.| 2 seconds delay\" - PC BR",
+            "TCPA @ 03:23 - slight delay \"Cx: You said it's auto, You said it's automated call?| 2seconds delay\" - PC BR",
+            "Greetings @ 00:14 - slight delay \"Cx: I'm good| 4 seconds delay\" ; Pitch @ 00:52 - some delay \"Cx: I'm not interested in getting a quote. I'm gonna do it myself| 4 seconds delay\"  - PC BR || Own Home @ 01:42 - slight delay \"Cx: Yeah| 2 seconds delay\" - PC BR",
+            "Good call",
+            "Walk In Tub @ 02:20 - slight delay \"Cx: Well, possibly. Yeah. But right now I'm not too. Yeah, I want to wait until this. This other fellow comes out and goes from there. He's done work for so.|2 seconds delay on ending the call\" - PC BR"
           ],
           "audits": []
         },
@@ -208,6 +234,13 @@
         "week1": {
           "score": 100,
           "qa": [
+            "Good call",
+            "Good call",
+            "Good call",
+            "SURVEY - MAIN REASON - @00:56 Cx said \"Well, right now I'm not looking to renovate the bathroom but I think it needs an upgrade.\",  agent pressed    57(No need)  instead of   11(Generic reason) ; WALK IN TUB - @1:58 Cx said \"I said, i haven't thought about a walk in tub.\",  agent had a bumping key then pressed   C(Clarification)   instead of    2(No) -- PC.BR",
+            "TCPA - @2:39 Cx said \"No, I'm not interested sir.\",  agent pressed   58(Hesitant)  instead of   4(Final no) \"This is a plain No/Not Interested\" -- PC.BR",
+            "Good call",
+            "Delay dispo for more then 10 secs \"No Dialer Issue/CTO Report\"  -- PC.BR",
             "Good call",
             "Good call",
             "Good call"
