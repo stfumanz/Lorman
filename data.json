@@ -313,6 +313,33 @@
           "audits": []
         }
       }
+    },
+    {
+      "name": "B. Tuico",
+      "password": "2348",
+      "month": "JUNE",
+      "weekly_data": {
+        "week1": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week2": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week3": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week4": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        }
+      }
     }
   ]
 }
