@@ -81,7 +81,6 @@
     </div>
     
     <div class="scroll-content">
-        <!-- AUTOMATIC THEME PRESETS -->
         <div class="theme-box">
             <h3 style="margin:0; font-size:0.85rem; color:var(--primary); letter-spacing:1px;">🎨 AUTO-THEME PRESETS</h3>
             <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
@@ -91,6 +90,10 @@
                 <button class="preset-btn" onclick="setTheme('#ef4444', '#fef2f2', '#450a0a')" style="background:#ef4444; color:white;">CRIMSON</button>
                 <button class="preset-btn" onclick="setTheme('#8b5cf6', '#f5f3ff', '#2e1065')" style="background:#8b5cf6; color:white;">ROYAL</button>
                 <button class="preset-btn" onclick="setTheme('#ffffff', '#111827', '#1f2937')" style="background:#374151; color:white;">DARK MODE</button>
+                
+                <button class="preset-btn" onclick="setTheme('#06b6d4', '#f0f9ff', '#0f172a')" style="background:#06b6d4; color:#0f172a;">SLATE TEAL</button>
+                <button class="preset-btn" onclick="setTheme('#ec4899', '#fdf2f8', '#4c051e')" style="background:#ec4899; color:white;">ORCHID BERRY</button>
+                <button class="preset-btn" onclick="setTheme('#eab308', '#090d16', '#111827')" style="background:#eab308; color:#111827;">CYBER GOLD</button>
             </div>
             <div class="theme-grid">
                 <div><label>Primary</label><input type="color" id="themePrimary" class="color-input" onchange="saveAndSync()"></div>
@@ -250,7 +253,11 @@
     function processImport() { try { db = JSON.parse(document.getElementById('jsonInput').value); saveToLocal(); renderSidebar(); applyThemeInputs(); closeModal('importModal'); alert("Imported!"); } catch(e) { alert("Error!"); } }
     function copyJSON() { navigator.clipboard.writeText(document.getElementById('jsonOutput').value); alert("Copied!"); }
     function closeModal(id) { document.getElementById(id).style.display = 'none'; }
-    function addNewAgent() { db.agents.push({ name: "New Agent", password: "123", month: "MAY", weekly_data: { week1:{score:0,qa:[],audits:[]}, week2:{score:0,qa:[],audits:[]}, week3:{score:0,qa:[],audits:[]}, week4:{score:0,qa:[],audits:[]} } }); saveToLocal(); renderSidebar(); }
+    function addNewAgent() { 
+      db.agents.push({ name: "New Agent", password: "123", month: "MAY", weekly_data: { week1:{score:0,qa:[],audits:[]}, week2:{score:0,qa:[],audits:[]}, week3:{score:0,qa:[],audits:[]}, week4:{score:0,qa:[],audits:[]} } }); 
+      saveToLocal(); 
+      selectAgent(db.agents.length - 1); 
+    }
     function clearWeeklyData() { if(confirm(`Reset?`)) { db.agents[selectedIndex].weekly_data[currentWeek] = { score: 0, qa: [], audits: [] }; switchTab(currentWeek); saveToLocal(); } }
   </script>
 </body>
