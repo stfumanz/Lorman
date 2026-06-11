@@ -1,8 +1,8 @@
 {
   "theme": {
-    "primary": "#06b6d4",
-    "bg": "#f0f9ff",
-    "card": "#0f172a"
+    "primary": "#22c55e",
+    "bg": "#1c4e30",
+    "card": "#102b1a"
   },
   "agents": [
     {
@@ -195,11 +195,15 @@
           "audits": []
         },
         "week2": {
-          "score": 89,
+          "score": 83.68,
           "qa": [
             "PITCH - @00:30 Cx interrupted & said \"Is it about home insurance?\",  agent had a slight delay in pressing   80(Wrong number)  instead of   0(PITCH) -- PC.BR",
             "SURVEY - MAIN REASON - @1:06 Cx said \"Right now I need to put a subfloor in.\",  agent pressed  4(Not interested)  instead of   11(Generic reason) -- PC.BR",
-            "SURVEY - MAIN REASON - @1:01 Cx said \"For my husband, he's disabled and he needs a walk-in bathtub.\",  agent too soon in pressing   11(Generic reason) and then OWN HOME - @1:19 Cx said \"I do.\",  agent pressed  1(Yes)  instead of   >(Go forward) +  1(Yes) to skip walk in tub question -- PC.BR"
+            "SURVEY - MAIN REASON - @1:01 Cx said \"For my husband, he's disabled and he needs a walk-in bathtub.\",  agent too soon in pressing   11(Generic reason) and then OWN HOME - @1:19 Cx said \"I do.\",  agent pressed  1(Yes)  instead of   >(Go forward) +  1(Yes) to skip walk in tub question -- PC.BR",
+            "Good call",
+            "TCPA - @2:57 Unnecessary hotkey \"after fully played TCPA cx already answered alright| Agent pressed K(is that okay?)\" ; PRE-TRANSFER - @3:27 After 1st round of 2(No), cx said \"I'd rather put that off. This isn't the right time.\",  agent pressed  4(Not interested)  instead of  END CALL (Final no) --(note *No Deduction) -- PC.BR",
+            "Good call",
+            "SURVEY - OWN HOME - @1:15 Major delay in pressing unnecessary hotkey \"Cx: Yes| After 8 seconds agent pressed Hello\"  -- PC.BR"
           ],
           "audits": []
         },
