@@ -211,7 +211,7 @@
           "audits": []
         },
         "week2": {
-          "score": 78.68,
+          "score": 83.68,
           "qa": [
             "PITCH - @00:30 Cx interrupted & said \"Is it about home insurance?\",  agent had a slight delay in pressing   80(Wrong number)  instead of   0(PITCH) -- PC.BR",
             "SURVEY - MAIN REASON - @1:06 Cx said \"Right now I need to put a subfloor in.\",  agent pressed  4(Not interested)  instead of   11(Generic reason) -- PC.BR",
@@ -220,7 +220,7 @@
             "TCPA - @2:57 Unnecessary hotkey \"after fully played TCPA cx already answered alright| Agent pressed K(is that okay?)\" ; PRE-TRANSFER - @3:27 After 1st round of 2(No), cx said \"I'd rather put that off. This isn't the right time.\",  agent pressed  4(Not interested)  instead of  END CALL (Final no) --(note *No Deduction) -- PC.BR",
             "Good call",
             "SURVEY - OWN HOME - @1:15 Major delay in pressing unnecessary hotkey \"Cx: Yes| After 8 seconds agent pressed Hello\"  -- PC.BR",
-            "SURVEY - MAIN REASON - @1:42 Major delay \"Cx: I don't want to renovate it| -- PC.BR \"Currently disputing this call\""
+            "Good call (Disputed)"
           ],
           "audits": []
         },
