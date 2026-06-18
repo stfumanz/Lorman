@@ -79,8 +79,7 @@
           "score": 95,
           "qa": [
             "PITCH - @1:36 Slight delay \"After >(How get number >2)|Cx: No|3 seconds delay on pressing 41\"  - SB_WI",
-            "GREETINGS - @00:08 Failed to apply silent rule (some delay) ; @00:15 Slight delay - \"Cx: Hello|3 seconds delay\" SB_WI",
-            "SURVEY - HOME TYPE - @1:54 Slight delay \"4 seconds delay on applying silent rule\" - SB_WI"
+            "GREETINGS - @00:08 Failed to apply silent rule (some delay) ; @00:15 Slight delay - \"Cx: Hello|3 seconds delay\" SB_WI || SURVEY - HOME TYPE - @1:54 Slight delay \"4 seconds delay on applying silent rule\" - SB_WI"
           ],
           "audits": []
         },
@@ -299,8 +298,12 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 66.09,
+          "qa": [
+            "TCPA @ 02:41 cx said \"Okay, well, I have to call you back. Thank you, bye.\" Agent played B (Busy) then pause @ 02:46 and major delay (1minute & 24secs) - PC BR || No Affirmation in TCPA tagged as SALE (Q3) --- Autofail (Cat.4) - PC BR",
+            "Good call",
+            "Delay dispo for 12secs \"No CTO/Dialer Reports\" - PC BR"
+          ],
           "audits": []
         },
         "week4": {
@@ -335,8 +338,12 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 73,
+          "qa": [
+            "WALK IN TUB  @02:14  Major delay in pressing unnecessary hotkey  ;  @02:35  Slight delay.  BR || PRE TRANSFER  @04:13, @04:17, @04:23, @04:27,  @04:41 Unnecessary hotkeys  ;  @04:46  cust talking to someone else in the backgorund ,  \"Hi, I'd like to pay my bill, okay?Let's see. Look Oh Lord is right in front of me.\"  agent pressed  5(What Company)  +  r(Repeat that) instead of  1(Yes)   --Cat 3-- BR || Tagging a SALE call into a NON-SALE call. BR Date Posted \"This call is disputed\"",
+            "BRANDING  @02:33 cust interrupted,  \"There's no way we can get a new bathroom any time lately because we just found out that our septic system shut, so our next big project is a septic system. So there's no way I can get a new bathroom.\"  agent pressed  41(Imm No x1)  instead of   64(Don't Need Now).  BR",
+            "PITCH @0:45  Slight delay. \"Cx: Im sorry, my wife handed over the phone what was the call about I'm sorry?|2 seconds delay\" BR"
+          ],
           "audits": []
         },
         "week4": {
