@@ -1,8 +1,8 @@
 {
   "theme": {
-    "primary": "#06b6d4",
-    "bg": "#f0f9ff",
-    "card": "#0f172a"
+    "primary": "#22c55e",
+    "bg": "#1c4e30",
+    "card": "#102b1a"
   },
   "agents": [
     {
@@ -360,7 +360,7 @@
             "PITCH @0:45  Slight delay. \"Cx: Im sorry, my wife handed over the phone what was the call about I'm sorry?|2 seconds delay\" BR",
             "WALK IN TUB  @01:34  Slight delay \"Cx: Not sure| 2 seconds delay\" ;  HOME TYPE  @01:57  Slight delay. \"Cx: Yeah 2 storey town house the bathroom is upstairs| 3 seconds delay\"  BR",
             "MAIN REASON  @01:22  Slight delay. \"Cx: It's functional but it's old| 3 seconds delay on proceeding the call\" BR",
-            "PITCH  @0:47  cust said,  \"Honey, my house is only 5 years old. I'm not sure where you got information that, I had called in for information.\"  agent slight delay in pressing  85(Already had Quote)  +  32(SR - Pitch)  instead of  >(How Get Number)  ;  @01:29  Major delay.  BR "
+            "PITCH  @0:47  cust said,  \"Honey, my house is only 5 years old. I'm not sure where you got information that, I had called in for information.\"  agent slight delay in pressing  85(Already had Quote)  +  32(SR - Pitch)  instead of  >(How Get Number)  ;  @01:29  Major delay. \"Cx: Go ahead. My house is handicapped accessible and everything is only five years old, so there would be no changes needed.|6 seconds delay on pressing an option\"   BR Date Posted"
           ],
           "audits": []
         },
@@ -387,8 +387,15 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 86.68,
+          "qa": [
+            "Main Reason @ 01:11 - some delay in applying silent rule \"6 seconds delay\"- BR",
+            "Good call",
+            "Pitch @ 00:47 - slight delay \"Cx: I don't remember requesting. We're not looking to remodel our bathroom.| 2 seconds delay\" ; @ 01:04 - bumping key \"Agent was going to play reask then stopped then played the right option\" - BR",
+            "Greetings @ 00:13 cx said \"I'm fine, how can I help you sir?\" Agent pressed 1 (Good) instead of 7 (What's About) - BR",
+            "Good call",
+            "Greetings @ 00:20 - some delay; Pitch @ 01:18 - slight delay - BR || Walk In Tub @ 02:10 - some delay; Credit @ 02:34 - slight delay - BR || Pre-Transfer @ 03:28 - slight delay \"Cx: Ah sure|3 seconds delay on proceeding the call\" - BR"
+          ],
           "audits": []
         },
         "week4": {
