@@ -1,8 +1,8 @@
 {
   "theme": {
-    "primary": "#22c55e",
-    "bg": "#1c4e30",
-    "card": "#102b1a"
+    "primary": "#06b6d4",
+    "bg": "#f0f9ff",
+    "card": "#0f172a"
   },
   "agents": [
     {
@@ -88,8 +88,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 95,
+          "qa": [
+            "INTRO  @0:40  Slight delay  \"After IVA Cx: Hello| 4 seconds delay\";  PITCH  @01:22  cust said,  \"It, this really is not a good time. This is not a good time. If you can call me back, call me back a little later this afternoon and I'll be able to answer your questions.\"  agent pressed  64(Don't Need Now)  instead of  b(Busy).  WI",
+            "PITCH  @01:06  Slight delay. \"Cx: Okay, Please go fast| 3 seconds delay\"  WI"
+          ],
           "audits": []
         }
       }
@@ -244,8 +247,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 98,
+          "qa": [
+            "Pitch @ 00:52 - slight delay in applying silent rule \"5 seconds delay\" - PC BR",
+            "Intro @ 00:15 - slight delay \"5 seconds delay *NO silent rule\" ; Greetings @ 00:25 - slight delay \"Cx: Good|2 seconds delay\" - PC BR"
+          ],
           "audits": []
         }
       }
@@ -323,7 +329,10 @@
         },
         "week4": {
           "score": 0,
-          "qa": [],
+          "qa": [
+            "INTRO - @00:09 Cx said \"Hi Avery, I'm well, thank you, And this is Melissa. Sorry. yeah, did we have an appointment scheduled this morning?\",  agent pressed   B(Busy)  instead of  #(How get number)  .PC.BR",
+            "Good call"
+          ],
           "audits": []
         }
       }
