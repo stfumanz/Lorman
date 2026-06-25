@@ -6,33 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://googleapis.com" rel="stylesheet">
   <style>
-    /* Default CSS Variables - Keeps your main page background clean white */
+    /* Premium Deep Dashboard Slate Palette */
     :root {
-      --primary: #22c55e;    
-      --bg: #ffffff;
-      --card: #f8fafc;        
-      --text-light: #0f172a;  
-      --text-dark: #0f172a;   
-      --border: #e2e8f0;
+      --primary: #10b981;    /* Vibrant Cyber Emerald */
+      --bg: #090d16;         /* Deep Midnight Charcoal Black */
+      --card: #111827;       /* Rich Slate Card Background */
+      --text-light: #f8fafc;  /* Clean White-Gray for Heading Elements */
+      --text-muted: #94a3b8;  /* Readable Secondary Text Color */
+      --border: #1f2937;     /* Clean Low-contrast Borders */
     }
     * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: var(--text-dark); margin: 0; padding: 0; transition: 0.5s; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: var(--text-light); margin: 0; padding: 0; transition: 0.5s; }
     
     .header-main { 
       background: var(--card); padding: 15px 30px; color: var(--primary); 
-      border-bottom: 5px solid var(--primary); display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 4px solid var(--primary); display: flex; justify-content: space-between; align-items: center;
     }
     .header-main h1 { margin: 0; font-size: 1.1rem; font-weight: 800; letter-spacing: 2px; flex: 1; text-align: center; }
     
     .admin-btn {
-      background: transparent; color: #64748b; font-size: 0.7rem; font-weight: 700;
-      padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;
+      background: transparent; color: var(--text-muted); font-size: 0.7rem; font-weight: 700;
+      padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: 0.2s;
     }
+    .admin-btn:hover { border-color: var(--primary); color: var(--text-light); }
 
     .nav-bar { background: var(--card); border-bottom: 1px solid var(--border); padding: 12px 0; position: sticky; top: 0; z-index: 100; overflow-x: auto; }
     .nav-inner { display: flex; justify-content: center; gap: 10px; padding: 0 15px; }
-    .agent-pill { padding: 8px 18px; border-radius: 30px; border: 1px solid var(--border); background: #ffffff; color: #64748b; font-weight: 700; font-size: 0.75rem; cursor: pointer; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
-    .agent-pill.active { background: var(--primary); color: #ffffff; border-color: var(--primary); }
+    .agent-pill { padding: 8px 18px; border-radius: 30px; border: 1px solid var(--border); background: #1f2937; color: var(--text-muted); font-weight: 700; font-size: 0.75rem; cursor: pointer; display: flex; align-items: center; gap: 8px; white-space: nowrap; transition: 0.2s; }
+    .agent-pill:hover { border-color: var(--primary); color: var(--text-light); }
+    .agent-pill.active { background: var(--primary); color: #090d16; border-color: var(--primary); }
     .dot { width: 8px; height: 8px; border-radius: 50%; }
     
     .content-container { max-width: 900px; margin: 30px auto; padding: 0 20px 80px; }
@@ -40,39 +42,45 @@
     .kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 30px; }
     .kpi-box { padding: 20px 10px; border-radius: 24px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 125px; transition: 0.3s; }
     .kpi-1 { background: var(--card); border: 2px solid var(--primary); } 
-    .kpi-2 { background: var(--primary); color: #ffffff; } 
-    .kpi-3 { background: var(--card); border: 1px solid var(--border); color: var(--text-dark); }
-    .kpi-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; color: #64748b; letter-spacing: 1px; }
-    .kpi-2 .kpi-label { color: rgba(255, 255, 255, 0.85); }
-    .kpi-value { font-size: 1.8rem; font-weight: 900; line-height: 1; text-transform: uppercase; color: var(--text-dark); }
-    .kpi-2 .kpi-value { color: #ffffff; }
+    .kpi-2 { background: var(--primary); color: #090d16; } 
+    .kpi-3 { background: #1e293b; border: 1px solid var(--border); color: var(--text-light); }
+    
+    .kpi-label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; color: var(--text-muted); letter-spacing: 1px; }
+    .kpi-2 .kpi-label { color: rgba(9, 13, 22, 0.7); }
+    .kpi-value { font-size: 1.8rem; font-weight: 900; line-height: 1; text-transform: uppercase; color: var(--text-light); }
+    .kpi-2 .kpi-value { color: #090d16; }
 
     .dashboard-tabs { display: flex; gap: 8px; margin-bottom: 20px; background: var(--card); padding: 8px; border-radius: 16px; border: 1px solid var(--border); }
-    .dash-tab-btn { flex: 1; padding: 12px; border: none; border-radius: 10px; background: transparent; color: #64748b; font-weight: 800; font-size: 0.7rem; cursor: pointer; }
-    .dash-tab-btn.active { background: var(--primary); color: #ffffff; }
+    .dash-tab-btn { flex: 1; padding: 12px; border: none; border-radius: 10px; background: transparent; color: var(--text-muted); font-weight: 800; font-size: 0.7rem; cursor: pointer; transition: 0.2s; }
+    .dash-tab-btn.active { background: var(--primary); color: #090d16; }
 
-    .main-card { background: var(--card); border-radius: 32px; overflow: hidden; color: var(--text-light); border: 1px solid var(--border); box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05); }
+    .main-card { background: var(--card); border-radius: 32px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
     .card-head { padding: 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); }
 
     .btn-group { display: flex; gap: 10px; align-items: center; }
-    .inquire-btn { background: transparent; color: var(--primary); border: 2px solid var(--primary); padding: 8px 18px; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; }
-    .unlock-btn { background: var(--primary); color: #ffffff; padding: 10px 20px; border-radius: 12px; border: none; font-weight: 800; cursor: pointer; font-size: 0.8rem; }
+    .inquire-btn { background: transparent; color: var(--primary); border: 2px solid var(--primary); padding: 8px 18px; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; transition: 0.2s; }
+    .inquire-btn:hover { background: rgba(16, 185, 129, 0.1); }
+    .unlock-btn { background: var(--primary); color: #090d16; padding: 10px 20px; border-radius: 12px; border: none; font-weight: 800; cursor: pointer; font-size: 0.8rem; transition: 0.2s; }
+    .unlock-btn:hover { opacity: 0.9; }
 
-    .mtd-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; background: #ffffff; padding: 20px; border-radius: 16px; border: 1px solid var(--border); margin-top: 15px; width: 100%; }
+    .mtd-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; background: #090d16; padding: 20px; border-radius: 16px; border: 1px solid var(--border); margin-top: 15px; width: 100%; }
     .mtd-item { text-align: center; }
-    .mtd-label { font-size: 0.65rem; color: #64748b; font-weight: 700; text-transform: uppercase; }
-    .mtd-val { font-size: 1rem; font-weight: 800; color: var(--text-dark); }
+    .mtd-label { font-size: 0.65rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; }
+    .mtd-val { font-size: 1rem; font-weight: 800; color: var(--text-light); }
 
     .table-block { padding: 30px; border-bottom: 1px solid var(--border); }
-    .table-block h3 { color: var(--primary); font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; }
+    .table-block h3 { color: var(--primary); font-size: 0.9rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px; }
     table { width: 100%; border-collapse: collapse; }
-    td { padding: 15px 10px; border-top: 1px solid var(--border); color: var(--text-dark); font-size: 0.95rem; line-height: 1.6; }
-    .quote-style { font-weight: 600; color: var(--text-dark); background: #f1f5f9; padding: 2px 8px; border-radius: 6px; border-left: 3px solid var(--primary); display: inline-block; margin: 2px 0; }
+    td { padding: 15px 10px; border-top: 1px solid var(--border); color: var(--text-light); font-size: 0.95rem; line-height: 1.6; }
+    
+    /* Elegant Dark-Theme Quotes formatting */
+    .quote-style { font-weight: 600; color: #fde68a; background: rgba(253, 230, 138, 0.08); padding: 2px 8px; border-radius: 6px; border-left: 3px solid var(--primary); display: inline-block; margin: 2px 0; }
 
-    .modal { display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(10px); z-index: 200; justify-content: center; align-items: center; }
-    .modal-content { background: #ffffff; padding: 40px; border-radius: 30px; width: 340px; text-align: center; border: 1px solid var(--border); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
-    .modal-content input { width: 100%; padding: 15px; margin: 20px 0; border: 2px solid var(--border); background: #f8fafc; color: var(--text-dark); border-radius: 15px; text-align: center; font-size: 1.5rem; font-weight: 800; outline: none; }
-    .btn-verify { background: var(--primary); color: #ffffff; padding: 15px; border: none; border-radius: 15px; width: 100%; font-weight: 800; cursor: pointer; }
+    .modal { display: none; position: fixed; inset: 0; background: rgba(5, 5, 10, 0.85); backdrop-filter: blur(8px); z-index: 200; justify-content: center; align-items: center; }
+    .modal-content { background: var(--card); padding: 40px; border-radius: 30px; width: 340px; text-align: center; border: 1px solid var(--border); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    .modal-content input { width: 100%; padding: 15px; margin: 20px 0; border: 2px solid var(--border); background: #090d16; color: white; border-radius: 15px; text-align: center; font-size: 1.5rem; font-weight: 800; outline: none; }
+    .modal-content input:focus { border-color: var(--primary); }
+    .btn-verify { background: var(--primary); color: #090d16; padding: 15px; border: none; border-radius: 15px; width: 100%; font-weight: 800; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -93,7 +101,7 @@
       <h3 style="color:var(--primary); margin:0;">🔐 UNLOCK MTD SCORES</h3>
       <input type="password" id="pwInput" placeholder="••••" />
       <button class="btn-verify" onclick="verifyAndShowScores()">VERIFY ACCESS</button>
-      <p onclick="closeModal('passwordModal')" style="color:#64748b; cursor:pointer; margin-top:20px; font-size:0.85rem;">Cancel</p>
+      <p onclick="closeModal('passwordModal')" style="color:var(--text-muted); cursor:pointer; margin-top:20px; font-size:0.85rem;">Cancel</p>
     </div>
   </div>
 
@@ -102,7 +110,7 @@
       <h3 style="color:var(--primary); margin:0;">🚨 ADMIN ACCESS</h3>
       <input type="password" id="adminPwInput" placeholder="••••" />
       <button class="btn-verify" onclick="verifyAdmin()">ACCESS EDITOR</button>
-      <p onclick="closeModal('adminModal')" style="color:#64748b; cursor:pointer; margin-top:20px; font-size:0.85rem;">Cancel</p>
+      <p onclick="closeModal('adminModal')" style="color:var(--text-muted); cursor:pointer; margin-top:20px; font-size:0.85rem;">Cancel</p>
     </div>
   </div>
 
@@ -117,7 +125,8 @@
       fetch('data.json?t=' + new Date().getTime())
         .then(r => r.json())
         .then(data => { 
-          db = data.agents ? data : { theme: { primary: "#22c55e", bg: "#ffffff", card: "#f8fafc" }, agents: data };
+          // Applies the structured dark dynamic layout fallbacks cleanly
+          db = data.agents ? data : { theme: { primary: "#10b981", bg: "#090d16", card: "#111827" }, agents: data };
           applyTheme(db.theme);
           renderPills(db.agents); 
         })
@@ -128,11 +137,11 @@
       if(!theme) return;
       const root = document.documentElement;
       
-      // Forces background setup to remain clean white regardless of incoming theme color setting
-      root.style.setProperty('--primary', theme.primary || '#22c55e');
-      root.style.setProperty('--bg', '#ffffff');
-      root.style.setProperty('--card', theme.card || '#f8fafc');
-      root.style.setProperty('--border', theme.border || '#e2e8f0');
+      // Dynamic fallback updates reading directly from custom theme configuration keys if present
+      root.style.setProperty('--primary', theme.primary || '#10b981');
+      root.style.setProperty('--bg', theme.bg || '#090d16');
+      root.style.setProperty('--card', theme.card || '#111827');
+      if(theme.border) root.style.setProperty('--border', theme.border);
     }
 
     function renderPills(agents) {
@@ -171,8 +180,8 @@
 
       document.getElementById('dashboardView').innerHTML = `
         <div class="kpi-row">
-            <div class="kpi-box kpi-1"><div class="kpi-label">MONTH</div><div class="kpi-value">${displayMonth}</div></div>
-            <div class="kpi-box kpi-2"><div class="kpi-label">QA EVALS</div><div class="kpi-value" style="color:#ffffff">${qas.length}</div></div>
+            <div class="kpi-box kpi-1"><div class="kpi-label">MONTH</div><div class="kpi-value" style="color:var(--primary)">${displayMonth}</div></div>
+            <div class="kpi-box kpi-2"><div class="kpi-label">QA EVALS</div><div class="kpi-value">${qas.length}</div></div>
             <div class="kpi-box kpi-3"><div class="kpi-label">AUDITS</div><div class="kpi-value">${audits.length}</div></div>
         </div>
 
@@ -218,7 +227,7 @@
     }
 
     function renderTable(title, data) {
-      if(data.length === 0) return `<div class="table-block"><h3>${title}</h3><p style="color:#64748b; font-size:0.85rem;">No entries recorded.</p></div>`;
+      if(data.length === 0) return `<div class="table-block"><h3>${title}</h3><p style="color:var(--text-muted); font-size:0.85rem;">No entries recorded.</p></div>`;
       return `<div class="table-block"><h3>${title}</h3><table><tbody>
         ${data.map((item, i) => {
           let f = item.replace(/"([^"]+)"/g, '<span class="quote-style">"$1"</span>');
@@ -236,7 +245,6 @@
     function openAdminModal() { document.getElementById('adminPwInput').value = ''; document.getElementById('adminModal').style.display = 'flex'; }
     function closeModal(id) { document.getElementById(id).style.display = 'none'; }
 
-    // Admin Access validation script loop
     function verifyAdmin() {
       if (document.getElementById('adminPwInput').value === "0513971123") { window.location.href = "admin.html"; } 
       else { alert("❌ Unauthorized Access"); }
