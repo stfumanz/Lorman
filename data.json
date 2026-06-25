@@ -1,422 +1,836 @@
 {
+
   "theme": {
+
     "primary": "#22c55e",
-    "bg": "#ffffff",
-    "card": "#f8fafc",
-    "text_main": "#0f172a",
-    "text_muted": "#64748b",
-    "accent": "#3b82f6",
-    "border": "#e2e8f0"
+
+    "bg": "#1c4e30",
+
+    "card": "#102b1a"
+
   },
+
   "agents": [
+
     {
+
       "name": "L. Ombos",
+
       "password": "0925",
+
       "weekly": {
+
         "week1": {
+
           "score": "79.88"
+
         },
+
         "week2": {
+
           "score": "79.68"
+
         },
+
         "week3": {
+
           "score": 0
+
         },
+
         "week4": {
+
           "score": "91.62"
+
         }
+
       },
+
       "qa": [
+
         "GOOD CALL",
+
         "GOOD CALL",
+
         "\"INTRODUCTION\" -  @00:10 Some delay \"Cx: Fine, How are you?| 4 seconds delay\" , (PC_WI)",
+
         "\"SURVEY - MAIN REASON\" - @1:34 Failed to apply the silent rule \"3 seconds\" , (PC_WI)",
+
         "\"SURVEY - MAIN REASON\" - @2:17 Cx said \"Somebody else must have done it. I have no idea who would want to redo my bathroom. My bathroom is fine.\",  agent pressed 2nd round of   >(SH - How Get Number)  instead of    42(Imm No) , (SB_BR)",
+
         "\"TCPA\" - @2:32 Bumping key , (SB_BR)"
+
       ],
+
       "audits": [],
+
       "month": "JUNE",
+
       "week_label": "WEEK 4",
+
       "weekly_data": {
+
         "week1": {
+
           "score": 83.54,
+
           "qa": [
+
             "Good call",
+
             "Good call",
+
             "PITCH @01:04 after 41(Imm No x1)  cust said,  \"No, no, we've, we've done it already.\"  agent some delay in pressing  42(Imm No x2)  instead of  ending the call.  BR",
+
             "Good call",
+
             "MAIN REASON  @0:59  cust said,  \"I don't remember if I put any request for remortgage, so this is not for me.\"  agent pressed  41(Imm No x1)  instead of  >(How Get Number).  BR",
+
             "PITCH  @0:57 after >(How get number 2nd rnd)  cust said,  \"No, I, I, I understand that logic, but right now I'm not interested in that.\"  agent pressed  41(Imm No x1)  instead of  64(Don't Need Now).  BR",
+
             "GREETINGS  @0:17  Slight delay. \"Cx: Okay, How are you?| 2 seconds delay\"  BR || NEXT STEP  @03:13  Not seamless. \"Not seamless in branding\"  BR",
+
             "Good call"
+
           ],
+
           "audits": [
+
             "Good call",
+
             "Good call",
+
             "Good call",
+
             "Agent disposed the call as NI3 instead of CB. \"The Cx hang-up after |Monitored|\"  BR",
+
             "Good call",
+
             "Good call",
+
             "@0:19  Agent has a missed option. \"Cx: I said who are you calling?| Agent pressed 3 instead of >(How get number)\"   BR",
+
             "Agent disposed the call as DA instead of AM.  BR",
+
             "Good call",
+
             "Good call",
+
             "Good call",
+
             "Good call"
+
           ]
+
         },
+
         "week2": {
+
           "score": 78.34,
+
           "qa": [
+
             "Pitch @ 00:33 cx interrupted & said \"First of all, I did not, I didn't fir first of all I did not ask for any help on my windows are all sealed. And I don't need any new windows, okay? Thank you.\" Agent major delay in pressing 88 (End call) instead of 41 (Imm No) \"No CTO/Dialer Issue Reports\" - WI",
+
             "Greetings @ 00:21 - some delay \"Cx: Oh, I'm not well, Matt. I'm sure you must be recording one of my calls, but I'm putting everything on hold right now.| 3 seconds delay on pressing R\" - WI",
+
             "Greetings @ 00:08 - slight delay \"Cx: Hello| 2 seconds delay\" ; Pitch @ 00:48 \"Cx: Alright| 3 seconds delay\" - slight delay - WI || Main Reason @ 01:21 - slight delay \"Cx: Well, I have no reason for new windows right now because a lot of them have already been replaced. And if I do need anything done for the windows, I have someone that I can call. So I don't know why I keep getting these calls.| 2 seconds| Cx: Hello?| 2 seconds delay on pressing 41\" - WI",
+
             "Own Home @ 01:56 - slight delay \"2seconds delay on pressing R\"; Home Type @ 02:41 - slight delay \"Cx: It's a regular single family home. It was built in 1928 or 29, but it has been completely updated. It was completely updated back in the 90s, but like I said, there's a couple broken windows from the kids and.| 3 seconds delay on proceeding the call\" - WI",
+
             "Intro @ 00:04 - slight delay \"After auto intro|Cx: Yeah|2 seconds delay on proceeding the call\" - WI || Main Reason @ 00:59 - slight delay \"The cx is inaudible| 2 seconds delay on pressing Hello\" ; Own Home @ 01:24 cx said \"The land contractor loose stone. Yes, I am buying it.\" Agent slight delay in pressing 1 (Qualified - Home Type) instead of 33 (QO - Home) \"As per updated rule Land contract is NQ. Safe ka par\" ; Home Type @ 01:43 - slight delay \"3 seconds delay on pressing R\"  - WI || TCPA @ 02:43 \"2 seconds delay on pressing R\" ; @ 02:50 - slight delays \"I can get windows cheaper than you can get through Anderson. I used to work for them.| 2 seconds delay on pressing 85\" - WI",
+
             "Good call",
+
             "Client Branding @  02:07 \"The cx interrupted and 2 seconds delay on pressing R\" ; @ 02:14 \"2 seconds delay on pressing R\"; @ 02:21 - slight delays \"The other doors and siding|2 seconds delay on pressing deferment\" - WI",
+
             "Pitch @ 00:48 \"Cx: Yeah, Could I call you back?|3 seconds delay on pressing B\" ; @ 01:00 - slight delays \"Cx: Okay| 2 seconds delay on proceeding the call\" - WI"
+
           ],
+
           "audits": []
+
         },
+
         "week3": {
+
           "score": 89.6,
+
           "qa": [
+
             "PITCH - @1:36 Slight delay \"After >(How get number >2)|Cx: No|3 seconds delay on pressing 41\"  - SB_WI",
+
             "GREETINGS - @00:08 Failed to apply silent rule (some delay) ; @00:15 Slight delay - \"Cx: Hello|3 seconds delay\" SB_WI || SURVEY - HOME TYPE - @1:54 Slight delay \"4 seconds delay on applying silent rule\" - SB_WI",
+
             "Good call",
+
             "PITCH - @1:35 Some delay \"Cx: We've already had to do that. We haven't replaced our windows because our house was not three, four of it was demolished by a tree. And so we had to already get our windows replaced. We're looking more at, like, a deck and different things, but our windows are done. But thanks for calling.| 4 seconds delay on pressing an option\" - SB_WI",
+
             "PITCH - @00:47 Bumping key \"Cx: You know what I'm gonna stop you because I don't live on my home anymore. I sold it and I live in town house| Agent pressed 41 stopped then played are you the home owner?\" ; @00:53 Some delay - SB_WI",
+
             "Good call"
+
           ],
+
           "audits": []
+
         },
+
         "week4": {
+
           "score": 95,
+
           "qa": [
+
             "INTRO  @0:40  Slight delay  \"After IVA Cx: Hello| 4 seconds delay\";  PITCH  @01:22  cust said,  \"It, this really is not a good time. This is not a good time. If you can call me back, call me back a little later this afternoon and I'll be able to answer your questions.\"  agent pressed  64(Don't Need Now)  instead of  b(Busy).  WI",
+
             "PITCH  @01:06  Slight delay. \"Cx: Okay, Please go fast| 3 seconds delay\"  WI"
+
           ],
+
           "audits": []
+
         }
+
       }
+
     },
+
     {
+
       "name": "A. Lisondra",
+
       "password": "@rfie93",
+
       "month": "JUNE",
+
       "week_label": "WEEK 4",
+
       "weekly": {
+
         "week1": {
+
           "score": "100"
+
         },
+
         "week2": {
+
           "score": "63.27"
+
         },
+
         "week3": {
+
           "score": "81.61"
+
         },
+
         "week4": {
+
           "score": "98.02"
+
         }
+
       },
+
       "qa": [
+
         "\"PITCH\"  @01:33  Slight delay. \"Cx: So what I got. |3 seconds delay\"   PC HW",
+
         "GOOD CALL",
+
         "\"BENEFITS\"  @02:10  Slight delay \"4 seconds delay silent rule\"   ;  @02:33 Slight delay  \"Cx: I got home protection with homeserve| 3 seconds delay\" ;  @02:43  \"Cx: Home Serve| 3 seconds delay\"  Slight delay.",
+
         "GOOD CALL",
+
         "GOOD CALL",
+
         "\"5K SCREEN\" @01:01  Failed to apply in silent rule. \"After 5 seconds the customer responded\" PC HW"
+
       ],
+
       "audits": [],
+
       "weekly_data": {
+
         "week1": {
+
           "score": 81.52,
+
           "qa": [
+
             "Greetings @ 00:13 - slight delay \"Cx: Not interested| 2 seconds delay\"; Pitch @ 00:49 - slight delay \"Cx: Yeah, Okay| 2 seconds delay\" - PC HW || Benefits @ 01:47 - some delay \"Cx: No| 4 seconds delay\"- PC HW || TCPA @ 02:38 - slight delay \"Cx: That's good| 2 seconds delay\" - PC HW",
+
             "Pitch @ 00:46 - slight delay \"Cx: is it cost money?| 2 seconds delay\"  - PC HW || Delay dispo for 12secs. \"Cx: No CTO/Dialer Issue reported\" - PC HW",
+
             "Good call",
+
             "Benefits @ 02:36 - slight delay \"Cx: It depends on what the price| 2 seconds delay\" - PC HW",
+
             "Good call",
+
             "Benefits @ 02:01 - slight delay \"Cx: Yes, I do. But the thing is, right now I've just had to purchase a car, and so I just would not have the money to have the service.| 2 seconds delay\" - PC HW",
+
             "Good call",
+
             "Benefits @ 01:58 - slight delay \"Cx: Yeah| 2 seconds delay\" - PC HW || TCPA @ 03:01 - slight delay \"Cx: I said I don't want anything anyway. Coz I'm on a fixed income so.| 2seconds delay\" - PC HW",
+
             "Value @ 01:26; @ 02:10 - slight delays \"Cx interrupted| Cx: Can we get on with this.| 3 seconds delay on pressing R\" - PC HW",
+
             "Delay dispo for 11secs. \"Cx did not respond in pre-transfer screen| NO CTO/Dialer Reports\"  - PC HW"
+
           ],
+
           "audits": []
+
         },
+
         "week2": {
+
           "score": 89.77,
+
           "qa": [
+
             "Delay dispo for 11 secs -- \"No dialer Issue/CTO Reports\" PC.HW",
+
             "Good call",
+
             "Good call",
+
             "PRE-TRANSFER - @3:20 Unnecessary stopping \"Cx: No I'm not interested thank you| Agent ended the call stopped then delay for 2 seconds. Then Ended the call\" -- PC.HW",
+
             "SURVEY - ADD UP - @2:03 Cx said \"I said, do you guys replace stripper poles if it breaks?\",  agent had a slight delay in pressing   D(Dfefer)  instead of   END CALL --(missed option note only) -- PC.HW",
+
             "PITCH - @1:10 Bumping key \"Customer agreed| agent pressed 2 bumping keys\" -- PC.HW || SURVEY - BENEFITS - @2:20 Cx said \"Sir, I totally understand how home warranty works but I'm pretty sure I don’t need that.\",  agent pressed   4(Final no)  instead of   58(Hesitant) -- PC.HW",
+
             "SURVEY - OWN HOME - @1:11 Bumping keys -- \"Customer agreed| Agent 2 bumping keys\" PC.HW",
+
             "Good call"
+
           ],
+
           "audits": []
+
         },
+
         "week3": {
+
           "score": 60.93,
+
           "qa": [
+
             "BENEFITS  @02:19  cust said,  \", No, no, I don't need anything sir, I was actually a little freak.\"   agent slight delay in proceeding the call instead of  4(Not Interested).  PC HW",
+
             "Good call",
+
             "Good call",
+
             "REPLACE  @01:49  Slight delay. \"Cx: I've never own my home before| 3 seconds delay on pressing R\"  PC || TCPA  @03:09  Slight delay  ;  @03:39  Some delay.  PC HW || Delay disposing the call for more than 1 minute.  \"Reported as dialer issue. I will dispute this call.\"",
+
             "PRE TRANSFER  @02:59  cust said,  \"Okay\"  agent slight  delay in pressing  x(Exit)  instead of  proceed.  --Cat 3--  PC HW || Tagging a SALE call into a NON-SALE. \"Disputing this call\" PC HW",
+
             "BENEFITS  @02:15  Slight delay. \"3 seconds delay on pressing R\" PC HW"
+
           ],
+
           "audits": []
+
         },
+
         "week4": {
+
           "score": 0,
+
           "qa": [],
+
           "audits": []
+
         }
+
       }
+
     },
+
     {
+
       "name": "B. Buen",
+
       "password": "buenafe26",
+
       "weekly": {
+
         "week1": {
+
           "score": "92.04"
+
         },
+
         "week2": {
+
           "score": "81.68"
+
         },
+
         "week3": {
+
           "score": "88.70"
+
         },
+
         "week4": {
+
           "score": "77.09"
+
         }
+
       },
+
       "qa": [
+
         "\"TCPA\"  @02:17  Slight delay. \"5 seconds delay silent rule\"   PC WI",
+
         "\"MAIN REASON\"  @01:16  Slight delay. PC WI",
+
         "\"MAIN REASON\"  @0:15  after r(Repeat) cust said,  \"All of what you said.\"  agent pressed 1(Yes) *asked the main reason question again*   instead of 1(Yes) to proceed in Own Home.   PC WI",
+
         "\"1\" \"MAIN REASON\"  @01:13  Slight delay  ;  @01:25  cust said,  \"I'm I'm not saying anything. I'm, I'm just talking to you. What I said, what are y'all price?\"  agent slight delay in pressing   57(No Need)  instead of  66(How Much)  ;  @02:13  cust said,  \"A lot of people do I already know, but you keep saying the same thing. But I'm asking you, you know, you talking about other people, but we only supposed to be talking about what size my house is and how many windows I got, ain't that right?\"  agent pressed  67(Cost insistent)  instead of  d(Defer).   PC WI || \"2\" \"TCPA\"  @05:41  Slight delay  ;  @06:32 Slight delay  ;  PRE TRANSFER  @08:08  Major delay   \"Cx: I said, I don't need to talk to no two or three people. I'm on the phone and I'm. I'm trying. I felt it. I already. You got the right person, so now you don't. I got to go to another person.| 7 seconds delay on pressing D(Deferment)\" ;  @08:22  Slight delay.   PC WI || \"3\" Delay in disposing the call for more than 10 seconds. \"No dialer issue/CTO Reports\"",
+
         "GOOD CALL",
+
         "\"TCPA\"  @01:25  cust said,  \"We've already got a quote from renewal by Anderson.\"  agent  ended the call instead of  53(Already had Quote).   PC WI"
+
       ],
+
       "audits": [],
+
       "month": "JUNE",
+
       "week_label": "WEEK 4",
+
       "weekly_data": {
+
         "week1": {
+
           "score": 70.09,
+
           "qa": [
+
             "Credit @ 03:02 - slight delay \"Cx: That's good| 2 seconds delay on responding\" - PC BR",
+
             "Pitch @ 01:27 - slight delay in applying silent rule \"5 seconds delay\" - PC BR || Home Type @ 04:15 \"delay on pressing R\" ; @ 04:54 - slight delays \"I said it's a manufactured\"; @ 04:57 - bumping key \"Agent proceeded the call then ended\" - PC BR\n\n",
+
             "Main Reason @ 00:55 - some delay in applying silent rule \"6 seconds delay\" - PC BR ",
+
             "Transfer @ 03:58 cx said \"Like I said, I'm not really trying to do it right now. So I, I think this call is a little premature for me.\" Agent pressed X (Exit) + 4 (Not Interested) + 4 (Final No) instead of 4 (Final No); @ 04:10 - major delay - \"Agent pressed X after * seconds agent pressed 4(Not interested), Stopped the script at the middle then played 4(Final No)\" PC BR",
+
             "Walk In Tub @ 01:26 - slight delay; @ 01:32 cx said \"I could be interested, but I'm not going to do it right now.\" Agent slight delay in playing 57 (No need) instead of proceed - 1 (Yes)- PC BR || Transfer @ 03:35 - slight delay in applying silent rule \"2 seconds delay\" - PC BR || Delay dispo 11secs. - PC BR \"No CTO/Dialer Issue Reports\"",
+
             "TCPA @ 03:14 - slight delay \"Cx: No, sir, not right now. I'm in bed sick, have been for weeks, so I'm really not up for it.| 2 seconds delay\" - PC BR",
+
             "TCPA @ 03:23 - slight delay \"Cx: You said it's auto, You said it's automated call?| 2seconds delay\" - PC BR",
+
             "Greetings @ 00:14 - slight delay \"Cx: I'm good| 4 seconds delay\" ; Pitch @ 00:52 - some delay \"Cx: I'm not interested in getting a quote. I'm gonna do it myself| 4 seconds delay\"  - PC BR || Own Home @ 01:42 - slight delay \"Cx: Yeah| 2 seconds delay\" - PC BR",
+
             "Good call",
+
             "Walk In Tub @ 02:20 - slight delay \"Cx: Well, possibly. Yeah. But right now I'm not too. Yeah, I want to wait until this. This other fellow comes out and goes from there. He's done work for so.|2 seconds delay on ending the call\" - PC BR"
+
           ],
+
           "audits": []
+
         },
+
         "week2": {
+
           "score": 83.68,
+
           "qa": [
+
             "PITCH - @00:30 Cx interrupted & said \"Is it about home insurance?\",  agent had a slight delay in pressing   80(Wrong number)  instead of   0(PITCH) -- PC.BR",
-            "SURVEY - MAIN REASON - @1:06 Cx said \"Right now I need to put a subfloor in.\",  agent pressed   4(Not interested)  instead of   11(Generic reason) -- PC.BR",
-            "SURVEY - MAIN REASON - @1:01 Cx said \"For my husband, he's disabled and he needs a walk-in bathtub.\",  agent too soon in pressing   11(Generic reason) and then OWN HOME - @1:19 Cx said \"I do.\",  agent pressed   1(Yes)  instead of   >(Go forward) +  1(Yes) to skip walk in tub question -- PC.BR",
+
+            "SURVEY - MAIN REASON - @1:06 Cx said \"Right now I need to put a subfloor in.\",  agent pressed  4(Not interested)  instead of   11(Generic reason) -- PC.BR",
+
+            "SURVEY - MAIN REASON - @1:01 Cx said \"For my husband, he's disabled and he needs a walk-in bathtub.\",  agent too soon in pressing   11(Generic reason) and then OWN HOME - @1:19 Cx said \"I do.\",  agent pressed  1(Yes)  instead of   >(Go forward) +  1(Yes) to skip walk in tub question -- PC.BR",
+
             "Good call",
-            "TCPA - @2:57 Unnecessary hotkey \"after fully played TCPA cx already answered alright| Agent pressed K(is that okay?)\" ; PRE-TRANSFER - @3:27 After 1st round of 2(No), cx said \"I'd rather put that off. This isn't the right time.\",  agent pressed   4(Not interested)  instead of  END CALL (Final no) --(note *No Deduction) -- PC.BR",
+
+            "TCPA - @2:57 Unnecessary hotkey \"after fully played TCPA cx already answered alright| Agent pressed K(is that okay?)\" ; PRE-TRANSFER - @3:27 After 1st round of 2(No), cx said \"I'd rather put that off. This isn't the right time.\",  agent pressed  4(Not interested)  instead of  END CALL (Final no) --(note *No Deduction) -- PC.BR",
+
             "Good call",
+
             "SURVEY - OWN HOME - @1:15 Major delay in pressing unnecessary hotkey \"Cx: Yes| After 8 seconds agent pressed Hello\"  -- PC.BR",
+
             "Good call (Disputed)"
+
           ],
+
           "audits": []
+
         },
+
         "week3": {
+
           "score": 89.43,
+
           "qa": [
+
             "PITCH  @02:31 Slight delay. \"Yeah, so I'm already taken care of that way. My daughter's like, and her husband taking care of that. Like, they're admin edition and remodeling my bathroom.\"   PC BR || Delay in disposing the call for more than 10 seconds. \"After the agent ended the call the agent pressed another key|No Dialer Isse/CTO Reports\" PC BR",
+
             "MAIN REASON  @01:49  Slight delay. \"Okay. I didn't request for someone to call me. For bathroom request| 3 seconds delay\" PC BR",
+
             "WALK IN TUB  @02:16  cust said,  \"I've considered it, but they've been way too I can't, couldn't afford it. I'm paying right now. I'm paying for a solar panels.\"  agent pressed   4(Not Interested)  +  1(Yes)  instead of  1(Yes).  PC BR",
+
             "Good call",
+
             "Good call",
+
             "MAIN REASON  @01:06  Slight delay. \"Cx: We're thinking about it because we just are wanting to escape the house. We're going to be. We're going to be staying in it, but we just want to update it.| 3 seconds delay on proceeding the call\"  PC BR || TCPA  @03:17  slight delay. \"After pressing 3(Is that a yes)|Cx: you said I'm not under obligation| 3 seconds delay on pressing R\"  PC BR"
+
           ],
+
           "audits": []
+
         },
+
         "week4": {
+
           "score": 98,
+
           "qa": [
+
             "Pitch @ 00:52 - slight delay in applying silent rule \"5 seconds delay\" - PC BR",
+
             "Intro @ 00:15 - slight delay \"5 seconds delay *NO silent rule\" ; Greetings @ 00:25 - slight delay \"Cx: Good|2 seconds delay\" - PC BR"
+
           ],
+
           "audits": []
+
         }
+
       }
+
     },
+
     {
+
       "name": "W. Barquio",
+
       "password": "b.wiljon2000",
+
       "weekly": {
+
         "week1": {
+
           "score": "95.38"
+
         },
+
         "week2": {
+
           "score": "57.54"
+
         },
+
         "week3": {
+
           "score": "59.02"
+
         },
+
         "week4": {
+
           "score": "95.36"
+
         }
+
       },
+
       "qa": [
+
         "GOOD CALL",
+
         "\"Main Reason/Own Home\" @ 01:24 - slight delay \"There was verbal collision, Cx: No, You go ahead| 3 seconds delay\"  - PC BR",
+
         "\"1\" \"Pitch\" @ 00:48 - slight delay \"Cx: I didn't want more information. I thought when I hit that button that they tell you on your phone different things, but I'm not going to update my bathroom right now.|2 seconds delay\"- PC BR || \"2\" \"Own Home\" @ 01:41 cx interrupted & said \"I'm not interested in doing anything right now.\" Agent played (_) Home Ownership instead of 58 (Hesitant 2nd Rnd); Credit @ 02:40 - slight delay - PC BR",
+
         "GOOD CALL",
+
         "GOOD CALL",
+
         "GOOD CALL"
+
       ],
+
       "audits": [],
+
       "month": "JUNE",
+
       "week_label": "WEEK 4",
+
       "weekly_data": {
+
         "week1": {
+
           "score": 89.13,
+
           "qa": [
+
             "Good call",
+
             "Good call",
+
             "Good call",
+
             "SURVEY - MAIN REASON - @00:56 Cx said \"Well, right now I'm not looking to renovate the bathroom but I think it needs an upgrade.\",  agent pressed    57(No need)  instead of   11(Generic reason) ; WALK IN TUB - @1:58 Cx said \"I said, i haven't thought about a walk in tub.\",  agent had a bumping key then pressed   C(Clarification)   instead of    2(No) -- PC.BR",
-            "TCPA - @2:39 Cx said \"No, I'm not interested sir.\",  agent pressed    58(Hesitant)  instead of    4(Final no) \"This is a plain No/Not Interested\" -- PC.BR",
+
+            "TCPA - @2:39 Cx said \"No, I'm not interested sir.\",  agent pressed   58(Hesitant)  instead of   4(Final no) \"This is a plain No/Not Interested\" -- PC.BR",
+
             "Good call",
+
             "Delay dispo for more then 10 secs \"No Dialer Issue/CTO Report\"  -- PC.BR",
+
             "Good call",
+
             "Good call",
+
             "Good call"
+
           ],
+
           "audits": []
+
         },
+
         "week2": {
+
           "score": 93.45,
+
           "qa": [
+
             "Good call",
+
             "Good call",
+
             "Good call",
+
             "Good call",
+
             "OWN HOME @01:23  Bumping key. \"After fully played script, Before the customer answered the agent pressed a key\" PC BR",
+
             "Good call",
+
             "TCPA  @03:19  cust said,  \"I would rather they don't, and I would rather not do this right now. I gotta go. Thank you.\"  agent pressed  4(Final No)  instead of  58(Hesitant).  PC BR",
+
             "Delay in disposing the call for more than 10 seconds.  PC BR  \"No dialer issue/CTO reported\" "
+
           ],
+
           "audits": []
+
         },
+
         "week3": {
+
           "score": 66.09,
+
           "qa": [
+
             "TCPA @ 02:41 cx said \"Okay, well, I have to call you back. Thank you, bye.\" Agent played B (Busy) then pause @ 02:46 and major delay (1minute & 24secs) - PC BR || No Affirmation in TCPA tagged as SALE (Q3) --- Autofail (Cat.4) - PC BR",
+
             "Good call",
+
             "Delay dispo for 12secs \"No CTO/Dialer Reports\" - PC BR",
+
             "Delay dispo for 12secs - \"No dialer issue/CTO Reported\" PC BR",
+
             "Home Type @ 01:43 - slight delay in applying silent rule \"5 seconds on pressing silent rule\"  - PC BR",
+
             "Delay dispo for 24secs - \"No dialer issue/CTO Reported\" PC BR PC BR"
+
           ],
+
           "audits": []
+
         },
+
         "week4": {
+
           "score": 0,
+
           "qa": [
+
             "INTRO - @00:09 Cx said \"Hi Avery, I'm well, thank you, And this is Melissa. Sorry. yeah, did we have an appointment scheduled this morning?\",  agent pressed   B(Busy)  instead of  #(How get number)  .PC.BR",
+
             "Good call"
+
           ],
+
           "audits": []
+
         }
+
       }
+
     },
+
     {
+
       "name": "V. Amistad",
+
       "password": "0615",
+
       "month": "JUNE",
+
       "weekly_data": {
+
         "week1": {
+
           "score": 0,
+
           "qa": [],
+
           "audits": []
+
         },
+
         "week2": {
+
           "score": 76.34,
+
           "qa": [
+
             "PITCH - @00:48 Cx said \"Yes.\",  agent pressed    41(Imm No)  instead of    1(Yes - Pitch) \"Agent pressed K(Is That okay) and the customer agreed\" -- SB.BR",
+
             "SURVEY - CREDIT - @1:49 Cx said \"Good.\",  agent input  (Excellent)  instead of  (Good) ; NEXT STEP - @2:10 Not seamless -- SB.BR",
-            "SURVEY - MAIN REASON - @1:09 Some delay \"Cx: I have to ah, Add a lot of safety equipment| 4 seconds Cx: Hello?| Agent then pressed R\" ; CREDIT - @2:33 Cx said \"I don't give a shit about credit. I have the money.\",  agent pressed   ](No Problem)  +   32(SR - Credit)  instead of   ](No Problem)  +   12(Good (601-700) -- SB.BR || TCPA - @4:16 Slight delay \"Cx: I have no idea what the fuck you just said| 4 seconds delay on pressing R\" -- SB.BR",
+
+            "SURVEY - MAIN REASON - @1:09 Some delay \"Cx: I have to ah, Add a lot of safety equipment| 4 seconds Cx: Hello?| Agent then pressed R\" ; CREDIT - @2:33 Cx said \"I don't give a shit about credit. I have the money.\",  agent pressed    ](No Problem)  +   32(SR - Credit)  instead of    ](No Problem)  +   12(Good (601-700) -- SB.BR || TCPA - @4:16 Slight delay \"Cx: I have no idea what the fuck you just said| 4 seconds delay on pressing R\" -- SB.BR",
+
             "SURVEY - CREDIT - @2:59 Major delay \"Cx: It's. It's good. I don't know. It was 640 or 80 last time I checked. I don't know, but I get people calling me, wanting me to take loans constantly.| 9 seconds delay on pressing an option\" ; NEXT STEP - @3:26 Not seamless -- SB.BR",
+
             "Good call",
+
             "SURVEY - CREDIT - @2:26 Slight delay \"Cx: It's under 66|3 seconds delay\"  -- SB.BR",
+
             "GREETINGS - @00:10 Cx said \"I'm doing fine thank you.\",  agent pressed    2(How Are You?)  instead of    1(Good) -- SB.BR",
+
             "GREETINGS - @00:41 Slight delay \"2seconds delay on pressing R\" -- SB.BR"
+
           ],
+
           "audits": []
+
         },
+
         "week3": {
+
           "score": 68,
+
           "qa": [
+
             "WALK IN TUB  @02:14  Major delay in pressing unnecessary hotkey  ;  @02:35  Slight delay.  BR || PRE TRANSFER  @04:13, @04:17, @04:23, @04:27,  @04:41 Unnecessary hotkeys  ;  @04:46  cust talking to someone else in the backgorund ,  \"Hi, I'd like to pay my bill, okay?Let's see. Look Oh Lord is right in front of me.\"  agent pressed  5(What Company)  +  r(Repeat that) instead of  1(Yes)   --Cat 3-- BR || Tagging a SALE call into a NON-SALE call. BR Date Posted \"This call is disputed\"",
+
             "BRANDING  @02:33 cust interrupted,  \"There's no way we can get a new bathroom any time lately because we just found out that our septic system shut, so our next big project is a septic system. So there's no way I can get a new bathroom.\"  agent pressed  41(Imm No x1)  instead of   64(Don't Need Now).  BR",
+
             "PITCH @0:45  Slight delay. \"Cx: Im sorry, my wife handed over the phone what was the call about I'm sorry?|2 seconds delay\" BR",
+
             "WALK IN TUB  @01:34  Slight delay \"Cx: Not sure| 2 seconds delay\" ;  HOME TYPE  @01:57  Slight delay. \"Cx: Yeah 2 storey town house the bathroom is upstairs| 3 seconds delay\"  BR",
+
             "MAIN REASON  @01:22  Slight delay. \"Cx: It's functional but it's old| 3 seconds delay on proceeding the call\" BR",
+
             "PITCH  @0:47  cust said,  \"Honey, my house is only 5 years old. I'm not sure where you got information that, I had called in for information.\"  agent slight delay in pressing  85(Already had Quote)  +  32(SR - Pitch)  instead of  >(How Get Number)  ;  @01:29  Major delay. \"Cx: Go ahead. My house is handicapped accessible and everything is only five years old, so there would be no changes needed.|6 seconds delay on pressing an option\"   BR Date Posted"
+
           ],
+
           "audits": []
+
         },
+
         "week4": {
+
           "score": 0,
+
           "qa": [],
+
           "audits": []
+
         }
+
       }
+
     },
+
     {
+
       "name": "B. Tuico",
+
       "password": "2348",
+
       "month": "JUNE",
+
       "weekly_data": {
+
         "week1": {
+
           "score": 0,
+
           "qa": [],
+
           "audits": []
+
         },
+
         "week2": {
+
           "score": 0,
+
           "qa": [],
+
           "audits": []
+
         },
+
         "week3": {
+
           "score": 86.68,
+
           "qa": [
+
             "Main Reason @ 01:11 - some delay in applying silent rule \"6 seconds delay\"- BR",
+
             "Good call",
+
             "Pitch @ 00:47 - slight delay \"Cx: I don't remember requesting. We're not looking to remodel our bathroom.| 2 seconds delay\" ; @ 01:04 - bumping key \"Agent was going to play reask then stopped then played the right option\" - BR",
+
             "Greetings @ 00:13 cx said \"I'm fine, how can I help you sir?\" Agent pressed 1 (Good) instead of 7 (What's About) - BR",
+
             "Good call",
+
             "Greetings @ 00:20 - some delay; Pitch @ 01:18 - slight delay - BR || Walk In Tub @ 02:10 - some delay; Credit @ 02:34 - slight delay - BR || Pre-Transfer @ 03:28 - slight delay \"Cx: Ah sure|3 seconds delay on proceeding the call\" - BR"
+
           ],
+
           "audits": []
+
         },
+
         "week4": {
+
           "score": 0,
+
           "qa": [],
+
           "audits": []
+
         }
+
       }
+
     }
+
   ]
-}
+
+} 
+
