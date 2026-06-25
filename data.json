@@ -1,8 +1,12 @@
 {
   "theme": {
-    "primary": "#06b6d4",
-    "bg": "#f0f9ff",
-    "card": "#0f172a"
+    "primary": "#22c55e",
+    "bg": "#ffffff",
+    "card": "#f8fafc",
+    "text_main": "#0f172a",
+    "text_muted": "#64748b",
+    "accent": "#3b82f6",
+    "border": "#e2e8f0"
   },
   "agents": [
     {
@@ -224,10 +228,10 @@
           "score": 83.68,
           "qa": [
             "PITCH - @00:30 Cx interrupted & said \"Is it about home insurance?\",  agent had a slight delay in pressing   80(Wrong number)  instead of   0(PITCH) -- PC.BR",
-            "SURVEY - MAIN REASON - @1:06 Cx said \"Right now I need to put a subfloor in.\",  agent pressed  4(Not interested)  instead of   11(Generic reason) -- PC.BR",
-            "SURVEY - MAIN REASON - @1:01 Cx said \"For my husband, he's disabled and he needs a walk-in bathtub.\",  agent too soon in pressing   11(Generic reason) and then OWN HOME - @1:19 Cx said \"I do.\",  agent pressed  1(Yes)  instead of   >(Go forward) +  1(Yes) to skip walk in tub question -- PC.BR",
+            "SURVEY - MAIN REASON - @1:06 Cx said \"Right now I need to put a subfloor in.\",  agent pressed   4(Not interested)  instead of   11(Generic reason) -- PC.BR",
+            "SURVEY - MAIN REASON - @1:01 Cx said \"For my husband, he's disabled and he needs a walk-in bathtub.\",  agent too soon in pressing   11(Generic reason) and then OWN HOME - @1:19 Cx said \"I do.\",  agent pressed   1(Yes)  instead of   >(Go forward) +  1(Yes) to skip walk in tub question -- PC.BR",
             "Good call",
-            "TCPA - @2:57 Unnecessary hotkey \"after fully played TCPA cx already answered alright| Agent pressed K(is that okay?)\" ; PRE-TRANSFER - @3:27 After 1st round of 2(No), cx said \"I'd rather put that off. This isn't the right time.\",  agent pressed  4(Not interested)  instead of  END CALL (Final no) --(note *No Deduction) -- PC.BR",
+            "TCPA - @2:57 Unnecessary hotkey \"after fully played TCPA cx already answered alright| Agent pressed K(is that okay?)\" ; PRE-TRANSFER - @3:27 After 1st round of 2(No), cx said \"I'd rather put that off. This isn't the right time.\",  agent pressed   4(Not interested)  instead of  END CALL (Final no) --(note *No Deduction) -- PC.BR",
             "Good call",
             "SURVEY - OWN HOME - @1:15 Major delay in pressing unnecessary hotkey \"Cx: Yes| After 8 seconds agent pressed Hello\"  -- PC.BR",
             "Good call (Disputed)"
@@ -292,7 +296,7 @@
             "Good call",
             "Good call",
             "SURVEY - MAIN REASON - @00:56 Cx said \"Well, right now I'm not looking to renovate the bathroom but I think it needs an upgrade.\",  agent pressed    57(No need)  instead of   11(Generic reason) ; WALK IN TUB - @1:58 Cx said \"I said, i haven't thought about a walk in tub.\",  agent had a bumping key then pressed   C(Clarification)   instead of    2(No) -- PC.BR",
-            "TCPA - @2:39 Cx said \"No, I'm not interested sir.\",  agent pressed   58(Hesitant)  instead of   4(Final no) \"This is a plain No/Not Interested\" -- PC.BR",
+            "TCPA - @2:39 Cx said \"No, I'm not interested sir.\",  agent pressed    58(Hesitant)  instead of    4(Final no) \"This is a plain No/Not Interested\" -- PC.BR",
             "Good call",
             "Delay dispo for more then 10 secs \"No Dialer Issue/CTO Report\"  -- PC.BR",
             "Good call",
@@ -352,7 +356,7 @@
           "qa": [
             "PITCH - @00:48 Cx said \"Yes.\",  agent pressed    41(Imm No)  instead of    1(Yes - Pitch) \"Agent pressed K(Is That okay) and the customer agreed\" -- SB.BR",
             "SURVEY - CREDIT - @1:49 Cx said \"Good.\",  agent input  (Excellent)  instead of  (Good) ; NEXT STEP - @2:10 Not seamless -- SB.BR",
-            "SURVEY - MAIN REASON - @1:09 Some delay \"Cx: I have to ah, Add a lot of safety equipment| 4 seconds Cx: Hello?| Agent then pressed R\" ; CREDIT - @2:33 Cx said \"I don't give a shit about credit. I have the money.\",  agent pressed    ](No Problem)  +   32(SR - Credit)  instead of    ](No Problem)  +   12(Good (601-700) -- SB.BR || TCPA - @4:16 Slight delay \"Cx: I have no idea what the fuck you just said| 4 seconds delay on pressing R\" -- SB.BR",
+            "SURVEY - MAIN REASON - @1:09 Some delay \"Cx: I have to ah, Add a lot of safety equipment| 4 seconds Cx: Hello?| Agent then pressed R\" ; CREDIT - @2:33 Cx said \"I don't give a shit about credit. I have the money.\",  agent pressed   ](No Problem)  +   32(SR - Credit)  instead of   ](No Problem)  +   12(Good (601-700) -- SB.BR || TCPA - @4:16 Slight delay \"Cx: I have no idea what the fuck you just said| 4 seconds delay on pressing R\" -- SB.BR",
             "SURVEY - CREDIT - @2:59 Major delay \"Cx: It's. It's good. I don't know. It was 640 or 80 last time I checked. I don't know, but I get people calling me, wanting me to take loans constantly.| 9 seconds delay on pressing an option\" ; NEXT STEP - @3:26 Not seamless -- SB.BR",
             "Good call",
             "SURVEY - CREDIT - @2:26 Slight delay \"Cx: It's under 66|3 seconds delay\"  -- SB.BR",
