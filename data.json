@@ -76,7 +76,7 @@
           "audits": []
         },
         "week3": {
-          "score": 89.6,
+          "score": 89.68,
           "qa": [
             "PITCH - @1:36 Slight delay \"After >(How get number >2)|Cx: No|3 seconds delay on pressing 41\"  - SB_WI",
             "GREETINGS - @00:08 Failed to apply silent rule (some delay) ; @00:15 Slight delay - \"Cx: Hello|3 seconds delay\" SB_WI || SURVEY - HOME TYPE - @1:54 Slight delay \"4 seconds delay on applying silent rule\" - SB_WI",
@@ -161,7 +161,7 @@
           "audits": []
         },
         "week3": {
-          "score": 60.93,
+          "score": 90.68,
           "qa": [
             "BENEFITS  @02:19  cust said,  \", No, no, I don't need anything sir, I was actually a little freak.\"   agent slight delay in proceeding the call instead of  4(Not Interested).  PC HW",
             "Good call",
@@ -258,7 +258,7 @@
           "audits": []
         },
         "week4": {
-          "score": 98,
+          "score": 79.75,
           "qa": [
             "Pitch @ 00:52 - slight delay in applying silent rule \"5 seconds delay\" - PC BR",
             "Intro @ 00:15 - slight delay \"5 seconds delay *NO silent rule\" ; Greetings @ 00:25 - slight delay \"Cx: Good|2 seconds delay\" - PC BR",
@@ -331,7 +331,7 @@
           "audits": []
         },
         "week3": {
-          "score": 66.09,
+          "score": 56.59,
           "qa": [
             "TCPA @ 02:41 cx said \"Okay, well, I have to call you back. Thank you, bye.\" Agent played B (Busy) then pause @ 02:46 and major delay (1minute & 24secs) - PC BR || No Affirmation in TCPA tagged as SALE (Q3) --- Autofail (Cat.4) - PC BR",
             "Good call",
@@ -393,7 +393,7 @@
           "audits": []
         },
         "week4": {
-          "score": 93,
+          "score": 74.5,
           "qa": [
             "Replace @ 01:49 - slight delay \"Cx: No| 2 seconds delay\" ; Benefits @ 02:31 - slight delay \"Cx: I don't. We usually go with warranties directly from whoever we bought appliances from, so I don't think we really need anything else at this time. But I will. I can mention it to my husband, see what his thoughts are.|2 seconds delay on pressing (Talk to someone)\" - PC HW",
             "Greetings @ 00:13 - slight delay \"Cx: I'm doing good, Lying down| 3 seconds delay\" - BR || TCPA @ 05:07 - slight delay; @ 05:21 - major delay \"Cx: I said all I got is a tub. I ain't got no. The kind that you walk in and take a shower.| 7 seconds delay on pressing ](no problem) + 32(reask); Pre-Transfer @ 06:29 \"Cx: No no, I said how much cost for this?|3 seconds delay\"; @ 07:18 \"Customer is asking for the price\"; @ 07:36 - some delays - BR",
