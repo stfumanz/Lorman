@@ -1,9 +1,8 @@
-
 {
   "theme": {
-    "primary": "#3b82f6",
-    "bg": "#eff6ff",
-    "card": "#1e3a8a"
+    "primary": "#ef4444",
+    "bg": "#fef2f2",
+    "card": "#450a0a"
   },
   "agents": [
     {
@@ -113,12 +112,13 @@
           "audits": []
         },
         "week2": {
-          "score": 97.02,
+          "score": 97.36,
           "qa": [
             "BENEFITS  @02:25  cust said,  \"Yes, I'm not feeling well, yeah, because I'm not feeling well. I need you to call at a later time.\"  agent pressed  s(Sorry)  +  b(Busy)   instead of  v(Very busy).  PC HW",
             "Good call",
             "Good call",
             "INTRO/PITCH  @0:16 cust talks, agent failed to stop the script (timing issue).  PC HW",
+            "Good call",
             "Good call"
           ],
           "audits": []
@@ -177,13 +177,14 @@
           "audits": []
         },
         "week2": {
-          "score": 90.68,
+          "score": 91.02,
           "qa": [
             "MAIN REASON while playing 4(Not Interested)  @01:58 cust interrupted, \"No,  thank you. No thank you.\"  agent pressed  58(Hesitant)  instead of  4(Final)  **already used how get**  PC BR",
             "INTRO  @0:51 cust said,  \"Yeah, yeah, about 5 minutes and I have to leave to get ready for work.\"  agent pressed b(Busy)  instead of  proceed.  PC BR",
             "Good call",
             "Good call",
-            "PITCH  @01:07  cust said,  \"Well, I suppose.\"  agent pressed  4(Not Interested)  instead of  proceed. PC BR || TCPA  @04:16  Slight delay. PC BR"
+            "PITCH  @01:07  cust said,  \"Well, I suppose.\"  agent pressed  4(Not Interested)  instead of  proceed. PC BR || TCPA  @04:16  Slight delay. PC BR",
+            "Good call"
           ],
           "audits": []
         },
@@ -241,10 +242,14 @@
           "audits": []
         },
         "week2": {
-          "score": 96.09,
+          "score": 81.34,
           "qa": [
             "Good call",
-            "Delay dispo for 19secs. \"No dialer Issue/CTO Reported\" - PC BR"
+            "Delay dispo for 19secs. \"No dialer Issue/CTO Reported\" - PC BR",
+            "Benefits @ 02:27 - bumping key - PC HW",
+            "5k Sq @ 01:07 - slight delay \"Failed to play silent rule *Q4* \" - PC HW || Delay dispo for 27secs. \"No dialer Issue reported\" - PC HW",
+            "Delay dispo for 13secs. \"No dialer Issue reported NI6\" - PC HW",
+            "Delay dispo for 15secs. \"No dialer Issue reported Q4\" - PC HW"
           ],
           "audits": []
         },
