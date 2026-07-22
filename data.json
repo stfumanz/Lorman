@@ -1,8 +1,8 @@
 {
   "theme": {
-    "primary": "#ef4444",
-    "bg": "#fef2f2",
-    "card": "#450a0a"
+    "primary": "#3b82f6",
+    "bg": "#eff6ff",
+    "card": "#1e3a8a"
   },
   "agents": [
     {
@@ -59,8 +59,13 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 96.68,
+          "qa": [
+            "PITCH  @0:51  Some delay. \"Cx: Hmm kay|5 seconds delay on pressing K(Is that okay)\"   WI",
+            "Good call",
+            "Good call",
+            "PITCH  @01:01  Failed to apply silent rule. \"After 5 seconds of dead air cx said: Go Ahead\"  WI"
+          ],
           "audits": []
         },
         "week4": {
@@ -124,8 +129,15 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 90,
+          "qa": [
+            "Benefits @ 02:16 - slight delay \"Cx: Nah. Because I've tried a couple home warranties, and every time you call them, you got to pay a fee, and then they don't. Then they tell you they don't cover it, and you have to pay the person that comes out. And look.| 2 seconds delay on addressing the concern\"  - PC HW",
+            "Greetings @ 00:17 cx said \"I'm good, but I don't have no home project, so I don't have anything to say.\" Agent slight delay in playing 58 (Hesitant) instead of 3 (What's About); @ 00:24 - bumping key - PC HW",
+            "Own Home @ 01:08 - slight delay \"Cx: Oh, I go ask y', all, do y' all put in kitchen sink? I mean, cabinets.| 2 seconds delay on proceeding the call\" ; Replace @ 02:11 - slight delay - PC HW",
+            "Benefits @ 01:57 - slight delay - PC HW",
+            "Pitch @ 00:48 - slight delay - PC HW || 5k Sq @ 01:11 - slight delay; Benefits @ 02:06; @ 02:18 - slight delays - PC HW",
+            "Benefits @ 02:01; @ 02:17 - slight delays - PC HW"
+          ],
           "audits": []
         },
         "week4": {
@@ -189,8 +201,12 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 95,
+          "qa": [
+            "Own Home @ 01:20 - slight delay - PC BR || TCPA @ 03:08 - slight delay - PC BR",
+            "Greetings @ 00:14 - slight delay; Pitch @ 00:51; @ 01:03 - slight delays - PC BR || Own Home @ 01:38 - slight delay - PC BR",
+            "Credit @ 02:10 - slight delay - PC BR"
+          ],
           "audits": []
         },
         "week4": {
@@ -254,8 +270,15 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 87.02,
+          "qa": [
+            "INTRO  @0:12  cust said,  \"\"I'm alive. I just got back from the VA, so I'm a little woozy.\"\"  agent pressed  b(Busy)  instead of  4(Not Good/Interested). PC HW || BRANDING  @02:25  after rg(Go ahead)  cust said,  \"I said no thank you.\"  agent pressed  4(Final no) instead of  58(Hesitant).  PC HW",
+            "PITCH  @1:01  after r(Repeat) cust said,  'Yeah, I am, I'm a contractor for building houses, and and then I have a plumber or everything you know and then we don't need for that now.\"  agent pressed  4(Not Interested)  instead of  57(No need).  PC HW",
+            "Good call",
+            "ADD UP  @01:33  cust said,  \"Yeah, we just don't have extra money for it right now.\"   agent  proceed the call  instead of  57(No Need)  ;  BENEFITS  @01:55  after r(Repeat) cust said,  \"We just, we have a lot going on. We just bought a brand new washer, brand new dryer, brand new refrigerator, brand new furnace, brand new AC, so we're pretty good right now in our house.\"  agent pressed  58(Hesitant)  instead of   57(No Need).  PC HW",
+            "Good call",
+            "Good call"
+          ],
           "audits": []
         },
         "week4": {
@@ -295,8 +318,13 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 90,
+          "qa": [
+            "Walk In Tub @ 01:34 - slight delay; Credit @ 02:23 - slight delay - BR",
+            "TCPA @ 03:14 cx said \"Uhm, I probably, I don't answer a lot of calls but come up as scams because I get so many so that might not work very well.\" Agent slight delay in pressing 64 (Don’t Need Now) instead of \\ (Scam) + 32 (Quick Repeat); @ 04:01 - some delay \"Cx: They can attempt probably won't answer| 4 seconds delay\"; @ 04:16 - slight delay - BR",
+            "Pre-Transfer @ 03:09 - slight delay - BR",
+            "Credit @ 03:16 - slight delay - BR || Client Branding @ 03:41 - not seamless; TCPA @ 04:19; @ 04:34 - slight delays - BR"
+          ],
           "audits": []
         },
         "week4": {
@@ -309,7 +337,7 @@
     {
       "name": "B. Tuico",
       "password": "2348",
-      "month": "JUNE",
+      "month": "JULY",
       "weekly_data": {
         "week1": {
           "score": 47.25,
@@ -336,14 +364,14 @@
           "audits": []
         },
         "week3": {
-          "score": 86.68,
+          "score": 76.34,
           "qa": [
-            "Main Reason @ 01:11 - some delay in applying silent rule \"6 seconds delay\"- BR",
-            "Good call",
-            "Pitch @ 00:47 - slight delay \"Cx: I don't remember requesting. We're not looking to remodel our bathroom.| 2 seconds delay\" ; @ 01:04 - bumping key \"Agent was going to play reask then stopped then played the right option\" - BR",
-            "Greetings @ 00:13 cx said \"I'm fine, how can I help you sir?\" Agent pressed 1 (Good) instead of 7 (What's About) - BR",
-            "Good call",
-            "Greetings @ 00:20 - some delay; Pitch @ 01:18 - slight delay - BR || Walk In Tub @ 02:10 - some delay; Credit @ 02:34 - slight delay - BR || Pre-Transfer @ 03:28 - slight delay \"Cx: Ah sure|3 seconds delay on proceeding the call\" - BR"
+            "TCPA - @3:24 Cust said \"Ok.\", agent pressed     31(LR - TCPA)  instead of     32(Quick Repeat) --(tcpa fully played) - SB.BR",
+            "SURVEY - CREDIT - @2:04 Some delay \"Cx: eleven hundred| 5 seconds delay on pressing an option\" - SB.BR || TCPA - @3:04 Cust said \"No.\",  agent pressed    41(Imm No)  instead of    43(Final No) \"Since this was a plain no you should end the call\" ;  @3:21 Cust said \"No, you're hooking me up with the wrong kind of contractor, but thanks for your time.\",  agent pressed    42(Imm No)  instead of    43(Final No) - SB.BR",
+            "SURVEY - MAIN REASON - @2:22 Cust said \"My window are ok now. So, I don’t need to replace it.\",  agent pressed     42(Imm no)  instead of   43(Final No) --(3rd objection already pressed Busy & 64 script) - SB.W",
+            "PITCH - @00:46 Some delay \"Cx: Alright| 4 seconds delay\"  - SB.WI || SURVEY - MAIN REASON - @1:30 Slight delay  ;  @2:08 Cust said \"And what was your last name?\",  agent pressed  W(Who),  and then @2:16 cust said \"Matt, what?\",  agent pressed    31(LR - Main)  instead 2nd rnd of    W(Who)  +  32(Benefit) - SB.WI",
+            "SURVEY - MAIN REASON - @1:50 Some delay in applying the silent rule  ;  @2:27 Slight delay in applying the silent rule - SB.WI",
+            "Good call"
           ],
           "audits": []
         },
