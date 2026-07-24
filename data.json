@@ -1,8 +1,8 @@
 {
   "theme": {
-    "primary": "#3b82f6",
-    "bg": "#eff6ff",
-    "card": "#1e3a8a"
+    "primary": "#06b6d4",
+    "bg": "#f0f9ff",
+    "card": "#0f172a"
   },
   "agents": [
     {
@@ -59,12 +59,14 @@
           "audits": []
         },
         "week3": {
-          "score": 96.68,
+          "score": 97.36,
           "qa": [
             "PITCH  @0:51  Some delay. \"Cx: Hmm kay|5 seconds delay on pressing K(Is that okay)\"   WI",
             "Good call",
             "Good call",
-            "PITCH  @01:01  Failed to apply silent rule. \"After 5 seconds of dead air cx said: Go Ahead\"  WI"
+            "PITCH  @01:01  Failed to apply silent rule. \"After 5 seconds of dead air cx said: Go Ahead\"  WI",
+            "Good call",
+            "Good call"
           ],
           "audits": []
         },
@@ -201,11 +203,14 @@
           "audits": []
         },
         "week3": {
-          "score": 95,
+          "score": 85,
           "qa": [
             "Own Home @ 01:20 - slight delay - PC BR || TCPA @ 03:08 - slight delay - PC BR",
             "Greetings @ 00:14 - slight delay; Pitch @ 00:51; @ 01:03 - slight delays - PC BR || Own Home @ 01:38 - slight delay - PC BR",
-            "Credit @ 02:10 - slight delay - PC BR"
+            "Credit @ 02:10 - slight delay - PC BR",
+            "Pitch @ 00:51 - slight delay; @ 01:01 - some delay \"Cx: Alright| 4 seconds delay\" ; @ 01:05 - bumping key - PC BR || Walk In Tub @ 01:52 - slight delay; Credit @ 02:29 - slight delay - PC BR",
+            "Own Home/Walk In tub @ 02:24 - slight delay; @ 02:31 cx interrupted & said \"Yeah, I own one unit, it's duplex.\" Agent slight delay in playing 88 (Disqualified) instead of , (Repeat Message) \"Duplex is qualified hometype in BR\" - PC BR",
+            "Pitch @ 00:47 - slight delay - PC BR || Own Home @ 01:34 - slight delay - PC BR"
           ],
           "audits": []
         },
@@ -270,14 +275,14 @@
           "audits": []
         },
         "week3": {
-          "score": 87.02,
+          "score": 89.43,
           "qa": [
-            "INTRO  @0:12  cust said,  \"\"I'm alive. I just got back from the VA, so I'm a little woozy.\"\"  agent pressed  b(Busy)  instead of  4(Not Good/Interested). PC HW || BRANDING  @02:25  after rg(Go ahead)  cust said,  \"I said no thank you.\"  agent pressed  4(Final no) instead of  58(Hesitant).  PC HW",
-            "PITCH  @1:01  after r(Repeat) cust said,  'Yeah, I am, I'm a contractor for building houses, and and then I have a plumber or everything you know and then we don't need for that now.\"  agent pressed  4(Not Interested)  instead of  57(No need).  PC HW",
             "Good call",
-            "ADD UP  @01:33  cust said,  \"Yeah, we just don't have extra money for it right now.\"   agent  proceed the call  instead of  57(No Need)  ;  BENEFITS  @01:55  after r(Repeat) cust said,  \"We just, we have a lot going on. We just bought a brand new washer, brand new dryer, brand new refrigerator, brand new furnace, brand new AC, so we're pretty good right now in our house.\"  agent pressed  58(Hesitant)  instead of   57(No Need).  PC HW",
             "Good call",
-            "Good call"
+            "SURVEY - BENEFITS - @2:02 Cx said \"I mean, I could, I don't really understand how the whole home warranty works, but.\",  agent pressed  2(No)  instead of   65(How does it work) - PC.BR",
+            "PITCH - @00:59 Bumping key - PC.BR",
+            "TCPA - @2:17 Cust interrupted & said \"No thank you, I've already had them. No thanks. I'll pass on that.\",  agent pressed 2nd rnd of  53(Already had quote)  instead of  4(Final no) --(same objection@00:46) - PC.BR",
+            "Delay dispo for more than 10 secs \"No dialer issue/CTO reports\" - PC.BR"
           ],
           "audits": []
         },
@@ -323,7 +328,9 @@
             "Walk In Tub @ 01:34 - slight delay; Credit @ 02:23 - slight delay - BR",
             "TCPA @ 03:14 cx said \"Uhm, I probably, I don't answer a lot of calls but come up as scams because I get so many so that might not work very well.\" Agent slight delay in pressing 64 (Don’t Need Now) instead of \\ (Scam) + 32 (Quick Repeat); @ 04:01 - some delay \"Cx: They can attempt probably won't answer| 4 seconds delay\"; @ 04:16 - slight delay - BR",
             "Pre-Transfer @ 03:09 - slight delay - BR",
-            "Credit @ 03:16 - slight delay - BR || Client Branding @ 03:41 - not seamless; TCPA @ 04:19; @ 04:34 - slight delays - BR"
+            "Credit @ 03:16 - slight delay - BR || Client Branding @ 03:41 - not seamless; TCPA @ 04:19; @ 04:34 - slight delays - BR",
+            "Main Reason @ 01:15 - slight delay; Walk In tub @ 01:40 - some delay \"Cx: Already have that done| 5 seconds delay on pressing R\"; @ 01:53 - slight delay; Credit @ 02:19 - slight delay - BR || TCPA @ 03:12 - slight delay - BR",
+            "Home Type @ 02:01 - slight delay - BR"
           ],
           "audits": []
         },
