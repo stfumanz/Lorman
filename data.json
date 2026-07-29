@@ -71,8 +71,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 92,
+          "qa": [
+            "Pitch @ 01:17 - some delay \"Cx: This is something that I'm not ready to deal with right now. If I have projects, I'll be doing some research and calling people and doing things on my time.| 3 seconds delay on pressing an option\" - WI",
+            "Pitch @ 01:28 - major delay \"Cx: Okay. But I can probably save you the question. I don't really want to replace my windows, and I don't know where that came from, so I'm sorry about that. I have really nice windows.|4 After 4 seconds Cx: Hello?| 5 seconds delay on pressing an option|NO CTO Reports/Dialer Issue\" - WI"
+          ],
           "audits": []
         }
       }
@@ -143,8 +146,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 99.34,
+          "qa": [
+            "TCPA - @2:50 Too soon in pressing(timing issue) - PC.HW",
+            "Good call"
+          ],
           "audits": []
         }
       }
@@ -215,8 +221,13 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 90,
+          "qa": [
+            "INTRO - @00:09 Slight delay - PC.BR",
+            "SURVEY - WALK IN TUB - @2:29 Cust said \"Yeah, like I said, I don't have any money, man. I don't have that. I don't get that kind of money.\",  agent pressed    X(eXit)  instead    58(Hesitant) \"After pressing 57(Don't need now) agent should've pressed 58 (2nd round)\" - PC.BR",
+            "PITCH - @00:54 Some delay \"Cx: I'm sorry I don't wanna remodel my bathroom| 4 seconds delay on pressing an option\" - PC.BR",
+            "SURVEY - MAIN REASON - @00:58 Cust said \"Well, actually all I want is safety. I've got a walk-in shower in my my husband's bathroom that he passed away three years ago, but and I hate it and so what I want is a walk-in tub in my bathroom because for safety I'm going to be 94 and I don't want to fall and break my neck.\",  agent pressed  11(Generic reason)  instead of   12(Walk in tub) --(to skip walk in tub screen) - PC.BR"
+          ],
           "audits": []
         }
       }
@@ -287,8 +298,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 100,
+          "qa": [
+            "Good call",
+            "Good call"
+          ],
           "audits": []
         }
       }
@@ -335,8 +349,13 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 89,
+          "qa": [
+            "SURVEY - MAIN REASON - @1:43 Slight delay - SB.BR",
+            "SURVEY - OWN HOME - @2:20 Some delay  \"Cx: Yes| 4 seconds delay\" ;  WALK IN TUB - @2:55 Some delay \"Cx: My husband says that the septic system wouldn't hold one of them. Too much water. What was that? He thinks that the walk in tubs there would be so much water going through there that the septic system couldn't hold it.| 4 seconds delay on proceeding the call\" - SB.BR",
+            "SURVEY - MAIN REASON - @00:59 Cust said \"Well, the thing is, you know, since I'm 65, I should be getting some kind of grant to be able to do it, and I'm disabled.\",  agent pressed    1(Own Home)  instead of   ^(Deferment) - SB.BR",
+            "PITCH - @1:44 Cust said \"I rent right now, so if I need anything done to the bathroom, the landlord. It would be a waste of my time.\",  agent had a bumping key and then pressed    43(Final No)  instead of    88(End Call) - SB.BR"
+          ],
           "audits": []
         }
       }
@@ -383,14 +402,10 @@
           "audits": []
         },
         "week4": {
-          "score": 89.68,
+          "score": 87.59,
           "qa": [
-            "Good call",
-            "PITCH - @00:57 After 1st rnd of >(How Get Number), cx said \"It wasn't me. I don't recall for a remodel. Yeah, it must have been somebody missing on my phone or something...\",  agent pressed   1(Yes - Pitch)  instead   2nd rnd of    >(How Get Number) .SB.BR || SURVEY - MAIN REASON - @1:36 Cx said \"Mine's pretty decent at the moment. Yeah, I wouldn't want to. Do any remodeling.\", agent attmpted to proceed and then @1:53 cx continued \"I don't need no remodeling at the moment, but I really appreciate it. You guys have a nice day.\",  agent pressed   41(Imm No)  instead of  64(Don't Need Now) \"TL's Note: We need to press 64 because of the *at the Moment*\" .SB.BR",
-            "SURVEY -  MAIN REASON - @1:25 Cx said \"Not today but thank you.\",  agent pressed   42(Imm No)  instead of   64(Don't Need Now) \"TL's Note: *Not Today*\".SB.BR",
-            "Good call",
-            "SURVEY - CREDIT - @1:55 Slight delay \"Cx is inaudible|2 seconds delay on pressing R\" .SB.BR",
-            "SURVEY - MAIN REASON - @1:07 Slight delay \"Cx: Ahh, I need to restore them| 3 seconds delay on proceeding the call\"  .SB.WI"
+            "OWN HOME  @01:49  cust said,  \"Well, I'm buying it for my daughter, you know. I just when it's paid for I it's mine. So I've been paying on it for 7 years now, maybe 8 years. So, I'm thinking I owe like 13,000 on it.\"  agent ended the call instead of  proceed  --Call Avoidance--  \"This is a Mortgage\" BR",
+            "Good call"
           ],
           "audits": []
         }
