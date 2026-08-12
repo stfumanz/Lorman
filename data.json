@@ -42,7 +42,7 @@
             "Good call",
             "PITCH - @1:02 Cust said \"No, you know, sir, I'm gonna stop you because it's not gonna make sense for you to go through the whole thing and I can't do anything right now. And I'm not gonna be able to get the windows at this time, but at some point I do want to get new windows, you know, so I'm sorry, but I can't help you at this time.\",  agent had a major delay in pressing    88(End Call)  instead of   64(Don't Need Now) \"8 seconds delay| No Dialer Issue/CTO Reports\" - SB.WI",
             "INTRO - @00:05 Major delay \"After auto intro|Cx: Yes|After 4 seconds|Cx: Go ahead|After 4 seconds agent pressed R|No Dialer Issue/CTO Reports\"  ;  PITCH - @1:10 Slight delay - SB.WI",
-            "SURVEY - MAIN REASON - @1:40 Cust said \"I mean my windows are old but I mean I'm not losing any air and so I don't really need you know I mean new windows I mean I can't afford new windows first of all and I wouldn't, they're not in my budget \"currently.\" \",  agent had a bumping key then pressed   42(Imm no)  instead of   64(Don't Need Now) - SB.WI"
+            "SURVEY - MAIN REASON - @1:40 Cust said \"I mean my windows are old but I mean I'm not losing any air and so I don't really need you know I mean new windows I mean I can't afford new windows first of all and I wouldn't, they're not in my budget currently.\",  agent had a bumping key then pressed   42(Imm no)  instead of   64(Don't Need Now) - SB.WI"
           ],
           "audits": []
         },
