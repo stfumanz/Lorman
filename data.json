@@ -59,11 +59,13 @@
           "audits": []
         },
         "week3": {
-          "score": 97,
+          "score": 90,
           "qa": [
             "Greetings @ 00:29 - slight delay; Pitch @ 00:55; @ 01:19 - slight delays - WI",
             "Greetings @ 00:31 - slight delay - WI ",
-            "Own Home @ 02:03 - slight delay - WI"
+            "Own Home @ 02:03 - slight delay - WI",
+            "Greetings @ 00:11 - some delay \"Cx: Oh man, I'm doing okay. How about you?|After 2 seconds| What's going on? Are you there?| 4 seconds delay\" - WI || TCPA @ 02:32 - some delay \"Is this a government program or a|4 seconds delay on pressing R\" ; @ 02:54 - not seamless - WI",
+            "Pitch @ 01:33; @ 01:49 - slight delays - WI"
           ],
           "audits": []
         },
@@ -124,7 +126,9 @@
           "score": 99.34,
           "qa": [
             "Good call",
-            "SURVEY - REPLACE - @1:32 Slight delay in applying the silent rule - PC_HW"
+            "SURVEY - REPLACE - @1:32 Slight delay in applying the silent rule - PC_HW",
+            "PITCH - @00:53 Cust said \"So, what you're talking about is something like American Home Shield?\",  agent presssed  had a slight delay  in pressing    P(Purpose)  instead of   Y(Yes)  +  3(Unsure) - PC_HW || SURVEY - OWN HOME - @1:30 Cust said \"Ok, but what you're talking about is like American Home Shield, right?\",  agent pressed   D(Defer)  instead of  Y(Yes)  +  ,(Repeat message) - PC_HW",
+            "Good call"
           ],
           "audits": []
         },
@@ -258,10 +262,13 @@
           "audits": []
         },
         "week3": {
-          "score": 97.34,
+          "score": 90.43,
           "qa": [
             "BENEFITS  @01:58  cust said,  \"I said, it depends.\" \"The customer did not mention any regarding about price\"  agent pressed  66(How much)  instead of  proceed.  PC HW",
-            "Good call"
+            "Good call",
+            "Good call",
+            "Delay in disposing the call for more than 20 seconds. \"No dialer issue/CTO reports\"  PC HW",
+            "PITCH after r @0:42  cust said,  \"I already got homeowner's insurance.\"  agent pressed  53(Already had Quote)  instead of  65(How Does It Work).   PC HW"
           ],
           "audits": []
         },
@@ -302,11 +309,12 @@
           "audits": []
         },
         "week3": {
-          "score": 93,
+          "score": 88,
           "qa": [
             "PITCH - @1:11 Some delay \"Yes ah, Yeah I never requested on it. I don't know how it gotten online|4 seconds delay on pressing R\" ;  @2:07 Slight delay - SB_BR",
             "PITCH - @1:06 Cust said \"That was me but I'm not intrested right now.\",  agent pressed    41(Imm No)  instead of 64(Don't Need Now) \"Note: Right now\"- SB_BR",
-            "SURVEY - MAIN REASON - @1:41 Slight delay - SB_BR"
+            "SURVEY - MAIN REASON - @1:41 Slight delay - SB_BR",
+            "PITCH - @00:48 Major delay - \"Cx: Sure|7 seconds delay\"  \"This is reported as dialer issue and I will be disputing this call\" SB_BR "
           ],
           "audits": []
         },
@@ -350,7 +358,10 @@
           "score": 96.34,
           "qa": [
             "Good call",
-            "MAIN REASON  @01:22 cust said,  \"I guess I don't have one,, yeah I don't have one.\" agent slight delay in pressing  41(Imm No x1)  instead of  32(Benefits). \"In main reason if the customer answered no reason or they don't know the option should be 32(benefits)\"  WI"
+            "MAIN REASON  @01:22 cust said,  \"I guess I don't have one,, yeah I don't have one.\" agent slight delay in pressing  41(Imm No x1)  instead of  32(Benefits). \"In main reason if the customer answered no reason or they don't know the option should be 32(benefits)\"  WI",
+            "Good call",
+            "GREETINGS  @0:12 & @0:13  Unnecessary hotkey  ;  @0:32  Slight delay.  WI",
+            "MAIN REASON  @02:18  Slight delay.  WI"
           ],
           "audits": []
         },
