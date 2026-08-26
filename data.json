@@ -59,15 +59,29 @@
           "audits": []
         },
         "week3": {
-          "score": 90,
+          "score": 78.88,
           "qa": [
             "Greetings @ 00:29 - slight delay; Pitch @ 00:55; @ 01:19 - slight delays - WI",
             "Greetings @ 00:31 - slight delay - WI ",
             "Own Home @ 02:03 - slight delay - WI",
             "Greetings @ 00:11 - some delay \"Cx: Oh man, I'm doing okay. How about you?|After 2 seconds| What's going on? Are you there?| 4 seconds delay\" - WI || TCPA @ 02:32 - some delay \"Is this a government program or a|4 seconds delay on pressing R\" ; @ 02:54 - not seamless - WI",
-            "Pitch @ 01:33; @ 01:49 - slight delays - WI"
+            "Pitch @ 01:33; @ 01:49 - slight delays - WI",
+            "TCPA @ 03:49 - some delay; Pre-transfer @ 04:41 - slight delay in applying silent rule - BR"
           ],
-          "audits": []
+          "audits": [
+            "Good call",
+            "Good call",
+            "Good call",
+            "Delay dispo. \"Hello + Name| After 2 seconds Hello| Dead air for 25seconds\" WIF",
+            "Delay dispo.\"Answering playing on the background for 15 seconds\" WIF",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call"
+          ]
         },
         "week4": {
           "score": 0,
@@ -123,11 +137,13 @@
           "audits": []
         },
         "week3": {
-          "score": 99.34,
+          "score": 89.02,
           "qa": [
             "Good call",
             "SURVEY - REPLACE - @1:32 Slight delay in applying the silent rule - PC_HW",
             "PITCH - @00:53 Cust said \"So, what you're talking about is something like American Home Shield?\",  agent presssed  had a slight delay  in pressing    P(Purpose)  instead of   Y(Yes)  +  3(Unsure) - PC_HW || SURVEY - OWN HOME - @1:30 Cust said \"Ok, but what you're talking about is like American Home Shield, right?\",  agent pressed   D(Defer)  instead of  Y(Yes)  +  ,(Repeat message) - PC_HW",
+            "Good call",
+            "PITCH - @00:53 Cust said \"Are you with Home Serve?\", agent pressed  D(Defer)  instead of   )(Company) - PC_HW || SURVEY - OWN HOME - @1:56 Slight delay in applying the silent rule - PC_HW",
             "Good call"
           ],
           "audits": []
@@ -193,11 +209,14 @@
           "audits": []
         },
         "week3": {
-          "score": 90,
+          "score": 88.34,
           "qa": [
             "SURVEY - OWN HOME - @00:56 Some delay in applying the silent rule - PC_HW",
             "PITCH - @00:44 Slight delay in applying the silent rule - PC_HW || SURVEY - 5K Sq. - @1:09 Slight delay in applying the silent rule - PC_HW || TCPA - @3:02 Slight delay in applying the silent rule - PC_HW",
-            "PITCH - @1:05 Bumping key - PC_HW || TCPA - @2:57 Cust said \"Yeah, I don't think I'm interested, but thank you anyway though.\",  agent pressed   58(Hesitant)  instead of   4(Final no) - PC_HW"
+            "PITCH - @1:05 Bumping key - PC_HW || TCPA - @2:57 Cust said \"Yeah, I don't think I'm interested, but thank you anyway though.\",  agent pressed   58(Hesitant)  instead of   4(Final no) - PC_HW",
+            "PITCH - @00:58 Slight delay - PC_HW",
+            "Good call",
+            "PITCH - @1:07 Slight delay - PC_HW"
           ],
           "audits": []
         },
@@ -262,13 +281,14 @@
           "audits": []
         },
         "week3": {
-          "score": 90.43,
+          "score": 90.77,
           "qa": [
             "BENEFITS  @01:58  cust said,  \"I said, it depends.\" \"The customer did not mention any regarding about price\"  agent pressed  66(How much)  instead of  proceed.  PC HW",
             "Good call",
             "Good call",
             "Delay in disposing the call for more than 20 seconds. \"No dialer issue/CTO reports\"  PC HW",
-            "PITCH after r @0:42  cust said,  \"I already got homeowner's insurance.\"  agent pressed  53(Already had Quote)  instead of  65(How Does It Work).   PC HW"
+            "PITCH after r @0:42  cust said,  \"I already got homeowner's insurance.\"  agent pressed  53(Already had Quote)  instead of  65(How Does It Work).   PC HW",
+            "Good call"
           ],
           "audits": []
         },
@@ -314,9 +334,24 @@
             "PITCH - @1:11 Some delay \"Yes ah, Yeah I never requested on it. I don't know how it gotten online|4 seconds delay on pressing R\" ;  @2:07 Slight delay - SB_BR",
             "PITCH - @1:06 Cust said \"That was me but I'm not intrested right now.\",  agent pressed    41(Imm No)  instead of 64(Don't Need Now) \"Note: Right now\"- SB_BR",
             "SURVEY - MAIN REASON - @1:41 Slight delay - SB_BR",
-            "PITCH - @00:48 Major delay - \"Cx: Sure|7 seconds delay\"  \"This is reported as dialer issue and I will be disputing this call\" SB_BR "
+            "PITCH - @00:48 Major delay - \"Cx: Sure|7 seconds delay\"  \"This is reported as dialer issue and I will be disputing this call\" SB_BR ",
+            "Good call",
+            "NEXT STEP - @2:45 Not seamless - SB_BR"
           ],
-          "audits": []
+          "audits": [
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call",
+            "Good call"
+          ]
         },
         "week4": {
           "score": 0,
@@ -355,13 +390,14 @@
           "audits": []
         },
         "week3": {
-          "score": 96.34,
+          "score": 78.43,
           "qa": [
             "Good call",
             "MAIN REASON  @01:22 cust said,  \"I guess I don't have one,, yeah I don't have one.\" agent slight delay in pressing  41(Imm No x1)  instead of  32(Benefits). \"In main reason if the customer answered no reason or they don't know the option should be 32(benefits)\"  WI",
             "Good call",
             "GREETINGS  @0:12 & @0:13  Unnecessary hotkey  ;  @0:32  Slight delay.  WI",
-            "MAIN REASON  @02:18  Slight delay.  WI"
+            "MAIN REASON  @02:18  Slight delay.  WI",
+            "OWN HOME  @01:22  Slight delay  ;  HOME TYPE  @01:31  cust said,  \"A regular brick house.\"    agent major delay in pressing  spacebar  instead of  proceed.  WI || TCPA  @02:40  cust said,  \"Yes, it's okay, but the reason why I was inquiring about it because the advertisement says replace windows for free. So that was what I thought it was supposed to be free windows. I didn't know I had to pay out of pocket.\"  agent slight delay in pressing  32(Quick Repeat)  instead of  $(How Much)  +  32(Quick Repeat).  WI || Dispo should be NI7. \"Agent disposed the call as DA\"  WI"
           ],
           "audits": []
         },
