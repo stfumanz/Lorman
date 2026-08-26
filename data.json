@@ -66,7 +66,7 @@
             "Own Home @ 02:03 - slight delay - WI",
             "Greetings @ 00:11 - some delay \"Cx: Oh man, I'm doing okay. How about you?|After 2 seconds| What's going on? Are you there?| 4 seconds delay\" - WI || TCPA @ 02:32 - some delay \"Is this a government program or a|4 seconds delay on pressing R\" ; @ 02:54 - not seamless - WI",
             "Pitch @ 01:33; @ 01:49 - slight delays - WI",
-            "TCPA @ 03:49 - some delay; Pre-transfer @ 04:41 - slight delay in applying silent rule - BR"
+            "TCPA @ 03:49 - some delay; Pre-transfer \"This is already disputed but the score is not updated yet\" @ 04:41 - slight delay in applying silent rule - BR"
           ],
           "audits": [
             "Good call",
@@ -84,8 +84,13 @@
           ]
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 86.75,
+          "qa": [
+            "SURVEY - MAIN REASON - @1:07 Cust said \"We currently actually have new windows. So, I was kinda confused on why we are getting the call.\",  agent pressed    >(How Get Number)  instead of 5(Not qualififed). SB..WI ||Disposition should have been NQ --(note) \"No Error, Also the agent disposed the call as NI4\"",
+            "Agent disposed the call as  NI3  instead of  IVA  ; Delay dispo for 46 secs. \"The call connected after 40 seconds, No response from the customer the call should be disposed as IVA\" SB",
+            "GREETINGS - @00:14 Failed to apply the silent rule(some delay)  ;  PITCH - @00:54 Slight delay in applying the silent rule. SB..WI",
+            "PITCH - @1:13 Some delay. SB.. \"Cx: Okay. Okay. Here's the thing is, I don't really need to remodel my bathroom right now. I have other problems with legal problems and other situations with handicapped children and such, so, you know, it would be nice to remodel the bathroom, possibly, but that's really not on my list of priorities right now. But I appreciate your phone call, and you can probably take me off the list at this point because I just don't have the money, so.|5 seconds delay on pressing DNC\" BR || Delay dispo for more than 10 secs --(NOTE). \"No error/minus for this, Note Only\" SB..BR"
+          ],
           "audits": []
         }
       }
@@ -149,8 +154,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 99.34,
+          "qa": [
+            "Good call",
+            "BENEFITS  @02:05  Failed to apply silent rule.  PC HW"
+          ],
           "audits": []
         }
       }
@@ -221,8 +229,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 100,
+          "qa": [
+            "Good call",
+            "Good call"
+          ],
           "audits": []
         }
       }
@@ -293,8 +304,11 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 97.34,
+          "qa": [
+            "Good call",
+            "TCPA @ 02:51 cx said \"Now it's like this, it's been nice talking to you and stuff, but don't let anybody call because like I said, everything in here in the house is good. Have a nice evening.\" Agent failed to play an option - 4 (Final No) until the cx hang up \"Currently disputing this call\" - PC HW"
+          ],
           "audits": []
         }
       }
@@ -354,8 +368,11 @@
           ]
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 91,
+          "qa": [
+            "OWN HOME  @01:17  cust said,  \"Yes, we do.\"  agent pressed   1(Yes- Own)  +  1(Walk In Tub)  instead of   34(SKIP - Yes Walk In Tub). \"In main reason Cx: Ahm To have a walk-in tub for easier access\"  BR",
+            "CREDIT  @1:52  cust said,  \"Actually I can't take out any more loans, so anything going with financing. I won't be able to do that.\"  agent pressed  64(Don’t Need Now)  instead of  41(Imm No x1).  BR || TCPA  @03:38 cust said,  \"Oh well yes that's fine but I'm not interested anymore because I found someone but I mean I just answered the call because I was trying to figure out who it was that was calling me and I did I was looking for some estimates online a lot of times they don't do that because they're soliciting customers but, I was just trying to get a ballpark in general for a DIY cause I don't have a huge bathroom. My bathroom is basically just need to be updated.\" \"Ballpark or Estimate is cost concern. Cx: I was just trying to get a ballpark in general for a DIY cause I don't have a huge bathroom.\"  42(Imm No x2)  instead of  $(How Much)  +  32(Quick Repeat).   BR"
+          ],
           "audits": []
         }
       }
