@@ -59,11 +59,12 @@
           "audits": []
         },
         "week3": {
-          "score": 88,
+          "score": 81.84,
           "qa": [
             "PITCH - @00:50 Slight delay  ;  @1:12 Cust said \"No, I'm just saying,  we have new windows we just did it 5 years ago.\",  agent failed to press an option until cust hang up \"10 seconds delay\" - WI",
             "PITCH - @1:25 Some delay \"After >(How get number x1)|Cx: No I was thinking it was someone else using my information|4 seconds delay\" - BR",
-            "PITCH - @1:14 Major delay \"After >(How get number x1)|Cx: It had to have been somebody else. We never asked for any information on remodeling our bathrooms because it's already been done.|9 seconds delay\" - BR"
+            "PITCH - @1:14 Major delay \"After >(How get number x1)|Cx: It had to have been somebody else. We never asked for any information on remodeling our bathrooms because it's already been done.|9 seconds delay\" - BR",
+            "PITCH - @00:58 Not seamless \"After pressing location the agent did not go seamless\" - BR || SURVEY - OWN HOME - @2:23 - @2:27 Talking over - \"Upon ending the call with NQ. The customer interrupted with (Why would that be?) But the agent is very late on stopping the script\" BR"
           ],
           "audits": []
         },
@@ -196,8 +197,11 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 95,
+          "qa": [
+            "Intro @ 00:02 cx said \"This is Ruth.\" Agent played 4 (Gatekeeper) instead of 1 (Available) - PC BR || TCPA @ 03:28 - slight delay - PC BR",
+            "Walk in tub @ 02:15 - slight delay - PC BR"
+          ],
           "audits": []
         },
         "week4": {
@@ -261,8 +265,12 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 94,
+          "qa": [
+            "Walk In tub @ 01:31 - slight delay - PC BR || TCPA @ 02:58 - slight delay - PC BR",
+            "Walk In tub @ 02:45 - bumping key - PC BR",
+            "Greetings @ 00:12 cx said \"Good, how are you?\" Agent played 1 (Good) instead of 2 (How Are You?) - PC BR"
+          ],
           "audits": []
         },
         "week4": {
