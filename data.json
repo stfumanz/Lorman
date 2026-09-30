@@ -131,7 +131,7 @@
           "audits": []
         },
         "week3": {
-          "score": 49.34,
+          "score": 66.59,
           "qa": [
             "Pitch @  01:04 - slight delay - PC HW || TCPA @  02:42; @ 02:51 - slight delays; Transfer @ 03:42 cx interrupted & said \"I can't afford it right now because I'm financially I'm strapped here for the next 3 to 4 months. So I can't afford it right now.\" Agent played 57 (No need) instead of end call - 4 (Final No) --- Autofail - PC HW || Not Interested tagged as SALE (Q6) --- Autofail (Cat.4) - \"This is an agressive call\" PC HW",
             "Pitch @  00:48 - slight delay - PC HW || TCPA @  02:40 - slight delay; @ 03:02 cx said \"They can try calling me once. I just don't wanna get calls everyday.\" Agent some delay in playing D (Defer) instead of [ (No Problem) + proceed the call; Transfer @ 03:56 - slight delay - PC HW",
@@ -143,8 +143,12 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 98.34,
+          "qa": [
+            "SURVEY - OWN HOME - @1:38 Slight delay in applying the silent rule \"5 seconds delay\" - PC_BR",
+            "Good call",
+            "SURVEY - HOME TYPE - @3:37 Bumping key \"After the customer answered manufactured. The agent proceeded the call but stopped and ended the call\"  - PC_BR"
+          ],
           "audits": []
         }
       }
@@ -335,8 +339,13 @@
           "audits": []
         },
         "week4": {
-          "score": 0,
-          "qa": [],
+          "score": 70.59,
+          "qa": [
+            "Pitch @ 00:47 cx said \"Yeah, but what house?\" Agent slight delay in pressing 1 (Yes - Pitch) instead of J (Which Area) + 1 (Yes - Pitch) - BR || Main Reason @ 01:12 cx said \"What, what, what, what house? Are you talking, are you, are you saying what house?\" Agent slight delay in pressing > (How Get Number) instead of J (Which Area) + 33 (QO - Main); @ 01:35 - slight delay; Own Home @ 02:16 - some delay; Home Type @ 02:55 cx said \"It's in a subdivision. It's, it's a house.\" Agent pressed end the call - X (Thanks Bye) instead of proceed the call --- Call avoidance (Cat.2) - BR",
+            "Good call\n",
+            "Main Reason @ 01:21 cx still talking then agent pressed an option (timing issue) \"The customer is still talking but the agent pressed R\" - BR",
+            "Pitch @ 00:45 cx said \"Okay, I mean, I don't recall requesting anything about my bad so because I just bought a new home, so.\" Agent slight delay in pressing > (How Get Number) instead of 88 (End call); @ 01:09 - some delay; @ 01:18; @ 01:34 - slight delays - BR"
+          ],
           "audits": []
         }
       }
