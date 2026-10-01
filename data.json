@@ -143,11 +143,14 @@
           "audits": []
         },
         "week4": {
-          "score": 98.34,
+          "score": 99.34,
           "qa": [
             "SURVEY - OWN HOME - @1:38 Slight delay in applying the silent rule \"5 seconds delay\" - PC_BR",
             "Good call",
-            "SURVEY - HOME TYPE - @3:37 Bumping key \"After the customer answered manufactured. The agent proceeded the call but stopped and ended the call\"  - PC_BR"
+            "SURVEY - HOME TYPE - @3:37 Bumping key \"After the customer answered manufactured. The agent proceeded the call but stopped and ended the call\"  - PC_BR",
+            "Good call",
+            "Good call",
+            "Good call"
           ],
           "audits": []
         }
@@ -339,12 +342,14 @@
           "audits": []
         },
         "week4": {
-          "score": 70.59,
+          "score": 68.59,
           "qa": [
             "Pitch @ 00:47 cx said \"Yeah, but what house?\" Agent slight delay in pressing 1 (Yes - Pitch) instead of J (Which Area) + 1 (Yes - Pitch) - BR || Main Reason @ 01:12 cx said \"What, what, what, what house? Are you talking, are you, are you saying what house?\" Agent slight delay in pressing > (How Get Number) instead of J (Which Area) + 33 (QO - Main); @ 01:35 - slight delay; Own Home @ 02:16 - some delay; Home Type @ 02:55 cx said \"It's in a subdivision. It's, it's a house.\" Agent pressed end the call - X (Thanks Bye) instead of proceed the call --- Call avoidance (Cat.2) - BR",
             "Good call\n",
             "Main Reason @ 01:21 cx still talking then agent pressed an option (timing issue) \"The customer is still talking but the agent pressed R\" - BR",
-            "Pitch @ 00:45 cx said \"Okay, I mean, I don't recall requesting anything about my bad so because I just bought a new home, so.\" Agent slight delay in pressing > (How Get Number) instead of 88 (End call); @ 01:09 - some delay; @ 01:18; @ 01:34 - slight delays - BR"
+            "Pitch @ 00:45 cx said \"Okay, I mean, I don't recall requesting anything about my bad so because I just bought a new home, so.\" Agent slight delay in pressing > (How Get Number) instead of 88 (End call); @ 01:09 - some delay; @ 01:18; @ 01:34 - slight delays - BR",
+            "Credit @ 02:02 - slight delay \"Cx: Inaudible| 2 seconds delay on pressing R\" - BR",
+            "Main Reason @ 01:08 - slight delay \"Cx: Ahh, I need to get a washer dyer up there|2 seconds delay on proceeding the call\" ; Walk in tub @ 02:03 \"Cx: Ahh, It be too big on there| 2 seconds delay on pressing 32(Unsure)\" ; @ 02:32 - slight delays \"Cx: A walk-in tub wouldn't fit in to the plans| 2 seconds delay on pressing 2(No)\" ; Credit @ 03:11 - slight delay - slight delay \"Cx: Pretty much between good and excellent.I guess somewhere I have a. A grant from the VA to go towards| 2 seconds delay on pressing an option\" "
           ],
           "audits": []
         }
