@@ -35,7 +35,7 @@
       "week_label": "WEEK 4",
       "weekly_data": {
         "week1": {
-          "score": 83.02,
+          "score": 85.02,
           "qa": [
             "Good call",
             "PITCH - @00:58 Slight delay \"4 seconds delay on pressing R\" ;  @1:05 Cust said \"We was gonna do that, but it's no matter which way we went, it was too expensive.\",  agent pressed   41(Imm no)  instead of   $(How much)  +  32(SR - Pitch) - BR",
@@ -48,7 +48,11 @@
         },
         "week2": {
           "score": 0,
-          "qa": [],
+          "qa": [
+            "Greetings @ 00:13 - slight delay \"Cx: Okay| 2 seconds delay\" - BR || Credit @ 02:56 - slight delay \"Cx: Yeah, probably fair|2 seconds delay pressing R\"  - BR",
+            "TCPA @ 02:50 - slight delay \"Cx: Excuse me? Don't call me because I'm not in *inaudible* in Tara Land, Texas. I'm out of time working.| 2 seconds delay\" - BR",
+            "Intro @ 00:06 - some delay \"Cx: Yeah? (After pressing auto intro)| 4 seconds delay\" ; Greetings @ 00:20 \"Cx: You're recording, You don't care| 2 seconds delay pressing R\" - slight delay - BR || Credit @ 02:19 - slight delay; @ 02:21 - bumping key \"Cx: My credit, My credit score?| 2 seconds delay pressing unsure stopped then played Y(Yep)\" - BR || TCPA @ 03:26 \"Cx: No. Yeah. No, I don't have to if I don't want one.| 2 seconds delay on pressing R\" ; @ 03:36 - slight delays \"Cx: I know. If I do not want a new bathroom, I'm not going to get one.| 2 seconds delay on pressing 41\" - BR"
+          ],
           "audits": []
         },
         "week3": {
@@ -98,8 +102,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 99.34,
+          "qa": [
+            "Good call",
+            "Pitch @1:05 - Slight talking over the cx; @1:40 \"What would that have been?| 2 seconds delay pressing #(How get number)\" - Slight delay. PC FL"
+          ],
           "audits": []
         },
         "week3": {
@@ -156,8 +163,13 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 95.68,
+          "qa": [
+            "SURVEY - FL TYPE - @1:55 Slight delay \"Cx: Ah, Which is the thickest?| 3 seconds delay on pressing R\" ;  @2:01 Cust said \"Which is the thickest?\",  agent pressed   ,(Rpeat message)  instead of   D(Defer) - PC_FL",
+            "Good call",
+            "Good call",
+            "SURVEY  OWN HOME - @2:03 Slight delay in applying the silent rule \"4 seconds delay\" - PC_FL"
+          ],
           "audits": []
         },
         "week3": {
@@ -207,8 +219,12 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 100,
+          "qa": [
+            "Good call",
+            "Good call",
+            "Good call"
+          ],
           "audits": []
         },
         "week3": {
@@ -241,8 +257,13 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 91,
+          "qa": [
+            "Main Reason @ 01:24 - slight delay; Walk in tub @ 02:25 - slight delay - BR || TCPA @ 04:26 - slight delay \"Cx: Perfect choice. Called last week. And I told her that I'm going to wait.| 2 seconds delay on pressing 64\" ; Pre-Transfer @ 05:28 - slight delay \"Cx: I can't talk to anybody right now. I'm at the doctor's office. I'm getting ready to go in. Somebody's trying to call me now. I'm sure it's them, so I have to talk to you. Another time, okay?\"| 2 seconds delay on ending the call (Q3)\"  - BR",
+            "Pitch @ 01:32 - slight delay \"Cx: But I'm just. I just want to waste your time because I'm not. I don't need my. Any of my bathrooms remodel, so I'm not sure what was. How that information get out, but go ahead, give me the quote or whatever you need here. Ask the questions.| 2 seconds delay on proceeding the call\" - BR || Main Reason @ 02:52 - slight delay \"Cx: Well, if I had a reason, it'd probably be, which I don't. Is make it functional. So the toilet's flush and the sinks work, and it's, you know, is it functional? I don't need all the thrills and thrills of, you know, walk in shower space. I don't, you know, I don't need it. Right. So I guess if my bathroom was not functional, like, nothing was working. Yeah. Let's get a new toilet or let's get a new sink or plumbing to make it work, but I don't have that problem.| 2 seconds delay on proceeding\" ; Walk in tub @ 03:18 - slight delay \"Cx: Nope no need to| 2 seconds delay\" ; Credit @ 04:21 - slight delay \"Cx: Excellent because I don't have any. I own the home and no credit. I don't. The only, only mark that might be on my credit is my daughter's cows loan which we co signed for like 10 years ago or 20 years ago. That's the only thing. But we have no debt, we have no credit card debt or nothing. So I would assume it's in excellent condition. I haven't even change.| 2 seconds delay\" - BR || Client Branding @ 04:42 - not seamless (some); TCPA @ 05:32 - slight delay \"Cx: Yeah. I just don't want to waste anybody's time so they could call, but it's not going to change anything for me.| 2 seconds delay pressing R\" - BR",
+            "Own Home @ 02:06 - slight delay \"Cx: I don't need remodel on a bathroom coz it's done| 3 seconds delay on ending the call\" - BR",
+            "Pitch @ 00:55 - slight delay \"Cx: Sure| 2 seconds delay\" - BR"
+          ],
           "audits": []
         },
         "week3": {
