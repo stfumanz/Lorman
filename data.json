@@ -245,14 +245,14 @@
       "month": "OCTOBER",
       "weekly_data": {
         "week1": {
-          "score": 88.68,
+          "score": 88.02,
           "qa": [
             "Good call",
             "INTRO - 00:05 Bumping key - BR || NEXT STEP - @2:53 Cust interrupted & said \"Why don't you call back in the springtime because that's when I'm gonna wanna do it right now I'm real busy. I gotta level the floors out and get the foundation right, so I'm working on that right now, but in the spring will be a better time.\",  agent pressed   B(Busy)  instead of   64(Don't need now) - BR || TCPA - @3:54 Cust said \"No, I don't want no one to call here. I just want one person to call and call me in the spring, and we'll go from there.\",  agent had a slight delay   ](No Problem)  +  32(Quick Repeat)  instead of   64(Don't need now) - BR",
             "PITCH - @1:56 Slight delay  ;  @2:03 Cust said \"N*gga, put me on to your job, m*therf*cker.\",  agent pressed  44(DNC)  instead of   43(Final no) - BR",
             "Good call",
-            "NEW ENTRY",
-            "NEW ENTRY"
+            "PITCH - @00:33 Slight talking over - BR",
+            "Good call"
           ],
           "audits": []
         },
