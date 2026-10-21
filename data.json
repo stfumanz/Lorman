@@ -105,10 +105,14 @@
           "audits": []
         },
         "week2": {
-          "score": 99.34,
+          "score": 89.68,
           "qa": [
             "Good call",
-            "Pitch @1:05 - Slight talking over the cx; @1:40 \"What would that have been?| 2 seconds delay pressing #(How get number)\" - Slight delay. PC FL"
+            "Pitch @1:05 - Slight talking over the cx; @1:40 \"What would that have been?| 2 seconds delay pressing #(How get number)\" - Slight delay. PC FL",
+            "Survey-Walk-in Tub @1:36 - Slight delay \"Cx: What house are you talking about?\" ; @1:56 - Bumping key, slight delay then re-asked the Home Owner question instead of re-asking Walk-in tub interest; @2:07 - Some delay; bumping key. - PC BR",
+            "Good call\n",
+            "Survey-Walk in Tub @1:36 \"Cx: I don't think so right at this time\" , 1:52 - Slight delays \"Cx: I do have a tub but not a walkin. But it's a tub\" ; Credit Score @2:18 - Slight delay. \"Cx: I hope it's excellent, I pay my bills\"   - PC BR",
+            "Survey-FL Type @1:53 - Cx said \"Ah, carpet and tile\" agent pressed 15 (Tile) instead of 2 (Combination).  - PC BR"
           ],
           "audits": []
         },
@@ -224,11 +228,14 @@
           "audits": []
         },
         "week2": {
-          "score": 100,
+          "score": 92.68,
           "qa": [
             "Good call",
             "Good call",
-            "Good call"
+            "Good call",
+            "Survey-Credit Score @2:03 - Slight delay. \"Cx: Fair\"  - BR || Handoff @3:27 - Specialist said \"Hello\" twice but agent failed to stop the script and reintroduce (Overtalking).  - BR",
+            "Good call",
+            "Survey-Credit Score @1:49 - Slight delay. \"Cx: I don't know, I never check on that\"   - BR || Handoff @3:29 - Bumping key (Failed to stop the stall key).  - BR"
           ],
           "audits": []
         },
