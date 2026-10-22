@@ -59,8 +59,15 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 81.43,
+          "qa": [
+            "Good call",
+            "Good call",
+            "PITCH - @1:11 Some delay  \"Cx: The two little ones in the back room I got done almost 10 years ago, and they need to be done over because I broke one of their windows.|4 seconds delay on pressing R\";  @1:30 Slight delay - WI",
+            "GREETINGS - @00:13 Major delay \"Cx: I'm okay| 8 seconds delay\" \"No CTO/Dialer Issue Reports\" ;  PITCH - @00:50 Cust said \"Yeah, I'm really not interested right now. I'm in the middle of going ahead and remodeling, getting a remodel on the roof and getting a brand new patio top for my house.\",  agent pressed  8(End call)  instead of  64(Don't need now) - WI || Delay dispo for more than 10 secs - WI",
+            "SURVEY - OWN HOME - @1:55 Slight delay in applying the silent rule - WI",
+            "PITCH - @00:49 Cust said \"I'm not looking to replace the windows right now. I'm not interested in windows right now. I'm soon selling my home, so I'm not interested.\",  agent pressed  41(Imm no)  instead of    64(Don't need now) - WI"
+          ],
           "audits": []
         },
         "week4": {
@@ -117,8 +124,14 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 90.09,
+          "qa": [
+            "SURVEY - FL TYPE - @2:55 Unnecessary hotkey - PC.FL",
+            "Good call\n",
+            "PITCH - @1:02 Unnecessary stopping \"The rea, The rea, The reason\" - PC.BR",
+            "NEXT STEP - @2:10 Bumping key  ;  @2:19 Major delay --(note) \"It was reported as dialer issue\" - PC.BR || Delay dispo for more than 10 sec \"No dialer issue reported\" - PC.BR ",
+            "SURVEY - MAIN REASON - @1:43 Some delay in applying the silent rule - PC.BR"
+          ],
           "audits": []
         },
         "week4": {
@@ -182,8 +195,15 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 95.68,
+          "qa": [
+            "FL Type @ 02:04 - slight delay in applying silent rule; Job Size Requirement @ 02:21 - slight delay in applying silent rule - PC FL || TCPA @ 03:49; @ 04:23 - slight delays - PC FL",
+            "FL Type @ 01:48 - slight delay - PC FL",
+            "FL Size @ 02:28 - slight delay in applying silent rule - PC FL",
+            "Good call",
+            "Good call",
+            "FL Type @ 02:11 - bumping key - PC FL"
+          ],
           "audits": []
         },
         "week4": {
@@ -240,8 +260,13 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 96.68,
+          "qa": [
+            "GREETING - @00:05 After auto intro + H(Hello), cust said \"Hey, this is Taylor.\",  agent pressed   1(Available)  instead of   4(Gatekeeper) - PC.BR",
+            "Good call",
+            "Good call",
+            "PITCH - @00:59 There's verbal collision  ;  @1:04 Unnecessary hotkey - PC.BR"
+          ],
           "audits": []
         },
         "week4": {
@@ -281,8 +306,13 @@
           "audits": []
         },
         "week3": {
-          "score": 0,
-          "qa": [],
+          "score": 91.34,
+          "qa": [
+            "Good call",
+            "SURVEY - MAIN REASON - @1:05 Slight delay in appying the silent rule - BR",
+            "GREETINGS - @00:16 Cust said \"Who are you calling for?\",  agent pressed  7(What's about)  instead of   >(How get #) - BR ",
+            "SURVEY - OWN HOME - @2:39 Major delay \"Cx: I'm saying my dad was indeed looking for a home platform remodeling, so we might actually get back at you.| 8 seconds delay\"  - BR"
+          ],
           "audits": []
         },
         "week4": {
