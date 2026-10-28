@@ -321,6 +321,47 @@
           "audits": []
         }
       }
+    },
+    {
+      "name": "J. Ymbong",
+      "password": "062999!!!",
+      "month": "OCTOBER",
+      "weekly_data": {
+        "week1": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        },
+        "week2": {
+          "score": 84.34,
+          "qa": [
+            "Pitch @1:17 - Slight delay; @1:25 - Bumping key.  - BR || Survey-Walk-in tub @2:36 - Slight delay; @2:56 - Cx said \"But if the door opens up on the outside, that's not gonna work\" agent had a slight delay and pressed G (Go Ahead) instead of 2 (No-walkin), the cx continued \"The only thing about a walk-in tub is the door is gonna be in the way depending which way it comes out because if it goes outwards that's not gonna work because our toilet is right next to the tub\" agent had a slight delay in pressing 1 (Walk In Tub) --verbal collision, agent paused then the cx asked \"What's that?\" agent had some delay and when the cx said \"Go ahead\" agent pressed G (Go Ahead) instead of 2 (No-walkin); @3:29 - Cx said \"You're going to ask me something\" agent pressed 33 (QO-Walk-in tub) instead of proceeding to the next question. - BR",
+            "Good call",
+            "Pitch @1:12 - Bumping key. Date posted  - BR",
+            "Intro @0:04, 0:14 - Unnecessary H (Hello) - BR\n\n\n",
+            "Survey-Main Reason @1:30 - Cx said \"Walk-in, sh-, tub\" then in Own Home question, cx said \"Yes\" agent pressed 1 (Yes - Own) instead of 34 (SKIP-Yes Walk In Tub); Home Type @2:04 - Slight delay; Credit Score @2:25 - Slight delay. BR",
+            "Greetings @0:19, 0:31 - Slight delays. - BR\n\n"
+          ],
+          "audits": []
+        },
+        "week3": {
+          "score": 87.34,
+          "qa": [
+            "Main Reason @ 01:07; @ 01:18 - slight delays; Walk in tub @ 01:51; @ 02:01 - slight delays; Home Type @ 02:12; @ 02:24 - slight delays - BR Jaintel ",
+            "Own Home @ 01:40 - slight delay; Credit @ 02:24 - slight delay - BR Jaintel ",
+            "Pitch @ 01:41 - slight delay - BR || Own Home @ 02:43 - some delay; Walk in tub @ 03:03 cx said \"The walk-in tub? No, that's too much money. What do they cost?\" Agent slight delay in pressing 2 (No-walkin/Already Have) instead of $ (How Much) + 2 (No-walkin/Already Have); Credit @ 03:40 - slight delay - BR || Client Branding @ 04:01 - not seamless - BR",
+            "Good call",
+            "Pitch @ 00:53 - slight delay - PC BR || Main Reason @ 01:44; @ 02:21 - slight delays; @ 01:56; @ 02:35 - slight delays in applying silent rule - PC BR",
+            "Credit @ 03:33 - slight delay - PC BR"
+          ],
+          "audits": []
+        },
+        "week4": {
+          "score": 0,
+          "qa": [],
+          "audits": []
+        }
+      }
     }
   ]
 }
