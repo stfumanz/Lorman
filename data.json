@@ -281,12 +281,14 @@
           "audits": []
         },
         "week3": {
-          "score": 96.68,
+          "score": 93.02,
           "qa": [
             "GREETING - @00:05 After auto intro + H(Hello), cust said \"Hey, this is Taylor.\",  agent pressed   1(Available)  instead of   4(Gatekeeper) - PC.BR",
             "Good call",
             "Good call",
-            "PITCH - @00:59 There's verbal collision  ;  @1:04 Unnecessary hotkey - PC.BR"
+            "PITCH - @00:59 There's verbal collision  ;  @1:04 Unnecessary hotkey - PC.BR",
+            "PITCH - @1:01 Cust said \"Not at this time.\",  agent unnecessary stopped   64(Don't need now) script then pressed   41(Imm no)  instead of continuing the script   64(Don't need now) - BR",
+            "Good call"
           ],
           "audits": []
         },
