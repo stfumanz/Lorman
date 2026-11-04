@@ -71,12 +71,14 @@
           "audits": []
         },
         "week4": {
-          "score": 87.09,
+          "score": 85.09,
           "qa": [
             "Intro @ 00:06 - slight delay; Greetings @ 00:14 - slight delay - WI || Main Reason @ 01:05 cx said \"Right now, I'm okay. I don't need a new window.\" Agent pressed 41 (Imm No) instead of 64 (Don't Need Now); @ 02:14 - slight delay in applying silent rule - WI",
             "Pitch @ 00:42 - slight delay - WI",
             "Good call",
-            "Greetings @ 00:12 - some delay \"Cx: Fine Matt (4 seconds delay pressing R)\"; Pitch @ 01:08 - some delay \"After >(How get number x1) Cx: It definitely wasn't me (4 seconds delay on pressing R)\" ; @ 01:22 - slight delay - WI || Delay dispo for 13secs \"No dialer issue\" - WI"
+            "Greetings @ 00:12 - some delay \"Cx: Fine Matt (4 seconds delay pressing R)\"; Pitch @ 01:08 - some delay \"After >(How get number x1) Cx: It definitely wasn't me (4 seconds delay on pressing R)\" ; @ 01:22 - slight delay - WI || Delay dispo for 13secs \"No dialer issue\" - WI",
+            "Pitch @ 00:35 - bumping key - WI",
+            "Next Step @ 01:42 - bumping key; @ 01:51 - slight delay - WI"
           ],
           "audits": []
         }
@@ -140,12 +142,14 @@
           "audits": []
         },
         "week4": {
-          "score": 97.34,
+          "score": 94.34,
           "qa": [
             "Good call",
             "Home Type @ 02:07 - slight delay - PC BR",
             "Own Home @ 01:18 - slight delay; Credit @ 01:58 - slight delay - PC BR",
-            "Main Reason @ 01:28 - slight delay - PC BR"
+            "Main Reason @ 01:28 - slight delay - PC BR",
+            "TCPA @ 04:35 - bumping key; @ 04:42 - slight delay - PC FL",
+            "FL Type @ 01:48; @ 02:07; @ 02:20 - slight delays - PC FL || TCPA @ 03:35 - slight delay - PC FL"
           ],
           "audits": []
         }
@@ -217,13 +221,14 @@
           "audits": []
         },
         "week4": {
-          "score": 81.68,
+          "score": 78.68,
           "qa": [
             "PITCH - @00:43 Slight delay - FL",
             "GREETING - @00:05 Cust said \"Are you a person?\",  agent pressed  Z(Live perZon) but didn’t play the exact recording --(note)  ;  INTRO - @00:23 Not seamless \"Agent played Z(live perZon)\" - FL",
             "Delay dispo for more than 1 minute  ;  Tagging a SALE call into a NON-SALE call - FL",
             "Good call",
-            "Good call"
+            "Good call",
+            "SURVEY - MAIN REASON - @2:26 Cust said \"Well, I don't really have any idea about that one because I don't really need any of the changing of the floor or the flooring at all, you know, because our floor is in a very, very good condition. And I don't think I need anything of that one, so I never think of that one at all.\",  agent pressed  58(Hesitant)  instead of  4(Final no) --(3rd objection) (1st@00:37 & 2nd@1:50) - FL"
           ],
           "audits": []
         }
@@ -286,10 +291,14 @@
           "audits": []
         },
         "week4": {
-          "score": 99.34,
+          "score": 92.77,
           "qa": [
             "Good call",
-            "Main Reason @ 01:00 - slight delay in applying silent rule - BR"
+            "Main Reason @ 01:00 - slight delay in applying silent rule - BR",
+            "Agent disposed the call as DNC instead of NI4 - BR",
+            "Good call",
+            "Good call",
+            "Pitch @ 00:47 cx said \"Ahh, I don’t need a bathroom renovation right now.\" Agent pressed 41 (Imm No) instead of 64 (Don’t Need Now) - BR"
           ],
           "audits": []
         }
@@ -335,12 +344,14 @@
           "audits": []
         },
         "week4": {
-          "score": 92,
+          "score": 88.34,
           "qa": [
             "Walk in tub @ 02:05; @ 02:21 - slight delays; Credit @ 02:45; @ 02:54 - slight delays - BR || TCPA @ 04:27 - slight delay - BR",
             "Walk in tub @ 02:21 - slight delay; Next Step @ 04:58 - slight delay - BR",
             "Greetings @ 00:22 cx said \"I'm doing well, thank you.\" Agent pressed B (Busy) instead of 7 (What's About); Pitch @ 01:30 - slight delay - BR",
-            "Pitch @ 00:50 - slight delay - BR"
+            "Pitch @ 00:50 - slight delay - BR",
+            "Greetings @ 00:30 cx said \"Good, how are you?\" Agent slight delay in pressing 1 (Good) instead of 2 (How Are You?) - BR",
+            "Good call"
           ],
           "audits": []
         }
@@ -381,13 +392,14 @@
           "audits": []
         },
         "week4": {
-          "score": 82.68,
+          "score": 82.43,
           "qa": [
             "Good call",
             "SURVEY - OWN HOME  - @1:42 Slight delay  PC.BR",
             "PITCH - @00:38 Cust interrupted & said \"I said I'm in a wheelchair and I got a small bathroom and I had to have somebody help me in the tub. And and I was gonna check on like walk-in tub and all.\",  then @1:03 cust said \"Alright.\",  agent pressed    1(Yes - Pitch)  instead of   34(SKIP - Main Reason) - BR || SURVEY - OWN HOME - @1:42 Cust said \"Yes.\",  agent pressed    1(Yes - Own)  instead of    34(SKIP - Yes Walk In Tub)  ;  WALK IN TUB - @1:53 Cust said \"Yeah.\",  agent pressed    33(QO - Walk In Tub)  instead of   1(Walk In Tub) - BR",
-            "SURVEY - MAIN REASON - @1:22 Major delay \"This will be disputed\"  ;  CREDIT - @2:31 Slight delay in pressing unnecessary hotkey \"Customer said It's 700, but agent pressed G(Go Ahead)\" ;  @2:38 Cust said \"It's 700..\",  agent input  (Excellent)  instead of  (Good) - BR || TCPA - @3:37 Unnecessary hotkey - BR",
-            "Good call"
+            "SURVEY - MAIN REASON - @1:22 Major delay \"This is Disputed\"  ;  CREDIT - @2:31 Slight delay in pressing unnecessary hotkey \"Customer said It's 700, but agent pressed G(Go Ahead)\" ;  @2:38 Cust said \"It's 700..\",  agent input  (Excellent)  instead of  (Good) - BR",
+            "Good call",
+            "Agent disposed the call as  Q6  instead of   Q5 - BR"
           ],
           "audits": []
         }
