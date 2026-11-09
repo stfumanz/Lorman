@@ -35,8 +35,15 @@
       "week_label": "WEEK 4",
       "weekly_data": {
         "week1": {
-          "score": 0,
-          "qa": [],
+          "score": 82.09,
+          "qa": [
+            "SURVEY - MAIN REASON - @1:14 Cust said \"Actually, I don't want any new windows now.\",  agent pressed  41(Imm no)  instead of  64(Don't need now)  ;  @1:31 Cust said \"No, I don’t want.\",  agent pressed   42(Imm no) instead of   43(Final no) --(3rd objection). \"Agent already rebutted with B(Busy) in the pitch screen\" BR",
+            "PITCH - @1:20 Bumping key  ;  @1:32 Some delay in applying the silent rule. BR",
+            "Delay dispo for more than 10 secs. \"No Dialer Issue\" WI",
+            "Good call",
+            "INTRO - @00:04 Major delay \"After auto intro Cx: Yes?| After 5 seconds Dead air Cx: Hello? *No Dialer Issue/CTO Reported\"  ;  GREETINGS - @00:19 Some delay  \"Cx: No wasn't me| 4 seconds delay\";  PITCH - @00:57 Major delay. BR",
+            "PITCH - @00:42 Slight delay  ;  @1:04 Not seamless. \"After pressing -(Recording) Agent didn't go seamless\" WI"
+          ],
           "audits": []
         },
         "week2": {
@@ -91,10 +98,14 @@
       "audits": [],
       "weekly_data": {
         "week1": {
-          "score": 99.34,
+          "score": 91.68,
           "qa": [
             "Good call",
-            "PITCH - @2:03 Slight delay. FL"
+            "PITCH - @2:03 Slight delay. FL",
+            "Good call",
+            "SURVEY - FL TYPE - @2:29 Slight delay. FL",
+            "PITCH - @00:54 Some delay \"Cx: Do you do carpeting? Or just hardwood? 4 seconds delay\" ;  @1:05 Slight delay  ;  @1:10 Unnecessary hotkey  ;  @1:15 Bumping key. FL || SURVEY - MAIN REASON - @1:39 Slight delay. FL",
+            "PITCH - @00:47 Cust said \"You're welcome to ask me questions, but we're not in a financial position to be purchasing anything, but you're welcome to ask me questions.\",  agent pressed  4(No interested)  instead of   1(Yes). FL"
           ],
           "audits": []
         },
@@ -145,9 +156,13 @@
       "week_label": "WEEK 4",
       "weekly_data": {
         "week1": {
-          "score": 96,
+          "score": 94.68,
           "qa": [
             "Greetings @ 00:14 - slight delay - PC FL || Main Reason @ 01:27 - some delay \"Cx: I was actually looking to repair some or switch to carpet I had when I bought my home. They had wood installed. The wood buckled in the basement level. So I was either trying to get that repaired or remove it and put carpet in.| 4 seconds delay\" - PC FL",
+            "Good call",
+            "TCPA @ 02:40 - slight delay - PC FL",
+            "Good call",
+            "Greetings @ 00:15 - slight delay - PC BR",
             "Good call"
           ],
           "audits": []
@@ -199,10 +214,14 @@
       "week_label": "WEEK 4",
       "weekly_data": {
         "week1": {
-          "score": 97.34,
+          "score": 88.68,
           "qa": [
             "GREETINGS - @00:23 Some delay. \"Cx: I'm growing and going|4 seconds delay\" BR",
-            "Good call"
+            "Good call",
+            "TCPA - @3:51 Cust said \"I really can't do one right now, so I mean it would be best if they didn't just because I can't do anything financially right now.\",  agent pressed  43(Final no)  instead of   42(Imm no). \"Agent already pressed 64(Don't need now) at main reason. If same concern agent should've pressed 42\" BR",
+            "SURVEY - MAIN REASON - @1:01 Cust said \"What would be my main reason? I don't know. I really, I don't know. Update it, yeah, maybe. regular showers.\",  agent attempted playing 41 script but there's verbal collision then pressed  Repeat that and cust respond \"Nothing.\",  agent pressed  41(Imm no)  instead of   1(Own home). BR",
+            "Good call",
+            "PITCH - @1:26 After 64 script, cust said \"No , like I said, I'm not interested because I'm not gonna do so. I don't wanna invest any time or take up your time at this point. So, because, I'm not looking for that project.\",  agent pressed  41(Imm no)  instead of   42(Imm no). \"If the agent pressed 64 if the cx is not interested the correct option would be 42\" BR"
           ],
           "audits": []
         },
@@ -235,7 +254,8 @@
             "SURVEY - OWN HOME - @1:31 Slight delay  ;  WALK IN TUB - @1:50 Cust said \"I haven't gotten that far.\",  agent pressed    33(QO - Walk In Tub)  instead of     2(No-walkin/Already Have)  ;  CREDIT - @2:30 Cust said \"Good. What does that have to do with it?\"  agent pressed    31(Why Ask Credit)  instead of    61(Why Need Information). \"In the rule we should've pressed 61 instead of 31 since the agent already ans\twered Good. If you pressed 31, It will just repeat the question\" BR || TCPA - @4:11 Bumping key. BR",
             "SURVEY - MAIN REASON - @00:58 Slight delay in applying the silent rule. BR",
             "SURVEY - MAIN REASON - @1:01 Cust gave out a reason then @1:38 after 64 script, cust said \"Ok.\",  agent pressed    33(QO - Main)  instead of     1(Own Home)  ;  @1:45 Slight delay in applying the silent rule. BR",
-            "PITCH - @1:38 Slight delay. BR"
+            "PITCH - @1:38 Slight delay. BR",
+            "SURVEY - MAIN REASON/OWN HOME - @1:10 Cust said \"More functional but I guess I probably just ought to cut you short right here. I have leukemia right now and we can't do anything in the house and stuff like that because of dust and what all that other stuff entails, so I'm afraid I'm gonna have to put you off for a while, ok?\",  agent pressed  64(Don't need now)  instead of  End the call. \"Leukemia = Cancer\" BR"
           ],
           "audits": []
         },
@@ -265,7 +285,11 @@
           "score": 0,
           "qa": [
             "Greetings @ 00:02 cx said \"No\" Agent played 1 (Available) instead of 4 (Gatekeeper); @ 00:05 - slight delay - PC FL",
-            "FL Size @ 02:31 - slight delay - PC FL"
+            "FL Size @ 02:31 - slight delay - PC FL",
+            "TCPA @ 02:52 - slight delay; @ 02:58 cx said \"Are they, are the workers that are…carpet, are they local?\" Agent played 0 (TCPA) instead of ) (Company) - PC FL",
+            "Good call",
+            "Pitch @ 00:49 - slight delay in applying silent rule - PC FL || Own Home @ 01:58 - slight delay - PC FL",
+            "FL Size @ 02:50 - slight delay - PC FL || TCPA @ 04:01 - slight delay - PC FL"
           ],
           "audits": []
         },
