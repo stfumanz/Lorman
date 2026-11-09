@@ -255,7 +255,7 @@
             "SURVEY - MAIN REASON - @00:58 Slight delay in applying the silent rule. BR",
             "SURVEY - MAIN REASON - @1:01 Cust gave out a reason then @1:38 after 64 script, cust said \"Ok.\",  agent pressed    33(QO - Main)  instead of     1(Own Home)  ;  @1:45 Slight delay in applying the silent rule. BR",
             "PITCH - @1:38 Slight delay. BR",
-            "SURVEY - MAIN REASON/OWN HOME - @1:10 Cust said \"More functional but I guess I probably just ought to cut you short right here. I have leukemia right now and we can't do anything in the house and stuff like that because of dust and what all that other stuff entails, so I'm afraid I'm gonna have to put you off for a while, ok?\",  agent pressed  64(Don't need now)  instead of  End the call.  BR"
+            "SURVEY - MAIN REASON/OWN HOME - @1:10 Cust said \"More functional but I guess I probably just ought to cut you short right here. I have leukemia right now and we can't do anything in the house and stuff like that because of dust and what all that other stuff entails, so I'm afraid I'm gonna have to put you off for a while, ok?\",  agent pressed  64(Don't need now)  instead of  End the call. \"Leukemia = BR\"  BR"
           ],
           "audits": []
         },
