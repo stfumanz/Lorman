@@ -47,8 +47,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 100,
+          "qa": [
+            "Good call",
+            "Good call"
+          ],
           "audits": []
         },
         "week3": {
@@ -110,8 +113,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 88.75,
+          "qa": [
+            "Pitch @ 01:07 - slight delay - PC FL || Own Home @ 01:59 - slight delay - PC FL",
+            "FL Type @ 01:45 - major delay \"Cx: Maybe laminate maybe carpet. I don't know the prices (Agent addressed the cost but bumping) (Dead air for 4 seconds)|Cx: What's that?\" ; Next Step @ 02:29 - some delay; @ 02:43 - major delay in pressing an option until cx hang up \"This is a technical but the agent did not put it on dialer issue\" - PC FL || Delay dispo for 14secs - PC FL"
+          ],
           "audits": []
         },
         "week3": {
@@ -168,8 +174,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 97.34,
+          "qa": [
+            "Good call",
+            "SURVEY - MAIN REASON - @1:51 Cust said \"No, I'm not interested at this moment. Thank you so much. I don't wanna make you waste your time, ok? Thank you, have a great day. Bye.\",  agent pressed  58(Hesitant)  instead of   57(No need) - FL"
+          ],
           "audits": []
         },
         "week3": {
@@ -226,8 +235,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 99.34,
+          "qa": [
+            "Pitch @ 00:34 - slight delay - BR",
+            "Good call"
+          ],
           "audits": []
         },
         "week3": {
@@ -260,8 +272,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 85,
+          "qa": [
+            "Pitch @ 00:22; @ 00:28 - slight delays - BR || Credit @ 01:58 - slight delay - BR || Client Branding @ 02:19 - not seamless; TCPA @ 02:54 cx said \"Yeah, is it alright if I have like 1second? My son's calling me.\" Agent some delay in pressing 0 (Transfer Dec) instead of O (Okay) + wait for the cx to be back on the line; @ 03:04 cx interrupted & said \"No, no, it's, it's a fine time. My, my son's just asking something. It's a good time. Just give me like one minute. I'll be right back.\" Agent some delay in pressing X (Thanks Bye) instead of O (Okay) + wait for the cx to be back on the line; @ 03:30 - some delay - BR",
+            "Greetings @ 00:15 - slight delay - BR || Own Home/Walk in tub @ 01:34; @ 01:43; @ 02:00 - slight delays; @ 01:59 - bumping key - BR || TCPA @ 03:23 cx said \"Ahm, I, I, I don't know if I want to do that. Right now my budget is very tight so I don't know if I want to commit to any loans or anything like that to tell you the truth, to be honest but I'll definitely keep that in mind.\" Agent pressed 41 (Imm No) instead of 64 (Don't Need Now) - BR"
+          ],
           "audits": []
         },
         "week3": {
@@ -294,8 +309,11 @@
           "audits": []
         },
         "week2": {
-          "score": 0,
-          "qa": [],
+          "score": 100,
+          "qa": [
+            "Good call",
+            "Good call"
+          ],
           "audits": []
         },
         "week3": {
