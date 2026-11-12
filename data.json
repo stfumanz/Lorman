@@ -174,10 +174,12 @@
           "audits": []
         },
         "week2": {
-          "score": 97.34,
+          "score": 93.68,
           "qa": [
             "Good call",
-            "SURVEY - MAIN REASON - @1:51 Cust said \"No, I'm not interested at this moment. Thank you so much. I don't wanna make you waste your time, ok? Thank you, have a great day. Bye.\",  agent pressed  58(Hesitant)  instead of   57(No need) - FL"
+            "SURVEY - MAIN REASON - @1:51 Cust said \"No, I'm not interested at this moment. Thank you so much. I don't wanna make you waste your time, ok? Thank you, have a great day. Bye.\",  agent pressed  58(Hesitant)  instead of   57(No need) - FL",
+            "Good call",
+            "SURVEY - MAIN REASON - @1:10 Cust said \"I don't have a reason to.\",  agent pressed   4(Not interested)  instead of   2(Unknown)  ;  @1:31 Slight delay in applying the silent rule - PC-BR"
           ],
           "audits": []
         },
